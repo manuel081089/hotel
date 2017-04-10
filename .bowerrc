@@ -1,5 +1,5 @@
 {
     "directory" : "vendor",
-    "proxy" : "http://10.11.10.4:3128",
-    "https-proxy" : "http://10.11.10.4:3128"
+    "proxy" : "http://proxy.ucm.pri.sld.cu:3128",
+    "https-proxy" : "http://proxy.ucm.pri.sld.cu:3128"
 }
