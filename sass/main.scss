@@ -3,6 +3,7 @@
 @import "../vendor/susy/sass/susy";
 /* Font-Awesome could be removed later and linked from the CDN in the index.html */
 @import "../vendor/font-awesome/css/font-awesome.min.css";
+@import "_reset.scss";
 @import "_variables.scss";
 
 $susy: (

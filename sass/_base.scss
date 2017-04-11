@@ -1,0 +1,23 @@
+.wrap {
+	@include container;
+
+	nav {
+		@include span(full);
+
+		background: $brand-secondary;
+		height: 5em;
+	}
+
+	header {
+		@include span(full);
+
+		background: #28AEED;
+		height: 15em;
+	}
+
+	article {
+		@include span(full);
+
+		background: #DF6A1B;
+	}
+}

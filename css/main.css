@@ -1,0 +1,44 @@
+@import url(../vendor/normalize-css/normalize.css);
+/* Font-Awesome could be removed later and linked from the CDN in the index.html */
+@import url(../vendor/font-awesome/css/font-awesome.min.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.wrap {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .wrap nav {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background: #363636;
+    height: 5em; }
+  .wrap header {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background: #28AEED;
+    height: 15em; }
+  .wrap article {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background: #DF6A1B; }
+
+/*# sourceMappingURL=main.css.map */
