@@ -7,11 +7,37 @@
   font-size: 16px;
   font-family: geniusthin; }
 
+body {
+  height: 100%; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  outline: 0px none; }
 
 ul {
   list-style: none; }
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 4px; }
+
+::-webkit-scrollbar-track {
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 10px;
+  background: #b6b8bd; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666; }
+
+::-webkit-scrollbar-thumb:active {
+  background: #333; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 @font-face {
   font-family: 'geniusthin';
@@ -29,18 +55,59 @@ ul {
     clear: both; }
   .wrap nav {
     width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    left: -100%; }
+    .wrap nav .close {
+      float: right;
+      font-size: 3.6em;
+      padding-right: .2em;
+      cursor: pointer;
+      transition: all 0.3s ease 0s; }
+      .wrap nav .close:hover {
+        font-size: 3.8em; }
+    .wrap nav .nav-content {
+      background: #242424;
+      text-align: left;
+      position: absolute;
+      padding-left: 1em;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      z-index: 999; }
+      .wrap nav .nav-content, .wrap nav .nav-content a {
+        color: white; }
+      .wrap nav .nav-content ul li {
+        padding-bottom: .8em;
+        margin-bottom: .8em;
+        border-bottom: 1px solid black; }
+        .wrap nav .nav-content ul li:last-child {
+          border-bottom: none; }
+  .wrap header {
+    width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
-    background: #363636;
+    background: #393939;
     height: 5em;
-    position: fixed;
     top: 0;
     width: 100%;
-    z-index: 99; }
-    .wrap nav .logo-container {
+    z-index: 99;
+    border-bottom: 1px solid #A29061;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.19); }
+    .wrap header .nav-toggle button {
+      color: #A29061;
+      float: right;
+      border: none;
+      font-size: 1.8em;
+      padding-top: 1em;
+      padding-right: .5em;
+      text-align: center;
+      background: #393939; }
+    .wrap header .logo-container {
       position: relative; }
-      .wrap nav .logo-container .logo {
+      .wrap header .logo-container .logo {
         position: absolute;
         top: 1.25em;
         left: .375em;
@@ -50,23 +117,23 @@ ul {
         padding-top: 1.125em;
         background: #f1f1f1;
         border-color: #ccc; }
-        .wrap nav .logo-container .logo::before {
+        .wrap header .logo-container .logo::before {
           content: "";
           position: absolute;
           display: block;
           top: 0;
           left: 0;
           height: 0;
-          border-top: 0.7em solid #363636;
+          border-top: 0.7em solid #393939;
           border-right: 3.5em solid transparent;
           border-bottom: 3.5em solid transparent;
           border-left: 3.5em solid transparent;
           z-index: 2; }
-        .wrap nav .logo-container .logo::after {
+        .wrap header .logo-container .logo::after {
           content: "";
           position: absolute;
           display: block;
-          top: 4.5em;
+          top: 3.4em;
           left: 0;
           height: 0;
           border-top: 0.9em solid #f1f1f1;
@@ -74,29 +141,29 @@ ul {
           border-bottom: 3.5em solid transparent;
           border-left: 3.52em solid transparent;
           z-index: 2; }
-        .wrap nav .logo-container .logo img {
+        .wrap header .logo-container .logo img {
           max-width: 6em;
           padding-top: 0.5em; }
-    .wrap nav .booking {
-      position: absolute;
-      right: 0;
-      top: 5em;
-      width: 5em; }
-  .wrap header {
+  .wrap .carousel {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0;
-    margin-top: 5em; }
-    .wrap header .slider img {
+    margin-right: 0; }
+    .wrap .carousel .slider img {
       width: 100%; }
+    .wrap .carousel .booking {
+      background: #393939;
+      color: white;
+      padding: .5em 0;
+      text-align: center;
+      margin-top: -.187em;
+      cursor: pointer; }
   .wrap .testimonials {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
     background: #EFF5F7;
-    margin-top: -0.25em;
     padding: 1em 0;
     text-align: center; }
     .wrap .testimonials .avatar img {
@@ -123,17 +190,17 @@ ul {
         border-right: 10px solid transparent;
         border-bottom: 10px solid white;
         border-left: 10px solid transparent; }
-  .wrap article {
+  .wrap #main-content article {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0; }
-    .wrap article .cards-container {
+    .wrap #main-content article .cards-container {
       overflow: hidden;
       *zoom: 1;
       padding: 1.5em;
       background: url("../img/parallax1.jpg"); }
-      .wrap article .cards-container .card {
+      .wrap #main-content article .cards-container .card {
         width: 100%;
         float: left;
         margin-left: 0;
@@ -143,30 +210,68 @@ ul {
         background: white;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
         margin-bottom: 5.26316%; }
-        .wrap article .cards-container .card hr {
+        .wrap #main-content article .cards-container .card hr {
           margin: .8em auto;
           border: 0;
           border-top: 1px solid #eee;
           width: 60%; }
-        .wrap article .cards-container .card .card-head {
-          position: relative; }
-          .wrap article .cards-container .card .card-head .card-img {
-            width: 100%;
-            position: relative;
-            border-radius: 4px 4px 0 0; }
-          .wrap article .cards-container .card .card-head .card-icon {
-            position: absolute;
-            top: 7.125em;
-            left: 42%;
-            color: white;
-            border-radius: 50%;
-            background: #2c2c2c;
-            width: 2.5em;
-            height: 2.5em; }
-            .wrap article .cards-container .card .card-head .card-icon img {
-              width: 60%;
-              margin-top: .4em; }
-        .wrap article .cards-container .card .card-body {
+        .wrap #main-content article .cards-container .card .card-head .card-img {
+          position: relative;
+          width: 100%;
+          border-radius: 4px 4px 0 0; }
+        .wrap #main-content article .cards-container .card .card-head .card-icon {
+          position: relative;
+          margin: -20px auto;
+          color: white;
+          border-radius: 50%;
+          background: #393939;
+          width: 2.5em;
+          height: 2.5em; }
+          .wrap #main-content article .cards-container .card .card-head .card-icon img {
+            width: 60%;
+            margin-top: .4em; }
+        .wrap #main-content article .cards-container .card .card-body {
           padding: 2em 1.2em 0.8em; }
+  .wrap footer {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background: #393939;
+    color: white;
+    text-align: center; }
+    .wrap footer .subscribe {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 2em 0 0; }
+      .wrap footer .subscribe input[type=text].subscribe-email {
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        padding: .313em .5em;
+        margin-top: .313em; }
+      .wrap footer .subscribe .subscribe-button {
+        background: #DE4154;
+        border-radius: 4px;
+        padding: .313em .5em;
+        color: white;
+        border: 1px solid #DE4154; }
+    .wrap footer .footer-col {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 1em; }
+      .wrap footer .footer-col h1, .wrap footer .footer-col span {
+        text-transform: uppercase; }
+      .wrap footer .footer-col li.contact-item {
+        border-bottom: 1px solid #4c4c4c;
+        padding-bottom: .562em;
+        margin-bottom: .562em; }
+      .wrap footer .footer-col .map {
+        margin-top: .25em; }
+        .wrap footer .footer-col .map img {
+          width: 95%; }
 
 /*# sourceMappingURL=main.css.map */

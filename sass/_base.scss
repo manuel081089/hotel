@@ -2,15 +2,78 @@
 	@include container;
 
 	nav {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 999;
+		left: -100%;
+
+
+		.close {
+			float: right;
+			font-size: 3.6em;
+			padding-right: .2em;
+			cursor: pointer;
+			transition: all 0.3s ease 0s;
+
+			&:hover {
+				font-size: 3.8em;
+			}
+		}
+
+		.nav-content {
+			background: #242424;
+			text-align: left;
+			position: absolute;
+			padding-left: 1em;
+			width: 100%;
+			height: 100%;
+			right: 0;
+			z-index: 999;			
+
+			&, a {
+				color: white;
+			}
+
+			ul {	
+				li {
+					padding-bottom: .8em;
+					margin-bottom: .8em;
+					border-bottom: 1px solid black;
+					&:last-child {
+						border-bottom: none;
+					}
+				}
+			}
+		}
+		
+	}
+
+	header {
 		@include span(full);
 
 		background: $brand-secondary;
 		height: $nav-height;
-		position: fixed;
+		//position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 99;
+		border-bottom: 1px solid $brand-primary;
+		box-shadow: 0 6px 4px -4px rgba(0,0,0,0.19);
 
+		.nav-toggle {
+			button {
+				color: $brand-primary;				
+				float: right;				
+				border: none;
+				font-size: 1.8em;
+				padding-top: 1em;
+				padding-right: .5em;		
+				text-align: center;				
+				background: $brand-secondary;
+			}
+		}
+		
 		.logo-container	{
 			position: relative;
 			.logo {
@@ -44,7 +107,7 @@
 					content: "";
 					position: absolute;
 					display: block;					
-					top: 4.5em;
+					top: 3.4em;
 					left: 0;
 					
 					height: 0;
@@ -63,33 +126,33 @@
 			}
 		}
 
-		.booking {
-			position: absolute;
-			right: 0;
-			top: 5em;
-			width: 5em;
-		}
-		
-
 	}
 
-	header {
+	.carousel {
 		@include span(full);		
 		
-		margin-top: $nav-height;
+		//margin-top: $nav-height;
 
 		.slider {			
 			img {
 				width: 100%;
 			}
 		}
+
+		.booking {
+			background: $brand-secondary;
+			color: white;
+			padding: .5em 0;
+			text-align: center;
+			margin-top: -.187em;
+			cursor: pointer;
+		}
 	}
 
 	.testimonials {
 		@include span(full);
 
-		background: #EFF5F7;
-		margin-top: -0.25em;
+		background: #EFF5F7;		
 		padding: 1em 0;
 
 		text-align: center;
@@ -128,66 +191,119 @@
 		}
 	}
 
-	article {
-		@include span(full);
-		
-		.cards-container {
-
-			@include clearfix;
-
-			padding: 1.5em;
-			background: url('../img/parallax1.jpg');
-
+	#main-content {
+		article {
+			@include span(full);
 			
-			.card {
-				@include span(full);
-				text-align: center;
+			.cards-container {
+
+				@include clearfix;
+
+				padding: 1.5em;
+				background: url('../img/parallax1.jpg');
+
+				
+				.card {
+					@include span(full);
+					text-align: center;
+					border-radius: 4px;
+					background: white;
+					box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+					margin-bottom: gutter(4);
+
+					hr {
+						margin: .8em auto;					
+						border: 0;
+						border-top: 1px solid #eee;										
+						width: 60%
+					}
+
+					.card-head {
+						
+						.card-img {	
+							position: relative;
+							width: 100%;							
+							border-radius: 4px 4px 0 0;			
+						}
+
+						.card-icon {
+							position: relative;
+							margin: -20px auto;						
+							color: white;
+							border-radius: 50%;
+							background: $brand-secondary;
+							width: 2.5em;
+							height: 2.5em;
+
+							img {
+								width: 60%;
+								margin-top: .4em;
+							}						
+						}
+					}
+
+					.card-body {
+						padding: 2em 1.2em 0.8em;
+					}
+
+				}
+
+			}
+			
+		}
+	}
+
+	footer {
+		@include span(full);
+		background: $brand-secondary;
+		color: white;
+		text-align: center;	
+
+		.subscribe {
+			@include span(full);
+
+			padding: 2em 0 0;
+
+			input[type=text].subscribe-email {
+
 				border-radius: 4px;
-				background: white;
-				box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-				margin-bottom: gutter(4);
-
-				hr {
-					margin: .8em auto;					
-					border: 0;
-					border-top: 1px solid #eee;										
-					width: 60%
-				}
-
-				.card-head {
-					position: relative;
-					.card-img {					
-						width: 100%;						
-						position: relative;		
-						border-radius: 4px 4px 0 0;			
-					}
-
-					.card-icon {
-						position: absolute;
-						top: 7.125em;
-						left: 42%;
-
-						color: white;
-						border-radius: 50%;
-						background: $brand-secondary - 10;
-						width: 2.5em;
-						height: 2.5em;
-
-						img {
-							width: 60%;
-							margin-top: .4em;
-						}						
-					}
-				}
-
-				.card-body {
-					padding: 2em 1.2em 0.8em;
-				}
-
+				border: 1px solid #ddd;
+				padding: .313em .5em;
+				margin-top: .313em; 
 
 			}
 
+			.subscribe-button {
+				$subscribe-btn-color: #DE4154;
+				background: $subscribe-btn-color;
+				border-radius: 4px;
+				padding: .313em .5em;
+				color: white;
+				border: 1px solid $subscribe-btn-color;
+
+			}
+		}	
+
+		.footer-col {
+			@include span(full);			
+			padding: 1em;
+			
+			h1, span {
+				text-transform: uppercase;
+			}
+
+			li.contact-item {
+				border-bottom: 1px solid #4c4c4c;
+				padding-bottom: .562em;
+				margin-bottom: .562em;
+			}
+
+			.map {
+				margin-top: .25em;
+				img {
+					width: 95%;
+				}
+			}
 		}
-		
 	}
 }

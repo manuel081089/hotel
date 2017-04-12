@@ -11,6 +11,8 @@ $susy: (
 	columns: 12,	
 );
 
+@include border-box-sizing;
+
 @font-face {
     font-family: 'geniusthin';
     src: url('/fonts/Genius-100-Thin-webfont.eot');

@@ -12,20 +12,45 @@
 <body>
 	<div class="wrap">
 		<nav>
+			<div class="nav-content">
+				<span class="close">&times;</span>
+				<h1>MENU</h1>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Orfila-Packages</a></li>
+					<li>
+						<a href="#">Room Suites</a>
+						<ul>
+							<li><a href="#">Junior Suite</a></li>
+							<li><a href="#">Deluxe Suite</a></li>
+						</ul>
+					</li>
+					<li>Home</li>
+					<li>Home</li>
+				</ul>
+			</div>			
+		</nav>
+
+		<header>			
 			<div class="logo-container">
 				<div class="logo">
 					<img src="img/logo.png" alt="">
 				</div>				
-			</div>
-			<div class="booking">
-				Book now
 			</div>	
-		</nav>
-		<header>
+			<div class="nav-toggle">
+				<button>
+					<i class="fa fa-navicon fa-fw"></i>
+				</button>
+			</div>		
+		</header>
+		<div class="carousel">
 			<div class="slider">
 				<img src="img/slide1.jpg" alt="">				
 			</div>
-		</header>
+			<div class="booking">
+				<strong>Book now</strong>
+			</div>
+		</div class="carousel">
 		<div class="testimonials">
 			<div class="avatar">
 				<img src="img/testimonial-avatar.jpg" alt="">
@@ -35,50 +60,82 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quos dolorum beatae officiis ab ipsa aut ipsum iusto, eius neque dolor aliquam. Quisquam explicabo fugiat voluptatem nostrum, eos, dolorum eius.</p>
 			</div>
 		</div>
-		<article>
-			<div class="cards-container">
-				<div class="card">
-					<div class="card-head">
-						<img class="card-img" src="img/hotel-orfila-madrid-plaza-mayor.jpg" alt="">
-						<div class="card-icon">
-							<img src="img/home-icon-white.png" alt="">
+		<div id="main-content">
+			<article>
+				<div class="cards-container">
+					<div class="card">
+						<div class="card-head">
+							<img class="card-img" src="img/hotel-orfila-madrid-plaza-mayor.jpg" alt="">
+							<div class="card-icon">
+								<img src="img/home-icon-white.png" alt="">
+							</div>
+						</div>
+						<div class="card-body">
+							<h2>Cultural Madrid</h2>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
 						</div>
 					</div>
-					<div class="card-body">
-						<h2>Cultural Madrid</h2>
-						<hr>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
+					<div class="card">
+						<div class="card-head">
+							<img class="card-img" src="img/jardin-de-orfila.jpg" alt="">
+							<div class="card-icon">
+								<img src="img/home-icon-white.png" alt="">
+							</div>
+						</div>
+						<div class="card-body">
+							<h2>Calm and Comfort</h2>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-head">
+							<img class="card-img" src="img/sabor-orfila.jpg" alt="">
+							<div class="card-icon">
+								<img src="img/home-icon-white.png" alt="">
+							</div>
+						</div>
+						<div class="card-body">
+							<h2>Orfila Taste</h2>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
+						</div>
 					</div>
 				</div>
-				<div class="card">
-					<div class="card-head">
-						<img class="card-img" src="img/jardin-de-orfila.jpg" alt="">
-						<div class="card-icon">
-							<img src="img/home-icon-white.png" alt="">
-						</div>
-					</div>
-					<div class="card-body">
-						<h2>Calm and Comfort</h2>
-						<hr>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-head">
-						<img class="card-img" src="img/sabor-orfila.jpg" alt="">
-						<div class="card-icon">
-							<img src="img/home-icon-white.png" alt="">
-						</div>
-					</div>
-					<div class="card-body">
-						<h2>Orfila Taste</h2>
-						<hr>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
-					</div>
+			</article>
+		</div>
+		<footer>
+			<div class="subscribe">
+				<label>Sign up for our newsletter</label>
+				<input type="text" class="subscribe-email" placeholder="Please enter your email">
+				<button class="subscribe-button">Subscribe</button>
+			</div>
+			<div class="footer-col">
+				<h1>contact</h1>
+				<ul>
+					<li class="contact-item">
+						<span class="contact-title"><strong>phone:</strong></span>
+						<span class="contact-detail">+34 555 5523</span>
+					</li>
+					<li class="contact-item">
+						<span class="contact-title"><strong>fax:</strong></span>
+						<span class="contact-detail">+34 555 5523</span>
+					</li>
+					<li class="contact-item">
+						<span class="contact-title"><strong>email:</strong></span>
+						<span class="contact-detail">inforeservas@hotelorfila.com</span>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h1>location</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem voluptatibus tenetur quos eius quisquam officiis!</p>
+				<div class="map">
+					<img src="img/gmap.png" alt="">
 				</div>
 			</div>
-		</article>
-		<footer></footer>
+		</footer>
 	</div>
 </body>
 </html>
