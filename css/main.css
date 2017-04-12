@@ -38,6 +38,44 @@ ul {
 ::-webkit-scrollbar-thumb:active {
   background: #333;
 } */
+@keyframes slidy {
+  0% {
+    left: 0%; }
+  20% {
+    left: 0%; }
+  25% {
+    left: -100%; }
+  45% {
+    left: -100%; }
+  50% {
+    left: -200%; }
+  70% {
+    left: -200%; }
+  75% {
+    left: -300%; }
+  95% {
+    left: -300%; }
+  100% {
+    left: -400%; } }
+body {
+  margin: 0; }
+
+div#slider {
+  overflow: hidden; }
+
+div#slider .slides img {
+  width: 20%;
+  float: left; }
+
+div#slider .slides {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite; }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -191,17 +229,13 @@ ul {
     margin-left: 0;
     margin-right: 0;
     margin-top: 5em; }
-    .wrap .carousel .slider img {
-      width: 100%; }
     .wrap .carousel .booking {
       background: #A29061;
       color: white;
       padding: .5em 0;
       text-align: center;
       margin-top: -.187em;
-      cursor: pointer;
-      /* border-top: 1px solid #f1f1f1;
-      border-bottom: 1px solid #f1f1f1; */ }
+      cursor: pointer; }
   .wrap .testimonials {
     width: 100%;
     float: left;

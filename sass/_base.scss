@@ -194,21 +194,13 @@
 		
 		margin-top: $nav-height;
 
-		.slider {			
-			img {
-				width: 100%;
-			}
-		}
-
 		.booking {
 			background: $brand-primary;
 			color: white;
 			padding: .5em 0;
 			text-align: center;
 			margin-top: -.187em;
-			cursor: pointer;
-			/* border-top: 1px solid #f1f1f1;
-			border-bottom: 1px solid #f1f1f1; */
+			cursor: pointer;			
 		}
 	}
 
