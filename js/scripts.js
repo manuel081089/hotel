@@ -16,13 +16,14 @@ jQuery(document).ready(function($) {
 		$nav.toggleClass('navbar-open');
 	});
 
-	$dropdownToggle = $('nav>.dropdown-toggle');
-	$dropdownMenu = $('nav>.dropdown-menu');
+	$dropdownToggle = $('.dropdown-toggle');
+	$dropdowns = $('.dropdown');
 
 	// Attaches event handler when .menu-toggle is clicked
 	$dropdownToggle.on('click', function(event) {
 		event.preventDefault();
-		$dropdownMenu.toggleClass('show-menu');
+		$dropdowns.toggleClass('active');
+		$('.dropdown-menu').toggleClass('show-menu');
 	});
 
 });

@@ -100,15 +100,30 @@ ul {
           border-bottom: none; }
         .wrap nav .nav-content .menu .menu-item:hover {
           background: #1d1d1d; }
+        .wrap nav .nav-content .menu .menu-item a {
+          width: 91.52542%;
+          display: inline-block; }
         .wrap nav .nav-content .menu .menu-item .caret {
-          float: right; }
-          .wrap nav .nav-content .menu .menu-item .caret::after {
-            clear: both; }
-      .wrap nav .nav-content .menu .dropdown .dropdown-menu {
-        display: none;
-        transition: all 0.3s ease 0s; }
-      .wrap nav .nav-content .menu .dropdown .show-menu {
+          transition: all 0.2s ease 0s;
+          width: 6.77966%;
+          display: inline-block; }
+      .wrap nav .nav-content .menu .active {
+        background: #363636 !important; }
+        .wrap nav .nav-content .menu .active .caret {
+          transform: rotate(90deg); }
+        .wrap nav .nav-content .menu .active:hover {
+          background: #363636 !important; }
+      .wrap nav .nav-content .menu .show-menu {
         display: block !important; }
+      .wrap nav .nav-content .menu .dropdown {
+        width: 100%;
+        z-index: 999;
+        background: #242424;
+        transition: all 0.3s ease 0s; }
+        .wrap nav .nav-content .menu .dropdown .dropdown-menu {
+          display: none;
+          margin-top: .8em;
+          transition: all 0.3s ease 0s; }
   .wrap header {
     width: 100%;
     float: left;
