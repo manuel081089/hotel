@@ -204,7 +204,8 @@
 		}
 	}
 
-	/* TESTIMONIALS SECTION */
+
+	/********************************** TESTIMONIALS SECTION **************************************/
 
 	.testimonials {
 		@include span(full);
@@ -245,6 +246,19 @@
 				border-bottom: 10px solid white;
 				border-left: 10px solid transparent;
 			}
+		}
+	}
+
+	.relais {
+		@include span(full);
+		text-align: center;
+		padding: 2em 0;
+		img.relais-logo {
+			width: 100%;
+			max-width: 35%;
+		}
+		img.relais-divider {
+			width: 60%;
 		}
 	}
 
