@@ -17,23 +17,27 @@ a, button {
 ul {
   list-style: none; }
 
-::-webkit-scrollbar {
+/* Custom scrollbars for webkit - decide later */
+/* ::-webkit-scrollbar {
   width: 2px;
-  height: 4px; }
+  height: 4px;
+}
 
 ::-webkit-scrollbar-track {
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 ::-webkit-scrollbar-thumb:horizontal {
   border-radius: 10px;
-  background: #b6b8bd; }
+  background: #b6b8bd;
+}
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #666; }
-
+  background: #666;
+}
 ::-webkit-scrollbar-thumb:active {
-  background: #333; }
-
+  background: #333;
+} */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -48,12 +52,18 @@ ul {
 .wrap {
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  /*********************************** NAVBAR (HIDDEN MOBILE) ***********************************/
+  /********************************** HEADER (WITH NAVBAR DESKTOP) ******************************/
+  /**************************************** IMAGE CAROUSEL **************************************/
+  /* TESTIMONIALS SECTION */
+  /******************************************* MAIN CONTENT AREA *******************************/
+  /******************************************* FOOTER *******************************************/ }
   .wrap:after {
     content: " ";
     display: block;
     clear: both; }
-  .wrap .is-open {
+  .wrap .navbar-open {
     right: 0 !important; }
   .wrap nav {
     width: 100%;
@@ -84,7 +94,8 @@ ul {
         color: white; }
       .wrap nav .nav-content .menu .menu-item {
         padding: .8em 1em;
-        border-bottom: 1px solid #1d1d1d; }
+        border-bottom: 1px solid #1d1d1d;
+        cursor: pointer; }
         .wrap nav .nav-content .menu .menu-item:last-child {
           border-bottom: none; }
         .wrap nav .nav-content .menu .menu-item:hover {
@@ -105,6 +116,7 @@ ul {
     margin-right: 0;
     background: #393939;
     height: 5em;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 99;
@@ -162,16 +174,19 @@ ul {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-top: 5em; }
     .wrap .carousel .slider img {
       width: 100%; }
     .wrap .carousel .booking {
-      background: #393939;
+      background: #A29061;
       color: white;
       padding: .5em 0;
       text-align: center;
       margin-top: -.187em;
-      cursor: pointer; }
+      cursor: pointer;
+      /* border-top: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1; */ }
   .wrap .testimonials {
     width: 100%;
     float: left;
@@ -266,11 +281,14 @@ ul {
         padding: .313em .5em;
         margin-top: .313em; }
       .wrap footer .subscribe .subscribe-button {
+        cursor: pointer;
         background: #DE4154;
         border-radius: 4px;
         padding: .313em .5em;
         color: white;
         border: 1px solid #DE4154; }
+        .wrap footer .subscribe .subscribe-button:hover {
+          background: #f25568; }
     .wrap footer .footer-col {
       width: 100%;
       float: left;

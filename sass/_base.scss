@@ -1,7 +1,10 @@
 .wrap {
 	@include container;
 
-	.is-open {
+	
+	/*********************************** NAVBAR (HIDDEN MOBILE) ***********************************/
+
+	.navbar-open {
 		right: 0 !important;
 	}
 
@@ -10,7 +13,7 @@
 		height: 100%;
 		position: fixed;
 		z-index: 999;
-		right: -100%;
+		right: -100%;		
 		
 		transition: all 0.3s ease 0s;
 
@@ -47,12 +50,15 @@
 				.menu-item {
 					padding: .8em 1em;					
 					border-bottom: 1px solid #1d1d1d;
+					cursor: pointer;
+
 					&:last-child {
 						border-bottom: none;
 					}
 					&:hover {
 						background: #1d1d1d;
 					}
+
 					.caret {
 						float: right;
 						&::after {
@@ -78,12 +84,14 @@
 		
 	}
 
+	/********************************** HEADER (WITH NAVBAR DESKTOP) ******************************/
+
 	header {
 		@include span(full);
 
 		background: $brand-secondary;
 		height: $nav-height;
-		//position: fixed;
+		position: fixed;
 		top: 0;
 		width: 100%;
 		z-index: 99;
@@ -157,10 +165,12 @@
 
 	}
 
+	/**************************************** IMAGE CAROUSEL **************************************/
+
 	.carousel {
 		@include span(full);		
 		
-		//margin-top: $nav-height;
+		margin-top: $nav-height;
 
 		.slider {			
 			img {
@@ -169,14 +179,18 @@
 		}
 
 		.booking {
-			background: $brand-secondary;
+			background: $brand-primary;
 			color: white;
 			padding: .5em 0;
 			text-align: center;
 			margin-top: -.187em;
 			cursor: pointer;
+			/* border-top: 1px solid #f1f1f1;
+			border-bottom: 1px solid #f1f1f1; */
 		}
 	}
+
+	/* TESTIMONIALS SECTION */
 
 	.testimonials {
 		@include span(full);
@@ -219,6 +233,8 @@
 			}
 		}
 	}
+
+	/******************************************* MAIN CONTENT AREA *******************************/
 
 	#main-content {
 		article {
@@ -282,6 +298,8 @@
 		}
 	}
 
+	/******************************************* FOOTER *******************************************/
+
 	footer {
 		@include span(full);
 		background: $brand-secondary;
@@ -303,12 +321,17 @@
 			}
 
 			.subscribe-button {
+				cursor: pointer;
 				$subscribe-btn-color: #DE4154;
 				background: $subscribe-btn-color;
 				border-radius: 4px;
 				padding: .313em .5em;
 				color: white;
 				border: 1px solid $subscribe-btn-color;
+
+				&:hover {
+					background: $subscribe-btn-color + 20;					
+				}
 
 			}
 		}	
