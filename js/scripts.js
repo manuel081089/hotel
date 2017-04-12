@@ -10,20 +10,24 @@ jQuery(document).ready(function($) {
 
 	$closeNav = $('.close-nav');
 
-	// Attaches event handler when .menu-toggle is clicked
 	$closeNav.on('click', function(event) {
 		event.preventDefault();
 		$nav.toggleClass('navbar-open');
 	});
 
-	$dropdownToggle = $('.dropdown-toggle');
+
+
+	// Dropdown toggles
 	$dropdowns = $('.dropdown');
+	$dropdownToggle = $('.dropdown-toggle');
 
 	// Attaches event handler when .menu-toggle is clicked
 	$dropdownToggle.on('click', function(event) {
 		event.preventDefault();
-		$dropdowns.toggleClass('active');
-		$('.dropdown-menu').toggleClass('show-menu');
+
+		$(this).parent().toggleClass('active');
+		$(this).next().next().toggleClass('show-menu');
+		
 	});
 
 });
