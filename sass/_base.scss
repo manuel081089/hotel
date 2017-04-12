@@ -208,7 +208,7 @@
 		.booking {
 			background: $brand-primary;
 			color: white;
-			padding: .5em 0;
+			padding: 1em 0;
 			text-align: center;
 			margin-top: -.187em;
 			cursor: pointer;			
@@ -351,6 +351,10 @@
 		background: $brand-secondary;
 		color: white;
 		text-align: center;	
+
+		.shape-container {
+			display: none;
+		}
 
 		.subscribe {
 			@include span(full);
