@@ -243,7 +243,11 @@ ul {
       overflow: hidden;
       *zoom: 1;
       padding: 1.5em;
-      background: url("../img/parallax1.jpg"); }
+      background: url("../img/parallax1.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
       .wrap #main-content article .cards-container .card {
         width: 100%;
         float: left;
