@@ -312,10 +312,34 @@ ul {
       padding: 1em; }
       .wrap footer .footer-col h1, .wrap footer .footer-col span {
         text-transform: uppercase; }
-      .wrap footer .footer-col li.contact-item {
+      .wrap footer .footer-col ul.contact-list li.contact-item {
         border-bottom: 1px solid #4c4c4c;
         padding-bottom: .562em;
         margin-bottom: .562em; }
+      .wrap footer .footer-col ul.social-list {
+        margin-top: 1.313em; }
+        .wrap footer .footer-col ul.social-list li.social-item {
+          display: inline;
+          cursor: pointer;
+          border-radius: 50%;
+          padding: .3em;
+          background: #69685B;
+          border: 1px solid #69685B;
+          transition: all 0.3s ease 0s; }
+          .wrap footer .footer-col ul.social-list li.social-item:hover {
+            border-color: #A29061; }
+        .wrap footer .footer-col ul.social-list .facebook:hover {
+          color: #A29061; }
+        .wrap footer .footer-col ul.social-list .foursquare:hover {
+          color: #A29061; }
+        .wrap footer .footer-col ul.social-list .tripadvisor:hover {
+          color: #A29061; }
+        .wrap footer .footer-col ul.social-list .instagram:hover {
+          color: #A29061; }
+        .wrap footer .footer-col ul.social-list .google:hover {
+          color: #A29061; }
+        .wrap footer .footer-col ul.social-list .twitter:hover {
+          color: #A29061; }
       .wrap footer .footer-col .map {
         margin-top: .25em; }
         .wrap footer .footer-col .map img {
