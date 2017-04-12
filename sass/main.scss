@@ -28,3 +28,7 @@ $susy: (
 
 @import "_base.scss";
 
+@media screen and (min-width: 42em) {
+	@import "_min-width-42em.scss";
+}
+

@@ -65,8 +65,7 @@
 					}
 
 					.caret {
-						transition: all 0.2s ease 0s;
-						width: span(1 of 12 last);
+						transition: all 0.2s ease 0s;						
 						display: inline-block;
 					}
 				}
@@ -135,11 +134,22 @@
 		
 		.logo-container	{
 			position: relative;
-			.logo {
+
+			.logo, .logo::after, .logo::before {
+			    -moz-transition: width .1s ease-in-out, left 1.5s ease-in-out;
+			    -webkit-transition: width .1s ease-in-out, left 1.5s ease-in-out;
+			    -moz-transition: width .1s ease-in-out, left 1.5s ease-in-out;
+			    -o-transition: width .1s ease-in-out, left 1.5s ease-in-out;
+			    transition: width .1s ease-in-out, left 1.5s ease-in-out;
+			}
+			
+
+			.logo {				
+
 				position: absolute;
 				top: 1.25em;
 				left: .375em;
-				width: 6.875em;				
+				width: $logo-width;	
 				height: 3.375em;
 				text-align: center;
 				padding-top: 1.125em;
@@ -148,6 +158,7 @@
 				border-color: #ccc;
 
 				&::before {
+					
 					content: "";
 					position: absolute;
 					display: block;					
@@ -156,9 +167,9 @@
 					height: 0;
 
 					border-top: 0.7em solid $brand-secondary;
-					border-right: 3.5em solid transparent;
-					border-bottom: 3.5em solid transparent;
-					border-left: 3.5em solid transparent;
+					border-right: $logo-triangles-brd-width solid transparent;
+					border-bottom: $logo-triangles-brd-width solid transparent;
+					border-left: $logo-triangles-brd-width solid transparent;
 					z-index: 2;
 				}
 
@@ -242,8 +253,8 @@
 				content: "";
 				position: absolute;
 				z-index: 0;
-				top: -1.25em;
-				left: 47%;
+				top: -1.25em;				
+				margin: 0 auto;
 				border-top: 10px solid transparent;
 				border-right: 10px solid transparent;
 				border-bottom: 10px solid white;
