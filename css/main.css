@@ -731,7 +731,7 @@ div#slider .slides {
             .wrap nav .nav-content .menu .menu-item a:hover {
               color: #A29061; }
           .wrap nav .nav-content .menu .menu-item .caret {
-            display: none !important; }
+            transform: rotate(90deg); }
         .wrap nav .nav-content .menu .dropdown {
           background: none !important;
           position: relative; }

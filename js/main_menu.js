@@ -19,18 +19,35 @@ var mainMenu  = function()
     //Show and Hide the Main Menu
     var toggleMenu =function(event) {
         event.preventDefault();
+
         $nav.toggleClass('navbar-open');
     }
 
 
 
     // Attaches event handler when .menu-toggle is clicked
+  var resetActiveSubmenu =  function () {
+        $(".dropdown.active").removeClass("active");
+        $(".show-menu").removeClass("show-menu").css("display: none");
+    }
+
     var showSubMenu = function(event) {
         event.preventDefault();
 
-        $(this).parent().toggleClass('active');
-        $(this).siblings('.dropdown-menu').toggleClass('show-menu');
-    }
+
+        var parent = $(this).parent();
+
+        if(parent.hasClass("active"))
+        {
+            parent.removeClass("active");
+            $(this).siblings('.dropdown-menu').removeClass('show-menu');
+        } else
+        {
+            resetActiveSubmenu();
+            parent.toggleClass('active');
+            $(this).siblings('.dropdown-menu').toggleClass('show-menu');
+        }
+    };
 
 
 
