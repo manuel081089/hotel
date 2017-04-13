@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	$nav = $('.wrap>nav');
+	$nav = $('nav');
 	$menuToggle = $('.nav-toggle');
 
 	// Attaches event handler when .menu-toggle is clicked

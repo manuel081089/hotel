@@ -132,13 +132,13 @@ div#slider .slides {
         color: white; }
       .wrap nav .nav-content .menu .menu-item {
         padding: .8em 1em;
-        border-bottom: 1px solid #1d1d1d;
-        cursor: pointer; }
+        border-bottom: 1px solid #1d1d1d; }
         .wrap nav .nav-content .menu .menu-item:last-child {
           border-bottom: none; }
         .wrap nav .nav-content .menu .menu-item:hover {
           background: #1d1d1d; }
         .wrap nav .nav-content .menu .menu-item a {
+          cursor: pointer;
           width: 91.52542%;
           display: inline-block; }
         .wrap nav .nav-content .menu .menu-item .caret {
@@ -257,7 +257,7 @@ div#slider .slides {
       position: relative;
       background: white;
       border-radius: 5px;
-      margin: 10px auto;
+      margin: 20px auto;
       width: 90%;
       padding: 0.8em 0.313em;
       z-index: 0;
@@ -352,11 +352,14 @@ div#slider .slides {
       .wrap footer .subscribe label {
         display: block; }
       .wrap footer .subscribe input[type=text].subscribe-email {
+        width: 68%;
+        height: 2.5em;
         border-radius: 4px;
         border: 1px solid #ddd;
         padding: .313em .5em;
         margin-top: .313em; }
       .wrap footer .subscribe .subscribe-button {
+        height: 2.5em;
         cursor: pointer;
         background: #DE4154;
         border-radius: 4px;
@@ -478,7 +481,7 @@ div#slider .slides {
       background: #393939;
       padding: 1em 4em;
       border-width: .5em 0 .5em .5em;
-      border-color: white;
+      border-color: #f1f1f1;
       border-style: solid;
       top: 7em;
       right: 0;
@@ -503,7 +506,7 @@ div#slider .slides {
         z-index: -1;
         border-style: solid;
         border-width: 33px 40px 33px 0;
-        border-color: transparent white transparent transparent; }
+        border-color: transparent #f1f1f1 transparent transparent; }
     .wrap .testimonials {
       max-width: 100%;
       margin-left: auto;
@@ -655,8 +658,174 @@ div#slider .slides {
       .wrap footer .subscribe {
         width: 49.15254%;
         float: right;
+        margin-right: 0; } }
+@media screen and (min-width: 56em) {
+  .wrap {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*********************************** NAVBAR (HIDDEN MOBILE) ***********************************/
+    /********************************** HEADER (WITH NAVBAR DESKTOP) ******************************/
+    /******************************************* MAIN CONTENT AREA *******************************/
+    /******************************************* FOOTER *******************************************/ }
+    .wrap:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .wrap nav {
+      position: static !important;
+      z-index: 0;
+      width: 83.05085%;
+      float: right;
+      margin-right: 0; }
+      .wrap nav .close-nav {
+        display: none; }
+      .wrap nav .nav-content {
+        background: #393939;
+        padding: 2.8em 2em 0 0;
+        text-align: right !important;
+        position: static !important; }
+        .wrap nav .nav-content h1 {
+          display: none !important; }
+        .wrap nav .nav-content .menu .menu-item {
+          display: inline !important;
+          padding: 0;
+          border: none !important; }
+          .wrap nav .nav-content .menu .menu-item:hover {
+            background: none !important; }
+          .wrap nav .nav-content .menu .menu-item a {
+            padding: 1em .8em;
+            display: inline !important; }
+            .wrap nav .nav-content .menu .menu-item a:hover {
+              color: #A29061; }
+          .wrap nav .nav-content .menu .menu-item .caret {
+            display: none !important; }
+        .wrap nav .nav-content .menu .dropdown {
+          background: none !important;
+          position: relative; }
+          .wrap nav .nav-content .menu .dropdown .dropdown-menu {
+            position: absolute;
+            top: 1em;
+            right: 0;
+            padding: 0.8em;
+            display: none;
+            margin-top: .8em;
+            width: 12.5em;
+            background: #575757; }
+            .wrap nav .nav-content .menu .dropdown .dropdown-menu li {
+              display: block !important;
+              border-bottom: 1px solid #363636 !important;
+              padding: .4em 0; }
+              .wrap nav .nav-content .menu .dropdown .dropdown-menu li:last-child {
+                border: none !important; }
+    .wrap header {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .wrap header .nav-toggle {
+        display: none !important; }
+      .wrap header .logo-container .logo {
+        width: 8.875em;
+        height: 4.375em !important; }
+        .wrap header .logo-container .logo::before {
+          border-right: 4.5em solid transparent;
+          border-left: 4.5em solid transparent; }
+        .wrap header .logo-container .logo::after {
+          top: 4.4em !important;
+          border-right: 4.5em solid transparent;
+          border-left: 4.5em solid transparent; }
+        .wrap header .logo-container .logo img {
+          max-width: 8em; }
+    .wrap .relais img.relais-logo {
+      width: 100%;
+      max-width: 12% !important; }
+    .wrap .relais img.relais-divider {
+      width: 20% !important; }
+    .wrap #main-content article {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; }
+      .wrap #main-content article .cards-container {
+        overflow: hidden;
+        *zoom: 1; }
+        .wrap #main-content article .cards-container .card {
+          max-width: 100%;
+          margin-left: auto;
+          margin-right: auto; }
+          .wrap #main-content article .cards-container .card:after {
+            content: " ";
+            display: block;
+            clear: both; }
+          .wrap #main-content article .cards-container .card hr {
+            margin: .8em auto;
+            border: 0;
+            border-top: 1px solid #eee;
+            width: 60%; }
+          .wrap #main-content article .cards-container .card .card-head {
+            width: 49.15254%;
+            float: left;
+            margin-right: 1.69492%;
+            overflow: hidden;
+            text-align: center;
+            height: 15em;
+            padding: 1em; }
+            .wrap #main-content article .cards-container .card .card-head::before {
+              content: ' ';
+              display: inline-block;
+              vertical-align: middle;
+              /* vertical alignment of the inline element */
+              height: 100%; }
+            .wrap #main-content article .cards-container .card .card-head .card-img {
+              position: relative;
+              /* allows repositioning */
+              left: 100%;
+              /* move the whole width of the image to the right */
+              margin-left: -200%;
+              /* magic! */
+              display: inline;
+              vertical-align: middle;
+              border-radius: 4px !important; }
+            .wrap #main-content article .cards-container .card .card-head .card-icon {
+              position: relative;
+              top: -10%;
+              width: 2.5em;
+              height: 2.5em; }
+              .wrap #main-content article .cards-container .card .card-head .card-icon img {
+                width: 60%;
+                margin-top: .4em; }
+          .wrap #main-content article .cards-container .card .card-body {
+            width: 49.15254%;
+            float: right;
+            margin-right: 0;
+            display: inline;
+            padding: 2em 1.2em 0.8em; }
+    .wrap footer {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background: #393939;
+      color: white;
+      text-align: center; }
+      .wrap footer:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      .wrap footer .shape-container {
+        width: 32.20339%;
+        float: left;
+        margin-right: 1.69492%; }
+      .wrap footer .subscribe {
+        width: 66.10169%;
+        float: right;
         margin-right: 0; }
-        .wrap footer .subscribe input[type=text].subscribe-email {
-          width: 68%; } }
+      .wrap footer .footer-col {
+        width: 49.15254%;
+        float: left;
+        margin-right: 1.69492%; }
+        .wrap footer .footer-col:nth-child(2) {
+          float: right;
+          margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */
