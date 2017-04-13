@@ -172,9 +172,9 @@
 						}
 						
 						.card-img {
-							position: relative; /* allows repositioning */
-    						left: 100%; /* move the whole width of the image to the right */
-    						margin-left: -200%; /* magic! */
+							position: relative; 
+    						left: 100%; 
+    						margin-left: -200%; 
 							display: inline;
 							vertical-align: middle;
 							border-radius: 4px !important;

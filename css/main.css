@@ -596,11 +596,8 @@ div#slider .slides {
               height: 100%; }
             .wrap #main-content article .cards-container .card .card-head .card-img {
               position: relative;
-              /* allows repositioning */
               left: 100%;
-              /* move the whole width of the image to the right */
               margin-left: -200%;
-              /* magic! */
               display: inline;
               vertical-align: middle;
               border-radius: 4px !important; }
@@ -749,57 +746,49 @@ div#slider .slides {
       margin-right: 0; }
       .wrap #main-content article .cards-container {
         overflow: hidden;
-        *zoom: 1; }
+        *zoom: 1;
+        padding: 1.5em;
+        background: url("../img/parallax1.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
         .wrap #main-content article .cards-container .card {
-          max-width: 100%;
-          margin-left: auto;
-          margin-right: auto; }
-          .wrap #main-content article .cards-container .card:after {
-            content: " ";
-            display: block;
-            clear: both; }
+          width: 32.20339%;
+          float: left;
+          margin-right: 1.69492%; }
+          .wrap #main-content article .cards-container .card:last-child {
+            float: right;
+            margin-right: 0; }
           .wrap #main-content article .cards-container .card hr {
             margin: .8em auto;
             border: 0;
             border-top: 1px solid #eee;
             width: 60%; }
           .wrap #main-content article .cards-container .card .card-head {
-            width: 49.15254%;
+            width: 100%;
             float: left;
-            margin-right: 1.69492%;
-            overflow: hidden;
-            text-align: center;
-            height: 15em;
-            padding: 1em; }
+            margin-left: 0;
+            margin-right: 0;
+            height: auto;
+            padding: 0;
+            overflow: initial; }
             .wrap #main-content article .cards-container .card .card-head::before {
-              content: ' ';
-              display: inline-block;
-              vertical-align: middle;
-              /* vertical alignment of the inline element */
-              height: 100%; }
+              content: none; }
             .wrap #main-content article .cards-container .card .card-head .card-img {
-              position: relative;
-              /* allows repositioning */
-              left: 100%;
-              /* move the whole width of the image to the right */
-              margin-left: -200%;
-              /* magic! */
-              display: inline;
-              vertical-align: middle;
-              border-radius: 4px !important; }
+              border-radius: 4px 4px 0 0 !important; }
             .wrap #main-content article .cards-container .card .card-head .card-icon {
-              position: relative;
-              top: -10%;
-              width: 2.5em;
-              height: 2.5em; }
+              position: relative !important;
+              margin: -20px auto !important;
+              border-radius: 50%; }
               .wrap #main-content article .cards-container .card .card-head .card-icon img {
                 width: 60%;
                 margin-top: .4em; }
           .wrap #main-content article .cards-container .card .card-body {
-            width: 49.15254%;
-            float: right;
+            width: 100%;
+            float: left;
+            margin-left: 0;
             margin-right: 0;
-            display: inline;
             padding: 2em 1.2em 0.8em; }
     .wrap footer {
       max-width: 100%;
@@ -825,7 +814,6 @@ div#slider .slides {
         float: left;
         margin-right: 1.69492%; }
         .wrap footer .footer-col:nth-child(2) {
-          float: right;
-          margin-right: 0; } }
+          margin-right: 0 !important; } }
 
 /*# sourceMappingURL=main.css.map */

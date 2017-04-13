@@ -131,12 +131,23 @@
 			@include span(full);
 			
 			.cards-container {
-
+				
 				@include clearfix;
+
+				padding: 1.5em;
+				background: url('../img/parallax1.jpg');
+				background-attachment: fixed;
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			background-size: cover;
+
 				
 				.card {
-					@include container;
-					
+					@include span(4 of 12);
+					&:last-child {
+						@include last;
+					}
+
 					hr {
 						margin: .8em auto;					
 						border: 0;
@@ -145,35 +156,26 @@
 					}
 
 					.card-head {
-						@include span(6 of 12);
-						overflow: hidden;
-						text-align: center;
-						height: 15em;	
-						padding: 1em;					
-
+						@include span(full);
 						&::before {
-							content: ' ';
-						    display: inline-block;
-						    vertical-align: middle;  /* vertical alignment of the inline element */
-						    height: 100%;
+							content: none;
 						}
-						
-						.card-img {
-							position: relative; /* allows repositioning */
-    						left: 100%; /* move the whole width of the image to the right */
-    						margin-left: -200%; /* magic! */
-							display: inline;
-							vertical-align: middle;
-							border-radius: 4px !important;
+						height: auto;
+
+						padding: 0;
+						overflow: initial;
+
+						.card-img {												
+							border-radius: 4px 4px 0 0 !important;
+
 						}
 
-						.card-icon {							
-							position: relative;
-							top: -10%;					
+						.card-icon {
+							position: relative !important;
+							margin: -20px auto !important;
 							
-							width: 2.5em;
-							height: 2.5em;
-
+							border-radius: 50%;
+							
 							img {
 								width: 60%;
 								margin-top: .4em;
@@ -182,8 +184,7 @@
 					}
 
 					.card-body {
-						@include span(6 of 12 last);
-						display: inline;
+						@include span(full);
 						padding: 2em 1.2em 0.8em;
 					}
 
@@ -214,7 +215,7 @@
 			@include span(6 of 12);
 
 			&:nth-child(2) {
-				@include last;
+				margin-right: 0 !important;
 			}
 		}
 
