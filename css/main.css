@@ -480,12 +480,36 @@ div#slider .slides {
       margin-right: 0;
       margin-top: 5em; }
       .wrap .carousel .booking {
-        background: #A29061;
-        color: white;
-        padding: .5em 0;
-        text-align: center;
-        margin-top: -.187em;
-        cursor: pointer; }
+        position: fixed;
+        background: #393939;
+        padding: 1em 4em;
+        border-width: .5em 0 .5em .5em;
+        border-color: white;
+        border-style: solid;
+        top: 7em;
+        right: 0;
+        z-index: 2; }
+        .wrap .carousel .booking::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -1.875em;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 25px 30px 25px 0;
+          border-color: transparent #393939 transparent transparent; }
+        .wrap .carousel .booking::after {
+          content: '';
+          position: absolute;
+          top: -0.5em;
+          left: -3em;
+          width: 0;
+          height: 0;
+          z-index: -1;
+          border-style: solid;
+          border-width: 33px 40px 33px 0;
+          border-color: transparent white transparent transparent; }
     .wrap .testimonials {
       max-width: 100%;
       margin-left: auto;
