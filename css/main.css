@@ -723,17 +723,17 @@ div#slider .slides {
       .wrap header .nav-toggle {
         display: none !important; }
       .wrap header .logo-container .logo {
-        width: 8.875em;
+        width: 9.875em;
         height: 4.375em !important; }
         .wrap header .logo-container .logo::before {
-          border-right: 4.5em solid transparent;
-          border-left: 4.5em solid transparent; }
+          border-right: 5em solid transparent;
+          border-left: 5em solid transparent; }
         .wrap header .logo-container .logo::after {
           top: 4.4em !important;
-          border-right: 4.5em solid transparent;
-          border-left: 4.5em solid transparent; }
+          border-right: 5em solid transparent;
+          border-left: 5em solid transparent; }
         .wrap header .logo-container .logo img {
-          max-width: 8em; }
+          max-width: 9em; }
     .wrap .relais img.relais-logo {
       width: 100%;
       max-width: 12% !important; }

@@ -91,22 +91,22 @@
 		.logo-container	{			
 
 			.logo {
-				width: $logo-width + 2em;		
+				width: $logo-width + 3em;		
 				height: 4.375em !important;
 
 				&::before {
-					border-right: ($logo-triangles-brd-width + 1em) solid transparent;
-					border-left: ($logo-triangles-brd-width + 1em) solid transparent;
+					border-right: ($logo-triangles-brd-width + 1.5em) solid transparent;
+					border-left: ($logo-triangles-brd-width + 1.5em) solid transparent;
 				}
 
 				&::after {
 					top: 4.4em !important;
-					border-right: ($logo-triangles-brd-width + 1em) solid transparent;
-					border-left: ($logo-triangles-brd-width + 1em) solid transparent;
+					border-right: ($logo-triangles-brd-width + 1.5em) solid transparent;
+					border-left: ($logo-triangles-brd-width + 1.5em) solid transparent;
 				}
 
 				img {
-					max-width: 8em;					
+					max-width: 9em;					
 				}
 			}
 		}
