@@ -6,7 +6,7 @@
 var mainMenu  = function()
 {
 
-    $nav = $('.wrap>nav');
+    $nav = $('nav');
     $menuToggle = $('.nav-toggle');
     $closeNav = $('.close-nav');
 

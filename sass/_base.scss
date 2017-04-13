@@ -287,6 +287,8 @@
 	/******************************************* MAIN CONTENT AREA *******************************/
 
 	#main-content {
+		
+		
 		article {
 
 			@include span(full);
@@ -350,28 +352,24 @@
 
 				}
 
+			}
 		}
-		}
 
-			.full-card-description
-			{
-				@include span(full);
+		.full-card-description  {
+			@include span(full);
 
-				display: none;
+			display: none;
+			background: #EFF5F7;
+			text-align: center;
+				
 
-				@include span(10 of 12);
-				margin-left: span(1) + gutter(10);
-
-				text-align: center;
-
-
+			.card-description-content {
+				width: 80%;
+				margin: 0 auto;
+				padding: 1.5em 0;
 				img{
 					width: 100%;
-					max-width: 100%;
-				}
-
-				img.relais-divider {
-					width: 60%;
+					max-width: 60%;
 				}
 
 				h1 {
@@ -385,20 +383,19 @@
 					border-top: 1px solid #eee;
 					width: 80%
 				}
-
-				margin-bottom: 20px;
-
-				&:target {
-					display: block;
-
+				p {
+					padding-top: .8em;
 				}
+			}
 
-
+			&:target {
+				display: block;
 
 			}
 
-		.full-card-description:target ~ #cards {
+		}
 
+		.full-card-description:target ~ #cards {
 			display: none;
 		}
 
