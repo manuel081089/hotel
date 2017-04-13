@@ -87,7 +87,7 @@ div#slider .slides {
   font-weight: normal;
   font-style: normal; }
 .wrap {
-  max-width: 100%;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   /*********************************** NAVBAR (HIDDEN MOBILE) ***********************************/
@@ -358,6 +358,7 @@ div#slider .slides {
         display: block; }
       .wrap footer .subscribe input[type=text].subscribe-email {
         width: 68%;
+        max-width: 68%;
         height: 2.5em;
         border-radius: 4px;
         border: 1px solid #ddd;
@@ -451,7 +452,7 @@ div#slider .slides {
 
 @media screen and (min-width: 42em) {
   .wrap {
-    max-width: 100%;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     /*********************************** NAVBAR (HIDDEN MOBILE) ***********************************/
@@ -513,7 +514,7 @@ div#slider .slides {
         border-width: 33px 40px 33px 0;
         border-color: transparent #f1f1f1 transparent transparent; }
     .wrap .testimonials {
-      max-width: 100%;
+      max-width: 1600px;
       margin-left: auto;
       margin-right: auto; }
       .wrap .testimonials:after {
@@ -573,7 +574,7 @@ div#slider .slides {
         overflow: hidden;
         *zoom: 1; }
         .wrap #main-content article .cards-container .card {
-          max-width: 100%;
+          max-width: 1600px;
           margin-left: auto;
           margin-right: auto; }
           .wrap #main-content article .cards-container .card:after {
@@ -663,7 +664,7 @@ div#slider .slides {
         margin-right: 0; } }
 @media screen and (min-width: 56em) {
   .wrap {
-    max-width: 100%;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     /*********************************** NAVBAR (HIDDEN MOBILE) ***********************************/
@@ -804,7 +805,7 @@ div#slider .slides {
             margin-right: 0;
             padding: 2em 1.2em 0.8em; }
     .wrap footer {
-      max-width: 100%;
+      max-width: 1600px;
       margin-left: auto;
       margin-right: auto;
       background: #393939;
@@ -828,5 +829,14 @@ div#slider .slides {
         margin-right: 1.69492%; }
         .wrap footer .footer-col:nth-child(2) {
           margin-right: 0 !important; } }
+@media screen and (min-width: 100em) {
+  .wrap {
+    position: relative; }
+    .wrap .language-selector {
+      position: absolute !important; }
+    .wrap header {
+      position: absolute !important; }
+    .wrap .booking {
+      position: absolute !important; } }
 
 /*# sourceMappingURL=main.css.map */

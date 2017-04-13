@@ -9,7 +9,8 @@
 
 $susy: (
 	global-box-sizing: border-box,
-	columns: 12,	
+	columns: 12,
+    container: 1600px,
 );
 
 @include border-box-sizing;
@@ -32,5 +33,9 @@ $susy: (
 
 @media screen and (min-width: 56em) {
     @import "_min-width-56em.scss";
+}
+
+@media screen and (min-width: 100em) {
+    @import "_min-width-100em.scss";
 }
 
