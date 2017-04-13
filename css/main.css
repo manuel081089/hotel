@@ -360,6 +360,8 @@ div#slider .slides {
       width: 80%; }
     .wrap #main-content .full-card-description:target {
       display: block; }
+  .wrap #main-content .full-card-description:target ~ #cards {
+    display: none; }
   .wrap footer {
     width: 100%;
     float: left;

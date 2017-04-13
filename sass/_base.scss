@@ -389,7 +389,10 @@
 
 			}
 
+		.full-card-description:target ~ #cards {
 
+			display: none;
+		}
 
 
 
