@@ -10,8 +10,8 @@
 	<link rel="stylesheet" href="css/select-css.css">
 	<link rel="stylesheet" href="css/select-css-compat.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="vendor/jquery/dist/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+
+
 </head>
 <body>
 	<div class="wrap">
@@ -106,7 +106,41 @@
 		</div>
 
 		<div id="main-content">
-			<article>
+
+			<article id="full-card-description-a"  class="full-card-description">
+				<div>
+					<h1>Cultural Madrid</h1>
+					<hr>
+					<div><img  src="img/hotel-orfila-madrid-plaza-mayor.jpg" alt=""></div>
+					<p>Dolor sit amet, consectetur adipisicing elit. Dolore quo accusamus, sed ex obcaecati eum dolor nostrum! Eum ullam fuga, eos suscipit iusto, dicta deserunt adipisci optio praesentium quod fugit!</p>
+				</div>
+			</article>
+
+
+			<article id="full-card-description-b" class="full-card-description">
+				<div >
+					<h1>Calm and Comfort</h1>
+					<hr>
+
+
+					<div>	<img src="img/jardin-de-orfila.jpg" alt=""></div>
+					<p>Dolor sit amet, consectetur adipisicing elit. Dolore quo accusamus, sed ex obcaecati eum dolor nostrum! Eum ullam fuga, eos suscipit iusto, dicta deserunt adipisci optio praesentium quod fugit!</p>
+				</div>
+			</article>
+
+
+			<article id="full-card-description-c" class="full-card-description">
+				<div>
+					<h1>Orfilia Taste</h1>
+					<hr>
+
+
+					<div><img  src="img/sabor-orfila.jpg" alt=""></div>
+					<p>Dolor sit amet, consectetur adipisicing elit. Dolore quo accusamus, sed ex obcaecati eum dolor nostrum! Eum ullam fuga, eos suscipit iusto, dicta deserunt adipisci optio praesentium quod fugit!</p>
+				</div>
+			</article>
+
+			<article id="cards" >
 				<div class="cards-container">
 					<div class="card">
 						<div class="card-head">
@@ -118,7 +152,8 @@
 						<div class="card-body">
 							<h2>Cultural Madrid</h2>
 							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
+							<p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
+							<span class='view-more-button' > <a  href="#full-card-description-a"> View More </a></span>
 						</div>
 					</div>
 					<div class="card">
@@ -131,7 +166,8 @@
 						<div class="card-body">
 							<h2>Calm and Comfort</h2>
 							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
+							<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
+							<span class='view-more-button' > <a href="#full-card-description-b"> View More </a></span>
 						</div>
 					</div>
 					<div class="card">
@@ -145,10 +181,14 @@
 							<h2>Orfila Taste</h2>
 							<hr>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
+							<span class='view-more-button' > <a href="#full-card-description-c"> View More </a></span>
 						</div>
 					</div>
 				</div>
 			</article>
+
+
+
 		</div>
 		<footer>
 			<div class="subscribe-section">
@@ -208,5 +248,15 @@
 			</div>			
 		</footer>
 	</div>
+
+
+	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	<script src="js/main_menu.js"></script>
+	<script src="js/scripts.js" ></script>
+
+
+
+
+
 </body>
 </html>
