@@ -15,16 +15,14 @@ $susy: (
 @include border-box-sizing;
 
 @font-face {
-    font-family: 'geniusthin';
-    src: url('../fonts/Genius-100-Thin-webfont.eot');
-    src: url('../fonts/Genius-100-Thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Genius-100-Thin-webfont.woff2') format('woff2'),
-         url('../fonts/Genius-100-Thin-webfont.woff') format('woff'),
-         url('../fonts/Genius-100-Thin-webfont.ttf') format('truetype'),
-         url('../fonts/Genius-100-Thin-webfont.svg#geniusthin') format('svg');
+    font-family: 'fengardo_neueregular';
+    src: url('../fonts/fengardoneue_regular-webfont.woff2') format('woff2'),
+         url('../fonts/fengardoneue_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
+
 
 @import "_base.scss";
 

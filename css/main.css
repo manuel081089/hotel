@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: geniusthin; }
+  font-family: fengardo_neueregular, Helvetica, sans-serif; }
 
 body {
   height: 100%; }
@@ -82,9 +82,8 @@ div#slider .slides {
   box-sizing: border-box; }
 
 @font-face {
-  font-family: 'geniusthin';
-  src: url("../fonts/Genius-100-Thin-webfont.eot");
-  src: url("../fonts/Genius-100-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Genius-100-Thin-webfont.woff2") format("woff2"), url("../fonts/Genius-100-Thin-webfont.woff") format("woff"), url("../fonts/Genius-100-Thin-webfont.ttf") format("truetype"), url("../fonts/Genius-100-Thin-webfont.svg#geniusthin") format("svg");
+  font-family: 'fengardo_neueregular';
+  src: url("../fonts/fengardoneue_regular-webfont.woff2") format("woff2"), url("../fonts/fengardoneue_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 .wrap {
@@ -714,11 +713,15 @@ div#slider .slides {
             display: none;
             margin-top: .8em;
             width: 12.5em;
-            background: #575757; }
+            background: #575757;
+            border: 1px solid #363636; }
             .wrap nav .nav-content .menu .dropdown .dropdown-menu li {
               display: block !important;
               border-bottom: 1px solid #363636 !important;
-              padding: .4em 0; }
+              padding: .4em 0;
+              text-align: center; }
+              .wrap nav .nav-content .menu .dropdown .dropdown-menu li:hover {
+                background: #363636 !important; }
               .wrap nav .nav-content .menu .dropdown .dropdown-menu li:last-child {
                 border: none !important; }
     .wrap header {
