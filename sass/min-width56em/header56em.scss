@@ -6,10 +6,11 @@ header {
 	}
 	
 	.logo-container	{			
-
+		
 		.logo {
 			width: $logo-width + 3em;		
 			height: 4.375em !important;
+			left: 2em;
 
 			&::before {
 				border-right: ($logo-triangles-brd-width + 1.5em) solid transparent;

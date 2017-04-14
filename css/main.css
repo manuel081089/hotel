@@ -312,7 +312,8 @@ div#slider .slides {
       padding-top: 1em;
       padding-right: .5em;
       text-align: center;
-      background: #393939; }
+      background: #393939;
+      cursor: pointer; }
     .wrap header .logo-container {
       position: relative; }
       .wrap header .logo-container .logo, .wrap header .logo-container .logo::after, .wrap header .logo-container .logo::before {
@@ -827,7 +828,8 @@ div#slider .slides {
         display: none !important; }
       .wrap header .logo-container .logo {
         width: 9.875em;
-        height: 4.375em !important; }
+        height: 4.375em !important;
+        left: 2em; }
         .wrap header .logo-container .logo::before {
           border-right: 5em solid transparent;
           border-left: 5em solid transparent; }
