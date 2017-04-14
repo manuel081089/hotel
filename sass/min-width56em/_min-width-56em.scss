@@ -1,234 +1,29 @@
 .wrap {
-	@include container;
-
 	
-	/*********************************** NAVBAR (HIDDEN MOBILE) ***********************************/
 
-	nav {
-		position: static !important;
-		z-index: 0;
-		@include span(10 of 12 last);
-
-		.close-nav {
-			display: none;
-		}
-
-		.nav-content {
-			background: $brand-secondary;
-			padding: 2.8em 2em 0 0;
-			text-align: right !important;
-			position: static !important;
-
-			h1 {
-				display: none !important;
-			}	
-
-			.menu {	
-				.menu-item {
-					display: inline !important;
-					padding: 0;		
-					border: none !important;					
-					
-					&:hover {
-						background: none !important;						
-					}
-
-					a {
-						padding: 1em .8em;
-						display: inline !important;
-						&:hover {
-							color: $brand-primary;
-						}
-					}
-
-					.caret {
-						transform: rotate(90deg);
-					}
-				}
-
-				.dropdown {					
-					background: none !important;
-					position: relative;
-					
-					.dropdown-menu {					
-						position: absolute;
-						top: 1em;
-						right: 0;
-						padding: 0.8em;	
-						display: none;
-						margin-top: .8em;
-						width: 12.5em;
-						background: $brand-secondary + 30;
-						border: 1px solid #363636;
-
-						li {
-							display: block !important;
-							border-bottom: 1px solid #363636 !important;
-							padding: .4em 0;
-							text-align: center;
-							&:hover {
-								background: $nav-dropdown-active !important;
-							}
-
-							&:last-child {
-								border: none !important;
-							}
-						}
-					}
-
-				}
-			}
-		}
-		
-	}
+	@import "nav56em.scss";
 	
 
 	/********************************** HEADER (WITH NAVBAR DESKTOP) ******************************/
 
-	header {
-		@include span(full);
-
-		.nav-toggle {
-			display: none !important;
-		}
-		
-		.logo-container	{			
-
-			.logo {
-				width: $logo-width + 3em;		
-				height: 4.375em !important;
-
-				&::before {
-					border-right: ($logo-triangles-brd-width + 1.5em) solid transparent;
-					border-left: ($logo-triangles-brd-width + 1.5em) solid transparent;
-				}
-
-				&::after {
-					top: 4.4em !important;
-					border-right: ($logo-triangles-brd-width + 1.5em) solid transparent;
-					border-left: ($logo-triangles-brd-width + 1.5em) solid transparent;
-				}
-
-				img {
-					max-width: 9em;					
-				}
-			}
-		}
-
-		.language-selector {			
-			right: 0;			
-			text-align: right;
-			padding: 0.3em 2.8em;				
-		}
-
-	}
+	@import "header56em.scss";
 
 
-	.relais {
-		img.relais-logo {
-			width: 100%;
-			max-width: 12% !important;
-		}
-		img.relais-divider {
-			width: 20% !important;
-		}
-	}
+	@import "relaisSection56em.scss";
 
 	/******************************************* MAIN CONTENT AREA *******************************/
 
 	#main-content {
 		article {
-			@include span(full);
-			
 			.cards-container {
 				
-				@include clearfix;
-
-				padding: 1.5em;
-				background: url('../img/parallax1.jpg');
-				background-attachment: fixed;
-    			background-position: center;
-    			background-repeat: no-repeat;
-    			background-size: cover;
-
-				
-				.card {
-					@include span(4 of 12);
-					&:last-child {
-						@include last;
-					}
-
-					hr {
-						margin: .8em auto;					
-						border: 0;
-						border-top: 1px solid #eee;										
-						width: 60%
-					}
-
-					.card-head {
-						@include span(full);
-						&::before {
-							content: none;
-						}
-						height: auto;
-
-						padding: 0;
-						overflow: initial;
-
-						.card-img {												
-							border-radius: 4px 4px 0 0 !important;
-
-						}
-
-						.card-icon {
-							position: relative !important;
-							margin: -20px auto !important;
-							
-							border-radius: 50%;
-							
-							img {
-								width: 60%;
-								margin-top: .4em;
-							}						
-						}
-					}
-
-					.card-body {
-						@include span(full);
-						padding: 2em 1.2em 0.8em;
-					}
-
-				}
+				@import "card56em.scss";
 
 			}
-			
 		}
 	}
 
 	/******************************************* FOOTER *******************************************/
 
-	footer {
-		@include container(12);
-		background: $brand-secondary;
-		color: white;
-		text-align: center;	
-
-		.shape-container {
-			@include span(4 of 12);	
-		}
-
-		.subscribe {
-			@include span(8 of 12 last);			
-		}
-
-		.footer-col {
-			@include span(6 of 12);
-
-			&:nth-child(2) {
-				margin-right: 0 !important;
-			}
-		}
-
-		
-	}
+	@import "footer56em.scss";
 }

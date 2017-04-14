@@ -1,0 +1,7 @@
+.carousel {
+	@include span(full);		
+	
+	margin-top: $nav-height;
+
+	@import "booking.scss";
+}

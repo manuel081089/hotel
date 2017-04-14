@@ -1,0 +1,37 @@
+.site-info {
+	@include span(full);
+	padding: .5em 0;
+	
+	background: $brand-primary;
+	color: black;
+	text-align: center;
+
+	.copyright {
+		@include span(full);
+		font-family: Arial, Helvetica, sans-serif !important;
+		font-size: .8em;
+	}
+
+	.useful-links {
+		@include span(full);
+		
+		ul {
+
+			li {
+				a {
+					font-family: Arial, Helvetica, sans-serif !important;
+					color: black;
+					font-size: .8em;
+				}
+
+				display: inline-block;
+				&::after {
+					content: " |"
+				}
+				&:last-child::after {
+					content: "";
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.testimonials {
+	@include container;		
+			
+	.avatar {
+		@include span(3 of 12);
+		padding-top: .8em;
+	}
+
+	.dialog-box {
+		@include span(8 of 12);
+
+
+		&::before {
+			content: '';
+			position: absolute;
+			border-style: solid;
+			border-width: 20px 20px 20px 0;
+			border-color: transparent #babfc1;
+			display: block;
+			width: 0;
+			z-index: 1;
+			margin-top: -20px;
+			left: -20px;
+			top: 50%;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			border-style: solid;
+			border-width: 19px 19px 19px 0;
+			border-color: transparent #fff;
+			display: block;
+			width: 0;
+			z-index: 1;
+			margin-top: -20px;
+			left: -19px;
+			top: 50%;
+			
+		}
+	}
+}

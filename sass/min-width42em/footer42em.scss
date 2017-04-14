@@ -1,0 +1,12 @@
+footer {
+	@include span(full);
+	background: $brand-secondary;
+	color: white;
+	text-align: center;	
+
+	@import "footerShape42em.scss";
+
+	@import "subscribeSection42em.scss";
+
+	
+}

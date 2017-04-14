@@ -1,0 +1,98 @@
+header {
+	@include span(full);
+
+	background: $brand-secondary;
+	height: $nav-height;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	border-bottom: 1px solid $brand-primary;
+	box-shadow: 0 6px 4px -4px rgba(0,0,0,0.19);
+
+	.nav-toggle {
+		button {
+			color: $brand-primary;				
+			float: right;				
+			border: none;
+			font-size: 1.8em;
+			padding-top: 1em;
+			padding-right: .5em;		
+			text-align: center;				
+			background: $brand-secondary;
+		}
+	}
+	
+	.logo-container	{
+		position: relative;
+
+		.logo, .logo::after, .logo::before {
+		    -moz-transition: width .1s ease-in-out, left 1.5s ease-in-out;
+		    -webkit-transition: width .1s ease-in-out, left 1.5s ease-in-out;
+		    -moz-transition: width .1s ease-in-out, left 1.5s ease-in-out;
+		    -o-transition: width .1s ease-in-out, left 1.5s ease-in-out;
+		    transition: width .1s ease-in-out, left 1.5s ease-in-out;
+		}
+		
+
+		.logo {				
+
+			position: absolute;
+			top: 1.25em;
+			left: .375em;
+			width: $logo-width;	
+			height: 3.375em;
+			text-align: center;
+			padding-top: 1.125em;
+
+			background: #f1f1f1;
+			border-color: #ccc;
+
+			&::before {
+				
+				content: "";
+				position: absolute;
+				display: block;					
+				top: 0;
+				left: 0;								
+				height: 0;
+
+				border-top: 0.7em solid $brand-secondary;
+				border-right: $logo-triangles-brd-width solid transparent;
+				border-bottom: $logo-triangles-brd-width solid transparent;
+				border-left: $logo-triangles-brd-width solid transparent;
+				z-index: 2;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;					
+				top: 3.4em;
+				left: 0;
+				
+				height: 0;
+
+				border-top: 0.9em solid #f1f1f1;
+				border-right: 3.52em solid transparent;
+				border-bottom: 3.5em solid transparent;
+				border-left: 3.52em solid transparent;
+				z-index: 2;
+			}
+
+			img {
+				max-width: 6em;
+				padding-top: 0.5em;
+			}
+		}
+	}
+
+	.language-selector {
+		position: fixed;
+		left: 42%;
+		text-align: center;
+		padding-top: 1.6em;
+		color: white;			
+	}
+
+}

@@ -1,0 +1,25 @@
+.footer-col {
+	@include span(full);			
+	padding: 1em;
+	
+	h1, span {
+		text-transform: uppercase;
+	}
+
+	ul.contact-list {
+		li.contact-item {
+			border-bottom: 1px solid #4c4c4c;
+			padding-bottom: .562em;
+			margin-bottom: .562em;
+		}
+	}
+
+	@import "social.scss";
+
+	.map {
+		margin-top: .25em;
+		img {
+			width: 95%;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.dropdown {					
+	background: none !important;
+	position: relative;
+	
+	.dropdown-menu {					
+		position: absolute;
+		top: 1em;
+		right: 0;
+		padding: 0.8em;	
+		display: none;
+		margin-top: .8em;
+		width: 12.5em;
+		background: $brand-secondary + 30;
+		border: 1px solid #363636;
+
+		li {
+			display: block !important;
+			border-bottom: 1px solid #363636 !important;
+			padding: .4em 0;
+			text-align: center;
+			&:hover {
+				background: $nav-dropdown-active !important;
+			}
+
+			&:last-child {
+				border: none !important;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,36 @@
+.shape-container {
+	@include span(6 of 12);
+	display: block !important;
+	position: relative;
+
+	.footer-shape {
+		padding: 2.3em;
+		background: $brand-primary;
+		border-radius: 0 0 20px 0;
+	}
+
+	&::after {
+		content: '';
+		position: absolute !important;
+		right: -38px;
+		height: 0;
+		top: 0;
+		border-style: solid;
+		border-width: 83px 40px 0 0;
+		border-color: #000000 transparent transparent transparent;
+	}
+
+	&::before {
+		content: '';
+		position: absolute !important;
+		right: -32px;
+		height: 0;
+		top: 0;
+		z-index: 2;
+		border-style: solid;
+		border-width: 80px 34px 0 0;
+		border-color: $brand-primary transparent transparent transparent;
+	}
+
+
+}

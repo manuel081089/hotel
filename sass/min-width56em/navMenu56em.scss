@@ -1,0 +1,25 @@
+.menu {	
+	.menu-item {
+		display: inline !important;
+		padding: 0;		
+		border: none !important;					
+		
+		&:hover {
+			background: none !important;						
+		}
+
+		a {
+			padding: 1em .8em;
+			display: inline !important;
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+
+		.caret {
+			transform: rotate(90deg);
+		}
+	}
+
+	@import "dropdown56em.scss";
+}

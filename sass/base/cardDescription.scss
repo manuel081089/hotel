@@ -1,0 +1,43 @@
+.full-card-description  {
+	@include span(full);
+
+	display: none;
+	background: #EFF5F7;
+	text-align: center;
+		
+
+	.card-description-content {
+		width: 80%;
+		margin: 0 auto;
+		padding: 1.5em 0;
+		img{
+			width: 100%;
+			max-width: 60%;
+		}
+
+		h1 {
+			margin-bottom: 0;
+			padding: 0;
+		}
+
+		hr {
+			margin: .8em auto;
+			border: 0;
+			border-top: 1px solid #eee;
+			width: 80%
+		}
+		p {
+			padding-top: .8em;
+		}
+	}
+
+	&:target {
+		display: block;
+
+	}
+
+	&:target ~ #cards {
+		display: none;
+	}
+
+}

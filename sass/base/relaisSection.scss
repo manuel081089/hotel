@@ -1,0 +1,12 @@
+.relais {
+	@include span(full);
+	text-align: center;
+	padding: 2em 0;
+	img.relais-logo {
+		width: 100%;
+		max-width: 35%;
+	}
+	img.relais-divider {
+		width: 60%;
+	}
+}

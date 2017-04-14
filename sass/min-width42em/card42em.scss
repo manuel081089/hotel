@@ -1,0 +1,54 @@
+.card {
+	@include container;
+	
+	hr {
+		margin: .8em auto;					
+		border: 0;
+		border-top: 1px solid #eee;										
+		width: 60%
+	}
+
+	.card-head {
+		@include span(6 of 12);
+		overflow: hidden;
+		text-align: center;
+		height: 15em;	
+		padding: 1em;					
+
+		&::before {
+			content: ' ';
+		    display: inline-block;
+		    vertical-align: middle;  /* vertical alignment of the inline element */
+		    height: 100%;
+		}
+		
+		.card-img {
+			position: relative; 
+			left: 100%; 
+			margin-left: -200%; 
+			display: inline;
+			vertical-align: middle;
+			border-radius: 4px !important;
+		}
+
+		.card-icon {							
+			position: relative;
+			top: -10%;					
+			
+			width: 2.5em;
+			height: 2.5em;
+
+			img {
+				width: 60%;
+				margin-top: .4em;
+			}						
+		}
+	}
+
+	.card-body {
+		@include span(6 of 12 last);
+		display: inline;
+		padding: 2em 1.2em 0.8em;
+	}
+
+}

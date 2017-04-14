@@ -1,0 +1,37 @@
+header {
+	@include span(full);
+
+	.nav-toggle {
+		display: none !important;
+	}
+	
+	.logo-container	{			
+
+		.logo {
+			width: $logo-width + 3em;		
+			height: 4.375em !important;
+
+			&::before {
+				border-right: ($logo-triangles-brd-width + 1.5em) solid transparent;
+				border-left: ($logo-triangles-brd-width + 1.5em) solid transparent;
+			}
+
+			&::after {
+				top: 4.4em !important;
+				border-right: ($logo-triangles-brd-width + 1.5em) solid transparent;
+				border-left: ($logo-triangles-brd-width + 1.5em) solid transparent;
+			}
+
+			img {
+				max-width: 9em;					
+			}
+		}
+	}
+
+	.language-selector {			
+		right: 0;			
+		text-align: right;
+		padding: 0.3em 2.8em;				
+	}
+
+}

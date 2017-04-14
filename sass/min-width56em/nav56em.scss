@@ -1,0 +1,23 @@
+nav {
+	position: static !important;
+	z-index: 0;
+	@include span(10 of 12 last);
+
+	.close-nav {
+		display: none;
+	}
+
+	.nav-content {
+		background: $brand-secondary;
+		padding: 2.8em 2em 0 0;
+		text-align: right !important;
+		position: static !important;
+
+		h1 {
+			display: none !important;
+		}	
+
+		@import "navMenu56em.scss";
+	}
+	
+}
