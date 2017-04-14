@@ -5,7 +5,9 @@
 @import "../vendor/font-awesome/css/font-awesome.min.css";
 @import "_reset.scss";
 @import "_variables.scss";
-@import "base/_css_slider.scss";
+
+@import "reusable/cssSlider/_css_slider.scss";
+@import "reusable/cardComponent/cardComponent.scss";
 
 $susy: (
 	global-box-sizing: border-box,
@@ -22,6 +24,7 @@ $susy: (
     font-weight: normal;
     font-style: normal;
 }
+
 
 
 @import "base/_base.scss";

@@ -76,6 +76,126 @@ div#slider .slides {
   font-size: 0;
   animation: 20s slidy infinite; }
 
+.card {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 5.26316%; }
+  .card hr {
+    margin: .8em auto;
+    border: 0;
+    border-top: 1px solid #eee;
+    width: 60%; }
+  .card .card-head .card-img {
+    position: relative;
+    width: 100%;
+    border-radius: 4px 4px 0 0; }
+  .card .card-head .card-icon {
+    position: relative;
+    margin: -20px auto;
+    color: white;
+    border-radius: 50%;
+    background: #393939;
+    width: 2.5em;
+    height: 2.5em; }
+    .card .card-head .card-icon img {
+      width: 60%;
+      margin-top: .4em; }
+  .card .card-body {
+    padding: 2em 1.2em 0.8em; }
+
+@media screen and (min-width: 42em) {
+  .card {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .card:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .card hr {
+      margin: .8em auto;
+      border: 0;
+      border-top: 1px solid #eee;
+      width: 60%; }
+    .card .card-head {
+      width: 49.15254%;
+      float: left;
+      margin-right: 1.69492%;
+      overflow: hidden;
+      text-align: center;
+      height: 15em;
+      padding: 1em; }
+      .card .card-head::before {
+        content: ' ';
+        display: inline-block;
+        vertical-align: middle;
+        /* vertical alignment of the inline element */
+        height: 100%; }
+      .card .card-head .card-img {
+        position: relative;
+        left: 100%;
+        margin-left: -200%;
+        display: inline;
+        vertical-align: middle;
+        border-radius: 4px !important; }
+      .card .card-head .card-icon {
+        position: relative;
+        top: -10%;
+        width: 2.5em;
+        height: 2.5em; }
+        .card .card-head .card-icon img {
+          width: 60%;
+          margin-top: .4em; }
+    .card .card-body {
+      width: 49.15254%;
+      float: right;
+      margin-right: 0;
+      display: inline;
+      padding: 2em 1.2em 0.8em; } }
+@media screen and (min-width: 56em) {
+  .card {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%; }
+    .card:last-child {
+      float: right;
+      margin-right: 0; }
+    .card hr {
+      margin: .8em auto;
+      border: 0;
+      border-top: 1px solid #eee;
+      width: 60%; }
+    .card .card-head {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      height: auto;
+      padding: 0;
+      overflow: initial; }
+      .card .card-head::before {
+        content: none; }
+      .card .card-head .card-img {
+        border-radius: 4px 4px 0 0 !important; }
+      .card .card-head .card-icon {
+        position: relative !important;
+        margin: -20px auto !important;
+        border-radius: 50%; }
+        .card .card-head .card-icon img {
+          width: 60%;
+          margin-top: .4em; }
+    .card .card-body {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 2em 1.2em 0.8em; } }
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -130,7 +250,6 @@ div#slider .slides {
       .wrap nav .nav-content, .wrap nav .nav-content a {
         color: white; }
       .wrap nav .nav-content .menu .menu-item {
-        padding: .8em 1em;
         border-bottom: 1px solid #1d1d1d; }
         .wrap nav .nav-content .menu .menu-item:last-child {
           border-bottom: none; }
@@ -139,7 +258,8 @@ div#slider .slides {
         .wrap nav .nav-content .menu .menu-item a {
           cursor: pointer;
           width: 91.52542%;
-          display: inline-block; }
+          display: inline-block;
+          padding: 0.7em 1em; }
         .wrap nav .nav-content .menu .menu-item .caret {
           transition: all 0.2s ease 0s;
           display: inline-block; }
@@ -306,38 +426,6 @@ div#slider .slides {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
-      .wrap #main-content article .cards-container .card {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
-        border-radius: 4px;
-        background: white;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        margin-bottom: 5.26316%; }
-        .wrap #main-content article .cards-container .card hr {
-          margin: .8em auto;
-          border: 0;
-          border-top: 1px solid #eee;
-          width: 60%; }
-        .wrap #main-content article .cards-container .card .card-head .card-img {
-          position: relative;
-          width: 100%;
-          border-radius: 4px 4px 0 0; }
-        .wrap #main-content article .cards-container .card .card-head .card-icon {
-          position: relative;
-          margin: -20px auto;
-          color: white;
-          border-radius: 50%;
-          background: #393939;
-          width: 2.5em;
-          height: 2.5em; }
-          .wrap #main-content article .cards-container .card .card-head .card-icon img {
-            width: 60%;
-            margin-top: .4em; }
-        .wrap #main-content article .cards-container .card .card-body {
-          padding: 2em 1.2em 0.8em; }
   .wrap #main-content .full-card-description {
     width: 100%;
     float: left;
@@ -484,6 +572,18 @@ div#slider .slides {
     /**************************************** IMAGE CAROUSEL **************************************/
     /********************************** TESTIMONIALS SECTION **************************************/
     /******************************************* MAIN CONTENT AREA *******************************/
+    	/* #main-content {
+    		article {
+    			@include span(full);
+    			
+    			.cards-container {
+    				
+    				@import "card42em.scss";
+    
+    			}
+    			
+    		}
+    	} */
     /******************************************* FOOTER *******************************************/ }
     .wrap header {
       width: 100%;
@@ -585,59 +685,6 @@ div#slider .slides {
         max-width: 15%; }
       .wrap .relais img.relais-divider {
         width: 40% !important; }
-    .wrap #main-content article {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0; }
-      .wrap #main-content article .cards-container .card {
-        max-width: 1600px;
-        margin-left: auto;
-        margin-right: auto; }
-        .wrap #main-content article .cards-container .card:after {
-          content: " ";
-          display: block;
-          clear: both; }
-        .wrap #main-content article .cards-container .card hr {
-          margin: .8em auto;
-          border: 0;
-          border-top: 1px solid #eee;
-          width: 60%; }
-        .wrap #main-content article .cards-container .card .card-head {
-          width: 49.15254%;
-          float: left;
-          margin-right: 1.69492%;
-          overflow: hidden;
-          text-align: center;
-          height: 15em;
-          padding: 1em; }
-          .wrap #main-content article .cards-container .card .card-head::before {
-            content: ' ';
-            display: inline-block;
-            vertical-align: middle;
-            /* vertical alignment of the inline element */
-            height: 100%; }
-          .wrap #main-content article .cards-container .card .card-head .card-img {
-            position: relative;
-            left: 100%;
-            margin-left: -200%;
-            display: inline;
-            vertical-align: middle;
-            border-radius: 4px !important; }
-          .wrap #main-content article .cards-container .card .card-head .card-icon {
-            position: relative;
-            top: -10%;
-            width: 2.5em;
-            height: 2.5em; }
-            .wrap #main-content article .cards-container .card .card-head .card-icon img {
-              width: 60%;
-              margin-top: .4em; }
-        .wrap #main-content article .cards-container .card .card-body {
-          width: 49.15254%;
-          float: right;
-          margin-right: 0;
-          display: inline;
-          padding: 2em 1.2em 0.8em; }
     .wrap footer {
       width: 100%;
       float: left;
@@ -683,6 +730,15 @@ div#slider .slides {
   .wrap {
     /********************************** HEADER (WITH NAVBAR DESKTOP) ******************************/
     /******************************************* MAIN CONTENT AREA *******************************/
+    	/* #main-content {
+    		article {
+    			.cards-container {
+    				
+    				@import "card56em.scss";
+    
+    			}
+    		}
+    	} */
     /******************************************* FOOTER *******************************************/ }
     .wrap nav {
       position: static !important;
@@ -762,43 +818,6 @@ div#slider .slides {
       max-width: 12% !important; }
     .wrap .relais img.relais-divider {
       width: 20% !important; }
-    .wrap #main-content article .cards-container .card {
-      width: 32.20339%;
-      float: left;
-      margin-right: 1.69492%; }
-      .wrap #main-content article .cards-container .card:last-child {
-        float: right;
-        margin-right: 0; }
-      .wrap #main-content article .cards-container .card hr {
-        margin: .8em auto;
-        border: 0;
-        border-top: 1px solid #eee;
-        width: 60%; }
-      .wrap #main-content article .cards-container .card .card-head {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0;
-        height: auto;
-        padding: 0;
-        overflow: initial; }
-        .wrap #main-content article .cards-container .card .card-head::before {
-          content: none; }
-        .wrap #main-content article .cards-container .card .card-head .card-img {
-          border-radius: 4px 4px 0 0 !important; }
-        .wrap #main-content article .cards-container .card .card-head .card-icon {
-          position: relative !important;
-          margin: -20px auto !important;
-          border-radius: 50%; }
-          .wrap #main-content article .cards-container .card .card-head .card-icon img {
-            width: 60%;
-            margin-top: .4em; }
-      .wrap #main-content article .cards-container .card .card-body {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 2em 1.2em 0.8em; }
     .wrap footer {
       max-width: 1600px;
       margin-left: auto;
