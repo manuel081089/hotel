@@ -40,18 +40,30 @@ nav {
 			color: white;
 		}
 
+		.main-menu {
+			text-transform: uppercase;
+		}
+
+		
+
 		.menu {	
-			.menu-item {							
-				border-bottom: 1px solid $nav-item-hover;					
+			.menu-item {	
+
+				&:first-child {
+					border-top: 1px solid $nav-item-hover;
+				}	
+
+				border-bottom: 1px solid $nav-item-hover;
 
 				&:last-child {
 					border-bottom: none;
 				}
+
 				&:hover {
 					background: $nav-item-hover;
 				}
 
-				a {
+				a {					
 					cursor: pointer;
 					width: span(11 of 12);
 					display: inline-block;

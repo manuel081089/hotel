@@ -256,8 +256,12 @@ div#slider .slides {
         padding-left: 1em; }
       .wrap nav .nav-content, .wrap nav .nav-content a {
         color: white; }
+      .wrap nav .nav-content .main-menu {
+        text-transform: uppercase; }
       .wrap nav .nav-content .menu .menu-item {
         border-bottom: 1px solid #1d1d1d; }
+        .wrap nav .nav-content .menu .menu-item:first-child {
+          border-top: 1px solid #1d1d1d; }
         .wrap nav .nav-content .menu .menu-item:last-child {
           border-bottom: none; }
         .wrap nav .nav-content .menu .menu-item:hover {
@@ -765,6 +769,20 @@ div#slider .slides {
         position: static !important; }
         .wrap nav .nav-content h1 {
           display: none !important; }
+        .wrap nav .nav-content .sub-menu {
+          position: absolute;
+          top: 10%;
+          right: 14%; }
+          .wrap nav .nav-content .sub-menu a {
+            color: #A29061;
+            padding: 1em 0 !important; }
+            .wrap nav .nav-content .sub-menu a:hover {
+              color: white !important; }
+          .wrap nav .nav-content .sub-menu li::after {
+            content: " | ";
+            color: #A29061; }
+          .wrap nav .nav-content .sub-menu li:last-child::after {
+            content: none; }
         .wrap nav .nav-content .menu .menu-item {
           display: inline !important;
           padding: 0;
@@ -772,7 +790,7 @@ div#slider .slides {
           .wrap nav .nav-content .menu .menu-item:hover {
             background: none !important; }
           .wrap nav .nav-content .menu .menu-item a {
-            padding: 1em .8em;
+            padding: 1em .6em;
             display: inline !important; }
             .wrap nav .nav-content .menu .menu-item a:hover {
               color: #A29061; }
