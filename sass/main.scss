@@ -5,7 +5,7 @@
 @import "../vendor/font-awesome/css/font-awesome.min.css";
 @import "_reset.scss";
 @import "_variables.scss";
-@import "_css_slider.scss";
+@import "base/_css_slider.scss";
 
 $susy: (
 	global-box-sizing: border-box,
@@ -27,14 +27,14 @@ $susy: (
 @import "_base.scss";
 
 @media screen and (min-width: 42em) {
-	@import "_min-width-42em.scss";
+	@import "min-width42em/_min-width-42em.scss";
 }
 
 @media screen and (min-width: 56em) {
-    @import "_min-width-56em.scss";
+    @import "min-width56em/_min-width-56em.scss";
 }
 
 @media screen and (min-width: 100em) {
-    @import "_min-width-100em.scss";
+    @import "min-width100em/_min-width-100em.scss";
 }
 
