@@ -68,6 +68,8 @@
 						transition: all 0.2s ease 0s;						
 						display: inline-block;
 					}
+
+
 				}
 
 				.active {
@@ -98,12 +100,12 @@
 						margin-top: .8em;
 						transition: all 0.3s ease 0s;
 					}
-
 				}
 			}
 		}
-		
 	}
+		
+
 
 	/********************************** HEADER (WITH NAVBAR DESKTOP) ******************************/
 
@@ -271,10 +273,14 @@
 		}
 	}
 
+
+
 	.relais {
 		@include span(full);
 		text-align: center;
 		padding: 2em 0;
+
+
 		img.relais-logo {
 			width: 100%;
 			max-width: 35%;
