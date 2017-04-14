@@ -4,7 +4,7 @@
 	display: none;
 	background: #EFF5F7;
 	text-align: center;
-		
+	padding-bottom: 4em;
 
 	.card-description-content {
 		width: 80%;
@@ -13,9 +13,11 @@
 		img{
 			width: 100%;
 			max-width: 60%;
+			border-radius: 4px;
 		}
 
 		h1 {
+			font-size: 4.18em;
 			margin-bottom: 0;
 			padding: 0;
 		}

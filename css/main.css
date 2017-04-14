@@ -440,15 +440,18 @@ div#slider .slides {
     margin-right: 0;
     display: none;
     background: #EFF5F7;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 4em; }
     .wrap #main-content .full-card-description .card-description-content {
       width: 80%;
       margin: 0 auto;
       padding: 1.5em 0; }
       .wrap #main-content .full-card-description .card-description-content img {
         width: 100%;
-        max-width: 60%; }
+        max-width: 60%;
+        border-radius: 4px; }
       .wrap #main-content .full-card-description .card-description-content h1 {
+        font-size: 4.18em;
         margin-bottom: 0;
         padding: 0; }
       .wrap #main-content .full-card-description .card-description-content hr {
