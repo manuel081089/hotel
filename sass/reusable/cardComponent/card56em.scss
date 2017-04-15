@@ -1,7 +1,8 @@
 .card {
 	@include span(4 of 12);
-	&:last-child {
-		@include last;
+	&:nth-child(3n+0) {
+		//@include last;
+		margin-right: 0 !important;
 	}
 
 	hr {

@@ -36,4 +36,25 @@
 	/******************************************* FOOTER *******************************************/
 
 	@import "footer.scss";
+
+	.packages-intro {		
+
+		.intro-text {
+			font-size: 3em;
+			text-align: center;
+		}
+
+		hr {
+			border: 1px solid #ddd;
+			margin: 0 auto 1.5em;
+			width: 60%;
+		}
+	}
+
+	.packages-container {
+		@include clearfix;
+		padding: 1.5em;	
+
+		
+	}
 }
