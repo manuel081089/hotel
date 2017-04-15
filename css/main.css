@@ -872,7 +872,24 @@ div#slider .slides {
         float: left;
         margin-right: 1.69492%; }
         .wrap footer .footer-col:nth-child(2) {
-          margin-right: 0 !important; } }
+          margin-right: 0 !important; }
+      .wrap footer .site-info {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; }
+        .wrap footer .site-info .copyright {
+          width: 49.15254%;
+          float: left;
+          margin-right: 1.69492%;
+          text-align: left !important;
+          padding-left: 1em; }
+        .wrap footer .site-info .useful-links {
+          width: 49.15254%;
+          float: right;
+          margin-right: 0;
+          text-align: right !important;
+          padding-right: 1em; } }
 @media screen and (min-width: 100em) {
   .wrap {
     position: relative; }

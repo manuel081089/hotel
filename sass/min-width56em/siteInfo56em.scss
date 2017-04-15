@@ -1,0 +1,15 @@
+.site-info {
+	@include span(full);	
+
+	.copyright {
+		@include span(6 of 12);
+		text-align: left !important;
+		padding-left: 1em;
+	}
+
+	.useful-links {		
+		@include span(6 of 12 last);
+		text-align: right !important;
+		padding-right: 1em;
+	}
+}
