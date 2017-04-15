@@ -6,20 +6,20 @@
 var mainMenu  = function()
 {
 
-    $nav = $('nav');
-    $menuToggle = $('.nav-toggle');
-    $closeNav = $('.close-nav');
-    $menuItem = $('.menu-item');
+    var $nav = $('nav');
+    var $menuToggle = $('.nav-toggle');
+    var $closeNav = $('.close-nav');
+    var $menuItem = $('.menu-item');
 
     // Dropdown toggles
-    $dropdowns = $('.dropdown');
-    $dropdownToggle = $('.dropdown-toggle');
+    var $dropdowns = $('.dropdown');
+    var $dropdownToggle = $('.dropdown-toggle');
 
     //Show and Hide the Main Menu
     var toggleMenu =function(event) {
         event.preventDefault();
 
-        $nav.toggleClass('navbar-open');
+        $('.nav-toggle').toggleClass('navbar-open');
     }
 
 
@@ -30,28 +30,11 @@ var mainMenu  = function()
     }
 
     var showSubMenu = function(event) {
-        event.preventDefault();
 
-        var parent = $(this).parent();
-
-        if(parent.hasClass("active"))
-        {
-            parent.removeClass("active");
-            $(this).siblings('.dropdown-menu').removeClass('show-menu');
-        } else
-        {
-            resetActiveSubmenu();
-            parent.toggleClass('active');
-            $(this).siblings('.dropdown-menu').toggleClass('show-menu');
-        }
     };
 
     var menuItemClick = function() {
-        if (!$(this).hasClass('dropdown')) {
 
-            $nav.removeClass('navbar-open');
-
-        }
     }
 
 
@@ -65,10 +48,46 @@ var mainMenu  = function()
     return {
       init : function()
       {
-          $menuToggle.on('click',toggleMenu);
-          $closeNav.on('click',toggleMenu);
-          $dropdownToggle.on('click', showSubMenu);
-          $menuItem.on('click', menuItemClick);
+          $('body').on('click','.nav-toggle', function () {
+              event.preventDefault();
+              $('nav').toggleClass('navbar-open');
+          });
+
+          $('body').on('click','.close-nav', function() {
+              event.preventDefault();
+              $('nav').toggleClass('navbar-open');
+          });
+
+          $('body').on('click','.close-nav', function() {});
+
+          $('body').on('click','.dropdown-toggle', function(){
+
+
+              event.preventDefault();
+
+              var parent = $(this).parent();
+
+              if(parent.hasClass("active"))
+              {
+                  parent.removeClass("active");
+                  $(this).siblings('.dropdown-menu').removeClass('show-menu');
+              } else
+              {
+                  resetActiveSubmenu();
+                  parent.toggleClass('active');
+                  $(this).siblings('.dropdown-menu').toggleClass('show-menu');
+              }
+          });
+
+          $('body').on('click','.menu-item', function(){
+              if (!$(this).hasClass('dropdown')) {
+
+                  $('nav').removeClass('navbar-open');
+
+              }
+          });
+
+
       }
     };
 
