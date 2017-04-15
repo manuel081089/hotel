@@ -60,14 +60,14 @@ ul {
 body {
   margin: 0; }
 
-div#slider {
+div.slider {
   overflow: hidden; }
 
-div#slider .slides img {
+div.slider .slides img {
   width: 20%;
   float: left; }
 
-div#slider .slides {
+div.slider .slides {
   position: relative;
   width: 500%;
   margin: 0;
@@ -620,6 +620,61 @@ div#slider .slides {
     overflow: hidden;
     *zoom: 1;
     padding: 1.5em; }
+
+#main-content #main-content-aside {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%; }
+  #main-content #main-content-aside h1 {
+    text-align: center; }
+  #main-content #main-content-aside h2 {
+    padding: 0 auto; }
+  #main-content #main-content-aside ul.list-services {
+    list-style: square inside;
+    margin-top: 2px; }
+    #main-content #main-content-aside ul.list-services li {
+      margin-left: 25%; }
+  #main-content #main-content-aside .relais {
+    position: relative;
+    bottom: 0px; }
+    #main-content #main-content-aside .relais img.relais-logo {
+      width: 100%;
+      max-width: 100% !important; }
+#main-content #main-content-article {
+  box-sizing: border-box;
+  width: 83.05085%;
+  float: right;
+  margin-right: 0; }
+  #main-content #main-content-article .carousel {
+    margin-top: .5em; }
+  #main-content #main-content-article #description {
+    clear: both;
+    margin-top: 1.25em !important;
+    margin-bottom: 2em !important;
+    padding: 1.25em; }
+    #main-content #main-content-article #description > p:first-letter {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: .1em; }
+  #main-content #main-content-article #price-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 2em; }
+  #main-content #main-content-article #button-container {
+    bottom: 2.19em;
+    position: relative;
+    clear: both !important;
+    margin-bottom: 2em !important; }
+    #main-content #main-content-article #button-container button.booking {
+      border: none;
+      background-color: #393939;
+      padding: 0.63em;
+      color: white;
+      display: inline-block; }
+      #main-content #main-content-article #button-container button.booking:hover {
+        color: #A29061;
+        background-color: #1d1d1d;
+        cursor: pointer; }
 
 @media screen and (min-width: 42em) {
   .wrap {

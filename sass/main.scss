@@ -27,10 +27,13 @@ $susy: (
 
 
 
-@import "base/_base.scss";
+@import "base/_base.scss";   
+
+@import "room-suites-pages";
+
 
 @media screen and (min-width: 42em) {
-	@import "min-width42em/_min-width-42em.scss";
+    @import "min-width42em/_min-width-42em.scss";
 }
 
 @media screen and (min-width: 56em) {

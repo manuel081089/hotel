@@ -1,0 +1,104 @@
+
+#main-content {
+
+  @mixin relais-logo-max-width($max-width )
+  {
+    img.relais-logo {
+      width: 100%;
+      max-width: $max-width;
+    }
+  }
+
+
+
+  #main-content-aside {
+
+    h1 {
+      text-align: center;
+    }
+
+    @include span(2);
+    h2 {
+      padding: 0 auto;
+    }
+
+
+    ul.list-services {
+      list-style: square inside;
+      margin-top: 2px;
+      li {
+        margin-left: 25%;
+      }
+    }
+
+    .relais {
+      position: relative;
+      bottom: 0px;
+      @include relais-logo-max-width(100% !important);
+    }
+  }
+
+  #main-content-article {
+    box-sizing: border-box;
+
+    @include span(10 last);
+    .carousel {
+      margin-top: .5em;
+    }
+
+    #description {
+
+      clear: both;
+      margin-top: 1.25em !important;
+      margin-bottom: 2em !important;
+      padding: 1.25em;
+
+      & > p {
+
+        &:first-letter {
+          font-size: 1.5em;
+          font-weight: bold;
+
+          margin: .1em;
+        }
+      }
+
+    }
+
+    #price-title {
+      display: block;
+      text-align: center;
+
+      .price {
+        //set style for price tag here
+      }
+
+      margin-bottom: 2em;
+
+    }
+
+    #button-container {
+      bottom: 2.19em;
+      position: relative;
+
+      clear: both !important;
+      margin-bottom: 2em !important;
+      button.booking {
+
+        border: none;
+        background-color: $brand-secondary;
+        padding: 0.63em;
+        color: white;
+
+        display: inline-block;
+
+        &:hover {
+          color: $brand-primary;
+          background-color: $nav-item-hover;
+          cursor: pointer;
+        }
+
+      }
+    }
+  }
+}
