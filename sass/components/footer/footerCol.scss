@@ -1,0 +1,33 @@
+.footer-col {
+	@include span(full);			
+	padding: 1em;
+	
+	h1, span {
+		text-transform: uppercase;
+	}
+
+	ul.contact-list {
+		li.contact-item {
+			border-bottom: 1px solid #4c4c4c;
+			padding-bottom: .562em;
+			margin-bottom: .562em;
+		}
+	}
+
+	.map {
+		margin-top: .25em;
+		img {
+			width: 95%;
+		}
+	}
+}
+
+@media screen and (min-width: 56em) {
+	.footer-col {
+		@include span(6 of 12);
+
+		&:nth-child(2) {
+			margin-right: 0 !important;
+		}
+	}
+}

@@ -1,46 +1,53 @@
-@import "../vendor/normalize-css/normalize.css";
-@import "../vendor/compass-sass-mixins/lib/_compass";
-@import "../vendor/susy/sass/susy";
-/* Font-Awesome could be removed later and linked from the CDN in the index.html */
-@import "../vendor/font-awesome/css/font-awesome.min.css";
-@import "_reset.scss";
-@import "_variables.scss";
-
-@import "reusable/cssSlider/_css_slider.scss";
-@import "reusable/cardComponent/cardComponent.scss";
+@import "variables/_variables";
+@import "utilities/parallaxMixin";
 
 $susy: (
 	global-box-sizing: border-box,
 	columns: 12,
-    container: 1600px,
+	container: $max-container-width,
 );
+
+@import "lib/lib";
+
+@import "base/_reset";
+
+@import "layout/_base";
+
+
+@import "components/header/headerComponent";
+@import "components/navbar/navbarComponent";
+@import "components/bookingHandle/bookingHandleComponent";
+@import "components/cssSlider/_css_slider";
+@import "components/testimonials/testimonialsComponent";
+@import "components/relaisSection/relaisSectionComponent";
+@import "components/footer/footerComponent";
+@import "components/socialMedia/social";
+@import "components/legal/legalSectionComponent";
+
+@import "components/cardComponent/cardComponent";
+@import "components/homeCardsContainer/homeCardsContainerComponent";
+
+
 
 @include border-box-sizing;
 
-@font-face {
-    font-family: 'fengardo_neueregular';
-    src: url('../fonts/fengardoneue_regular-webfont.woff2') format('woff2'),
-         url('../fonts/fengardoneue_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+/*
 
 
-
-@import "base/_base.scss";   
+@import "base/_base";   
 
 @import "room-suites-pages";
 
 
 @media screen and (min-width: 42em) {
-    @import "min-width42em/_min-width-42em.scss";
+    @import "min-width42em/_min-width-42em";
 }
 
 @media screen and (min-width: 56em) {
-    @import "min-width56em/_min-width-56em.scss";
+    @import "min-width56em/_min-width-56em";
 }
 
 @media screen and (min-width: 100em) {
-    @import "min-width100em/_min-width-100em.scss";
-}
+    @import "min-width100em/_min-width-100em";
+}*/
 

@@ -1,0 +1,56 @@
+.wrap {
+	@include container;
+}
+
+.l-container-full {
+	@include container(12);
+
+	.l-container-full-col {
+		@include span(full);
+	}
+}
+
+.l-container-2col {
+	@include container(12);
+
+	.l-container-first-col {
+		@include span(3 of 12);
+	}
+
+	.l-container-full-col {
+		@include span(9 of 12 last);
+	}
+}
+	
+	/*#main-content {
+		
+		article {
+			@include span(full);
+			
+			@import "parallaxCardContainer.scss";
+		}
+
+		@import "cardDescription.scss";
+	}*/
+
+
+	/*.packages-intro {
+
+		.intro-text {
+			font-size: 3em;
+			text-align: center;
+		}
+
+		hr {
+			border: 1px solid #ddd;
+			margin: 0 auto 1.5em;
+			width: 60%;
+		}
+	}
+
+	.packages-container {
+		@include clearfix;
+		padding: 1.5em;	
+
+		
+	}*/

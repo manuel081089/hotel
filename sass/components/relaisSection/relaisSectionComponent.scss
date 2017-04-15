@@ -1,0 +1,9 @@
+@import "relaisSection";
+
+@media screen and (min-width: 42em){
+  @import "relaisSection42em";
+}
+
+@media screen and (min-width: 56em){
+  @import "relaisSection56em";
+}
