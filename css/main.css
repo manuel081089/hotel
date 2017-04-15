@@ -348,7 +348,7 @@ div#slider .slides {
           content: "";
           position: absolute;
           display: block;
-          top: 3.4em;
+          top: 3.39em;
           left: 0;
           height: 0;
           border-top: 0.9em solid #f1f1f1;
@@ -631,7 +631,7 @@ div#slider .slides {
         content: '';
         position: absolute;
         top: 0;
-        left: -1.875em;
+        left: -1.85em;
         width: 0;
         height: 0;
         border-style: solid;
@@ -730,7 +730,7 @@ div#slider .slides {
         .wrap footer .shape-container::before {
           content: '';
           position: absolute !important;
-          right: -32px;
+          right: -31px;
           height: 0;
           top: 0;
           z-index: 2;
