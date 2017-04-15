@@ -7,6 +7,7 @@
 
 	.l-container-full-col {
 		@include span(full);
+		padding: 1em;
 	}
 }
 
@@ -21,36 +22,9 @@
 		@include span(9 of 12 last);
 	}
 }
-	
-	/*#main-content {
-		
-		article {
-			@include span(full);
-			
-			@import "parallaxCardContainer.scss";
-		}
 
-		@import "cardDescription.scss";
-	}*/
+#content-wrapper {
+	margin-top: $nav-height;
+}
 
 
-	/*.packages-intro {
-
-		.intro-text {
-			font-size: 3em;
-			text-align: center;
-		}
-
-		hr {
-			border: 1px solid #ddd;
-			margin: 0 auto 1.5em;
-			width: 60%;
-		}
-	}
-
-	.packages-container {
-		@include clearfix;
-		padding: 1.5em;	
-
-		
-	}*/

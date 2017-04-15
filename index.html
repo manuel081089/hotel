@@ -13,264 +13,27 @@
 
 
 </head>
-<body>
+<body ng-app="hotelApp">
 	<div class="wrap">
-		<header>			
-			<div class="logo-container">
-				<div class="logo">
-					<img src="img/logo.png" alt="">
-				</div>				
-			</div>
-			<div class="nav-toggle">
-				<button>
-					<i class="fa fa-navicon fa-fw"></i>
-				</button>
-			</div>
-			<div class="language-selector">
-				<i class="fa fa-language"></i>
-				<select class="language-select">
-					<option value="en_US">English</option>
-					<option value="es_ES">Espa&ntilde;ol</option>
-					<option value="it_IT">Italiano</option>
-				</select>
-			</div>
-			<nav>
-				<div class="nav-content">
-					<span class="close-nav">&times;</span>
-					<h1>MENU</h1>
-					<ul class="main-menu menu">
-						<li class="menu-item"><a href="index.html">Home</a></li>
-						<li class="menu-item"><a href="/pages/packages.html">Orfila-Packages</a></li>
-						<li class="menu-item dropdown">
-							<a class="dropdown-toggle" href="#">Room Suites</a>
-							<span class="caret">
-								<i class="fa fa-chevron-right"></i>
-							</span>
-							<ul class="dropdown-menu">
-								<li class="menu-item"><a href="Junior%20Suite.html">Junior Suite</a></li>
-								<li class="menu-item"><a href="Double%20Suite.html">Double Suite</a></li>
-								<li class="menu-item"><a href="Deluxe%20Suite.html">Deluxe  Suite</a></li>
-							</ul>
-						</li>
-						<li class="menu-item dropdown">
-							<a href="" class="dropdown-toggle">Executive orders</a>
-							<span class="caret">
-								<i class="fa fa-chevron-right"></i>
-							</span>
-							<ul class="dropdown-menu">
-								<li class="menu-item"><a href="#">My other item</a></li>
-								<li class="menu-item"><a href="#">My other item 2</a></li>
-								<li class="menu-item"><a href="#">My other item 3</a></li>
-							</ul>
-						</li>
-						<li class="menu-item"><a href="#">Lounges / Events</a></li>
-						<li class="menu-item"><a href="#">Contact</a></li>
-					</ul>
-					<ul class="sub-menu menu">
-						<li class="menu-item"><a href="#">Hotel Orfila</a></li>
-						<li class="menu-item"><a href="#">Orfila Madrid</a></li>					
-						<li class="menu-item"><a href="#">Gallery</a></li>
-						<li class="menu-item"><a href="#">CSR</a></li>
-						<li class="menu-item"><a href="#">Press Room</a></li>
-						<li class="menu-item"><a href="#">Agenda de Madrid</a></li>
-					</ul>					
-				</div>			
-			</nav> <!-- nav -->
 
-		</header> <!-- top header -->
+		<div ng-include="'pages/partials/header.html'"></div>
 
-		<div class="carousel">
-				<div class="slider">
-					<div class="slides">
-						<img src="img/slide1.jpg" alt>
-						<img src="img/slide2.jpg" alt>
-						<img src="img/slide3.jpg" alt>
-						<img src="img/slide4.jpg" alt>
-					</div>
-				</div>
+		<div id="content-wrapper">
+			<ui-view></ui-view>
 		</div>
 
-		<div class="booking-container">
-			<div class="booking">
-				<strong>Book now</strong>
-			</div>
-		</div>
+		<div ng-include="'pages/partials/footer.html'"></div>
+		<div ng-include="'pages/partials/legalSection.html'"></div>
 
-		<div class="testimonials">
-			<div class="testimonial-page testimonial-active">
-				<div class="avatar">
-					<img src="img/testimonial-avatar.jpg" alt=""><br>
-					<span><strong>John A. Doe</strong></span><br>
-					<span><i>Fullstack Developer at CYOM,Inc</i></span>
-				</div>
-				<div class="dialog-box">
-					<img class="quote" src="img/quote-top.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quos dolorum beatae officiis ab ipsa aut ipsum iusto, eius neque dolor aliquam. Quisquam explicabo fugiat voluptatem nostrum, eos, dolorum eius.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="relais">
-			<div><img class="relais-logo" src="img/relais_and_chateaux.jpg" alt=""></div>
-			<div><img class="relais-divider" src="img/custom-divider.png" alt=""></div>
-			<h1>Lorem ipsum!</h1>
-			<p>Dolor sit amet, consectetur adipisicing elit. Dolore quo accusamus, sed ex obcaecati eum dolor nostrum! Eum ullam fuga, eos suscipit iusto, dicta deserunt adipisci optio praesentium quod fugit!</p>
-		</div>
-
-
-
-
-
-			<!--<article id="full-card-description-a"  class="full-card-description">
-				<div class="card-description-content">
-					<h1>Cultural Madrid</h1>
-					<hr>
-					<div><img  src="img/hotel-orfila-madrid-plaza-mayor.jpg" alt=""></div>
-					<p>Dolor sit amet, consectetur adipisicing elit. Dolore quo accusamus, sed ex obcaecati eum dolor nostrum! Eum ullam fuga, eos suscipit iusto, dicta deserunt adipisci optio praesentium quod fugit!
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae cum sunt fugit eum quidem quasi. Eligendi numquam, dolorum saepe assumenda, aspernatur id pariatur, iste quis dolorem possimus beatae eveniet laboriosam?
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, quisquam. Possimus quos eaque magnam deserunt praesentium repellat voluptatibus, doloribus fugiat ratione temporibus dolorem, sit eveniet sapiente impedit, veritatis velit. Sapiente?</p>
-				</div>
-			</article>
-
-
-			<article id="full-card-description-b" class="full-card-description">
-				<div  class="card-description-content">
-					<h1>Calm and Comfort</h1>
-					<hr>
-					<div><img src="img/jardin-de-orfila.jpg" alt=""></div>
-					<p>Dolor sit amet, consectetur adipisicing elit. Dolore quo accusamus, sed ex obcaecati eum dolor nostrum! Eum ullam fuga, eos suscipit iusto, dicta deserunt adipisci optio praesentium quod fugit!
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. At repellendus saepe non earum, molestias amet, necessitatibus rerum magnam blanditiis soluta eligendi quasi? Praesentium fugiat, est tenetur cum vero minus perspiciatis!
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iste magni cumque sit fugit consequuntur rem debitis perferendis eum adipisci est quo voluptatum beatae consectetur corrupti labore animi, corporis quidem?</p>
-				</div>
-			</article>
-
-
-			<article id="full-card-description-c" class="full-card-description">
-				<div class="card-description-content">
-					<h1>Orfilia Taste</h1>
-					<hr>
-					<div><img  src="img/sabor-orfila.jpg" alt=""></div>
-					<p>Dolor sit amet, consectetur adipisicing elit. Dolore quo accusamus, sed ex obcaecati eum dolor nostrum! Eum ullam fuga, eos suscipit iusto, dicta deserunt adipisci optio praesentium quod fugit!
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque adipisci temporibus numquam ex omnis, facere sapiente modi consectetur fugit, consequatur ducimus quasi amet molestiae. Sequi vero omnis temporibus eius culpa.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur saepe assumenda quod rem quam neque veritatis laudantium vero accusantium, vel omnis magnam quaerat sed exercitationem voluptas non atque reiciendis minus!</p>
-				</div>
-			</article>-->
-		<div class="l-container-full">
-			<div class="l-container-full-col">
-				<div class="home-cards-container">
-					<div class="card">
-						<div class="card-head">
-							<img class="card-img" src="img/hotel-orfila-madrid-plaza-mayor.jpg" alt="">
-							<div class="card-icon">
-								<img src="img/home-icon-white.png" alt="">
-							</div>
-						</div>
-						<div class="card-body">
-							<h2>Cultural Madrid</h2>
-							<hr>
-							<p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
-							<a class="read-more" href="#full-card-description-a">Read More</a>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-head">
-							<img class="card-img" src="img/jardin-de-orfila.jpg" alt="">
-							<div class="card-icon">
-								<img src="img/home-icon-white.png" alt="">
-							</div>
-						</div>
-						<div class="card-body">
-							<h2>Calm and Comfort</h2>
-							<hr>
-							<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
-							<a class="read-more" href="#full-card-description-b">Read More</a>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-head">
-							<img class="card-img" src="img/sabor-orfila.jpg" alt="">
-							<div class="card-icon">
-								<img src="img/home-icon-white.png" alt="">
-							</div>
-						</div>
-						<div class="card-body">
-							<h2>Orfila Taste</h2>
-							<hr>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem unde consectetur, iure minima saepe a. Voluptas voluptatum nisi enim, cumque vel explicabo tempore reiciendis ullam! Non saepe minus deserunt nulla.</p>
-
-							<a class="read-more" href="#full-card-description-c">Read More</a>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		<footer>
-			<div class="subscribe-section">
-				<div class="shape-container">
-					<div class="footer-shape">
-						<strong>WWW.HOTELORFILA.COM</strong>
-					</div>
-				</div>
-				<div class="subscribe">
-					<label><strong>Sign up for our newsletter</strong></label>
-					<input type="text" class="subscribe-email" placeholder="Please enter your email">
-					<button class="subscribe-button">Subscribe</button>
-				</div>
-			</div>
-			<div class="footer-col">
-				<h1>contact</h1>
-				<ul class="contact-list">
-					<li class="contact-item">
-						<span class="contact-title"><strong>phone:</strong></span>
-						<span class="contact-detail">+34 555 5523</span>
-					</li>
-					<li class="contact-item">
-						<span class="contact-title"><strong>fax:</strong></span>
-						<span class="contact-detail">+34 555 5523</span>
-					</li>
-					<li class="contact-item">
-						<span class="contact-title"><strong>email:</strong></span>
-						<span class="contact-detail">inforeservas@hotelorfila.com</span>
-					</li>
-				</ul>
-				<ul class="social-list">
-					<li class="social-item facebook"><i class="fa fa-facebook fa-fw"></i></li>
-					<li class="social-item foursquare"><i class="fa fa-foursquare fa-fw"></i></li>
-					<li class="social-item tripadvisor"><i class="fa fa-tripadvisor fa-fw"></i></li>
-					<li class="social-item instagram"><i class="fa fa-instagram fa-fw"></i></li>
-					<li class="social-item google"><i class="fa fa-google-plus fa-fw"></i></li>
-					<li class="social-item twitter"><i class="fa fa-twitter fa-fw"></i></li>
-				</ul>
-			</div>
-			<div class="footer-col">
-				<h1>location</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem voluptatibus tenetur quos eius quisquam officiis!</p>
-				<div class="map">
-					<img src="img/gmap.png" alt="">
-				</div>
-			</div>
-		</footer>
-		<div class="legal">
-			<div class="site-info">
-				<div class="copyright">Hotel Orfila &copy; All rights reserved - 2017</div>
-				<div class="useful-links">
-					<ul>
-						<li><a href="#">Legal Notice</a></li>
-						<li><a href="#">Site Map</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
 	</div>
 
 
 	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	<script src="vendor/angular/angular.min.js"></script>
+	<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script src="js/main_menu.js"></script>
 	<script src="js/scripts.js" ></script>
+	<script src="js/appAngular.js"></script>
 
 </body>
 </html>

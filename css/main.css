@@ -43,6 +43,18 @@ ul {
 ::-webkit-scrollbar-thumb:active {
   background: #333;
 } */
+.default-button {
+  display: block;
+  margin: 1.5em auto;
+  padding: 0.4em;
+  border-radius: 3px;
+  width: 7em;
+  color: white;
+  border: 1px solid #393939;
+  background: #393939; }
+  .default-button:hover {
+    color: #A29061; }
+
 .wrap {
   max-width: 1600px;
   margin-left: auto;
@@ -64,7 +76,8 @@ ul {
     width: 100%;
     float: left;
     margin-left: 0;
-    margin-right: 0; }
+    margin-right: 0;
+    padding: 1em; }
 
 .l-container-2col {
   max-width: 1600px;
@@ -83,36 +96,9 @@ ul {
     float: right;
     margin-right: 0; }
 
-	/*#main-content {
-		
-		article {
-			@include span(full);
-			
-			@import "parallaxCardContainer.scss";
-		}
+#content-wrapper {
+  margin-top: 5em; }
 
-		@import "cardDescription.scss";
-	}*/
-	/*.packages-intro {
-
-		.intro-text {
-			font-size: 3em;
-			text-align: center;
-		}
-
-		hr {
-			border: 1px solid #ddd;
-			margin: 0 auto 1.5em;
-			width: 60%;
-		}
-	}
-
-	.packages-container {
-		@include clearfix;
-		padding: 1.5em;	
-
-		
-	}*/
 header {
   width: 100%;
   float: left;
@@ -816,13 +802,6 @@ ul.social-list {
       margin-top: .4em; }
   .card .card-body {
     padding: 2em 1.2em 0.8em; }
-    .card .card-body .read-more {
-      display: block;
-      margin: 1.5em auto;
-      padding: 0.4em;
-      border-radius: 3px;
-      width: 7em;
-      border: 1px solid #ddd; }
 
 @media screen and (min-width: 42em) {
   .card {
@@ -920,7 +899,15 @@ ul.social-list {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1.5em; }
+  padding: 5em 1.5em; }
+
+.intro .intro-text {
+  font-size: 3em;
+  text-align: center; }
+.intro hr {
+  border: 1px solid #ddd;
+  margin: 0 auto 2.5em;
+  width: 60%; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
