@@ -1,0 +1,26 @@
+.l-container-2col {
+  @include container(12);
+
+  .l-container-first-col {
+    display: none;
+  }
+
+  .l-container-second-col {
+    @include span(full);
+  }
+}
+
+@media screen and (min-width: 56em){
+  .l-container-2col {
+    @include container(12);
+
+    .l-container-first-col {
+      display: block;
+      @include span(3 of 12);
+    }
+
+    .l-container-second-col {
+      @include span(9 of 12 last);
+    }
+  }
+}

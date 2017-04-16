@@ -11,17 +11,7 @@
 	}
 }
 
-.l-container-2col {
-	@include container(12);
-
-	.l-container-first-col {
-		@include span(3 of 12);
-	}
-
-	.l-container-second-col {
-		@include span(9 of 12 last);
-	}
-}
+@import "l-container-2col";
 
 #content-wrapper {
 	margin-top: $nav-height;

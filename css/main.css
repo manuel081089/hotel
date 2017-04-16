@@ -6,6 +6,17 @@
   src: url("../../fonts/fengardoneue_regular-webfont.woff2") format("woff2"), url("../../fonts/fengardoneue_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'folks-lightregular';
+  src: url("../../fonts/Folks-Light-webfont.eot");
+  src: url("../../fonts/Folks-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Folks-Light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'geniusthin';
+  src: url("../../fonts/Genius-100-Thin-webfont.woff2") format("woff2"), url("../../fonts/Genius-100-Thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 * {
   margin: 0;
   padding: 0;
@@ -88,14 +99,31 @@ ul {
     display: block;
     clear: both; }
   .l-container-2col .l-container-first-col {
-    width: 23.72881%;
-    float: left;
-    margin-right: 1.69492%; }
+    display: none; }
   .l-container-2col .l-container-second-col {
-    width: 74.57627%;
-    float: right;
+    width: 100%;
+    float: left;
+    margin-left: 0;
     margin-right: 0; }
 
+@media screen and (min-width: 56em) {
+  .l-container-2col {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto; }
+    .l-container-2col:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .l-container-2col .l-container-first-col {
+      display: block;
+      width: 23.72881%;
+      float: left;
+      margin-right: 1.69492%; }
+    .l-container-2col .l-container-second-col {
+      width: 74.57627%;
+      float: right;
+      margin-right: 0; } }
 #content-wrapper {
   margin-top: 5em; }
 
@@ -913,14 +941,64 @@ ul.social-list {
   color: white;
   background: #393939;
   padding: 1em;
-  margin: 1.8em 1em; }
-  .sidebar h1 {
-    text-align: center; }
-  .sidebar ul {
-    margin-top: 2px; }
-  .sidebar .relais {
-    position: relative;
-    bottom: 0px; }
+  margin: 1.8em 1em;
+  border-radius: 5px; }
+  .sidebar .sidebar-head {
+    text-align: center;
+    padding-bottom: 1em; }
+    .sidebar .sidebar-head .sidebar-logo {
+      font-size: 7em;
+      text-shadow: -2px -2px rgba(0, 0, 0, 0.5);
+      font-family: geniusthin; }
+    .sidebar .sidebar-head .sidebar-title {
+      font-size: 1.5em; }
+    .sidebar .sidebar-head .sidebar-separator {
+      width: 60%;
+      height: 1px;
+      background: white;
+      margin: .8em auto;
+      opacity: 0.4;
+      position: relative; }
+      .sidebar .sidebar-head .sidebar-separator::after {
+        content: '';
+        width: 18%;
+        height: 1px;
+        background: white;
+        position: absolute;
+        top: 4px;
+        margin: 0 auto;
+        left: 41%; }
+  .sidebar .sidebar-body .sidebar-body-title {
+    text-align: center !important; }
+  .sidebar .sidebar-body .sidebar-list {
+    padding: 0.8em 1.7em 0; }
+    .sidebar .sidebar-body .sidebar-list > li {
+      padding-bottom: .7em;
+      position: relative; }
+      .sidebar .sidebar-body .sidebar-list > li::before {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 6px;
+        top: 3px;
+        left: -10%;
+        border-width: 0 0 1px 1px;
+        border-style: solid;
+        border-color: white;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg); }
+
+.sidebar-footer {
+  margin: -2.1em 1em 1em;
+  border: 1px solid #363636;
+  border-top-width: 5px;
+  padding: 1em;
+  text-align: center; }
+  .sidebar-footer img {
+    max-width: 30%; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;

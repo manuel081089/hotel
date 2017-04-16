@@ -1,25 +1,72 @@
 .sidebar {
-
   color: white;
   background: $brand-secondary;
   padding: 1em;
   margin: 1.8em 1em;
+  border-radius: 5px;
 
-
-  h1 {
+  .sidebar-head {
     text-align: center;
-  }
+    padding-bottom: 1em;
 
-  ul {
-    margin-top: 2px;
-    li {
+    .sidebar-logo {
+      font-size: 7em;
+      text-shadow: -2px -2px rgba(0,0,0,0.5);
+      font-family: geniusthin;
+    }
+    .sidebar-title {
+      font-size: 1.5em;
+    }
+
+    .sidebar-separator {
+      width: 60%;
+      height: 1px;
+      background: white;
+      margin: .8em auto;
+      opacity: 0.4;
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 18%;
+        height: 1px;
+        background: white;
+        position: absolute;
+        top: 4px;
+        margin: 0 auto;
+        left: 41%;
+      }
     }
   }
 
-  .relais {
-    position: relative;
-    bottom: 0px;
-    //@include relais-logo-max-width(100% !important);
+  .sidebar-body {
+    .sidebar-body-title {
+      text-align: center !important;
+    }
+    .sidebar-list {
+      padding: 0.8em 1.7em 0;
+      >li {
+        padding-bottom: .7em;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 12px;
+          height: 6px;
+          top: 3px;
+          left: -10%;
+          border-width: 0 0 1px 1px;
+          border-style: solid;
+          border-color: white;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+      }
+    }
   }
-
 }
+
+@import "../sidebarFooter/sidebarFooterComponent";
