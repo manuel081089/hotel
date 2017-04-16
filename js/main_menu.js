@@ -80,10 +80,10 @@ var mainMenu  = function()
           });
 
           $('body').on('click','.menu-item', function(){
+              $('.menu-item>a').removeClass('active-link');
+              $(this).children('a').addClass('active-link');
               if (!$(this).hasClass('dropdown')) {
-
                   $('nav').removeClass('navbar-open');
-
               }
           });
 

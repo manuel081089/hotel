@@ -354,10 +354,12 @@ nav {
         nav .nav-content .menu .menu-item:hover {
           background: none !important; }
         nav .nav-content .menu .menu-item a {
-          padding: 1em .6em;
+          padding: 1em .6em .8em;
           display: inline !important; }
           nav .nav-content .menu .menu-item a:hover {
             color: #A29061; }
+          nav .nav-content .menu .menu-item a.active-link {
+            border-bottom: 2px solid white; }
         nav .nav-content .menu .menu-item .caret {
           transform: rotate(90deg); }
       nav .nav-content .menu .dropdown {

@@ -33,10 +33,14 @@
 		}
 
 		a {
-			padding: 1em .6em;
+			padding: 1em .6em .8em;
 			display: inline !important;
 			&:hover {
 				color: $brand-primary;
+			}
+
+			&.active-link {
+				border-bottom: 2px solid white;
 			}
 		}
 
