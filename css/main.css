@@ -62,7 +62,8 @@ ul {
   width: 7em;
   color: white;
   border: 1px solid #393939;
-  background: #393939; }
+  background: #393939;
+  cursor: pointer; }
   .default-button:hover {
     color: #A29061; }
 
@@ -798,125 +799,129 @@ ul.social-list {
       margin-right: 0;
       text-align: right !important;
       padding-right: 1em; } }
-.card {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  text-align: center;
-  border-radius: 4px;
-  background: white;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  margin-bottom: 5.26316%; }
-  .card hr {
-    margin: .8em auto !important;
-    border: 0 !important;
-    border-top: 1px solid #eee !important;
-    width: 60% !important; }
-  .card .card-head .card-img {
-    position: relative;
+.cards-container {
+  overflow: hidden;
+  *zoom: 1;
+  padding: .5em; }
+  .cards-container .card {
     width: 100%;
-    border-radius: 4px 4px 0 0; }
-  .card .card-head .card-icon {
-    position: relative;
-    margin: -20px auto;
-    color: white;
-    border-radius: 50%;
-    background: #393939;
-    width: 2.5em;
-    height: 2.5em; }
-    .card .card-head .card-icon img {
-      width: 60%;
-      margin-top: .4em; }
-  .card .card-body {
-    padding: 2em 1.2em 0.8em; }
-
-@media screen and (min-width: 42em) {
-  .card {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto; }
-    .card:after {
-      content: " ";
-      display: block;
-      clear: both; }
-    .card hr {
-      margin: .8em auto;
-      border: 0;
-      border-top: 1px solid #eee;
-      width: 60%; }
-    .card .card-head {
-      width: 49.15254%;
-      float: left;
-      margin-right: 1.69492%;
-      overflow: hidden;
-      text-align: center;
-      height: 15em;
-      padding: 1em; }
-      .card .card-head::before {
-        content: ' ';
-        display: inline-block;
-        vertical-align: middle;
-        /* vertical alignment of the inline element */
-        height: 100%; }
-      .card .card-head .card-img {
-        position: relative;
-        left: 100%;
-        margin-left: -200%;
-        display: inline;
-        vertical-align: middle;
-        border-radius: 4px !important; }
-      .card .card-head .card-icon {
-        position: relative;
-        top: -10%;
-        width: 2.5em;
-        height: 2.5em; }
-        .card .card-head .card-icon img {
-          width: 60%;
-          margin-top: .4em; }
-    .card .card-body {
-      width: 49.15254%;
-      float: right;
-      margin-right: 0;
-      display: inline;
-      padding: 2em 1.2em 0.8em; } }
-@media screen and (min-width: 56em) {
-  .card {
-    width: 32.20339%;
     float: left;
-    margin-right: 1.69492%; }
-    .card:nth-child(3n+0) {
-      margin-right: 0 !important; }
-    .card hr {
-      margin: .8em auto;
-      border: 0;
-      border-top: 1px solid #eee;
-      width: 60%; }
-    .card .card-head {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-bottom: 5.26316%; }
+    .cards-container .card hr {
+      margin: .8em auto !important;
+      border: 0 !important;
+      border-top: 1px solid #eee !important;
+      width: 60% !important; }
+    .cards-container .card .card-head .card-img {
+      position: relative;
       width: 100%;
+      border-radius: 4px 4px 0 0; }
+    .cards-container .card .card-head .card-icon {
+      position: relative;
+      margin: -20px auto;
+      color: white;
+      border-radius: 50%;
+      background: #393939;
+      width: 2.5em;
+      height: 2.5em; }
+      .cards-container .card .card-head .card-icon img {
+        width: 60%;
+        margin-top: .4em; }
+    .cards-container .card .card-body {
+      padding: 2em 1.2em 0.8em; }
+  @media screen and (min-width: 42em) {
+    .cards-container .card {
+      max-width: 1600px;
+      margin-left: auto;
+      margin-right: auto; }
+      .cards-container .card:after {
+        content: " ";
+        display: block;
+        clear: both; }
+      .cards-container .card hr {
+        margin: .8em auto;
+        border: 0;
+        border-top: 1px solid #eee;
+        width: 60%; }
+      .cards-container .card .card-head {
+        width: 49.15254%;
+        float: left;
+        margin-right: 1.69492%;
+        overflow: hidden;
+        text-align: center;
+        height: 15em;
+        padding: 1em; }
+        .cards-container .card .card-head::before {
+          content: ' ';
+          display: inline-block;
+          vertical-align: middle;
+          /* vertical alignment of the inline element */
+          height: 100%; }
+        .cards-container .card .card-head .card-img {
+          position: relative;
+          left: 100%;
+          margin-left: -200%;
+          display: inline;
+          vertical-align: middle;
+          border-radius: 4px !important; }
+        .cards-container .card .card-head .card-icon {
+          position: relative;
+          top: -10%;
+          width: 2.5em;
+          height: 2.5em; }
+          .cards-container .card .card-head .card-icon img {
+            width: 60%;
+            margin-top: .4em; }
+      .cards-container .card .card-body {
+        width: 49.15254%;
+        float: right;
+        margin-right: 0;
+        display: inline;
+        padding: 2em 1.2em 0.8em; } }
+  @media screen and (min-width: 56em) {
+    .cards-container .card {
+      width: 32.20339%;
       float: left;
-      margin-left: 0;
-      margin-right: 0;
-      height: auto;
-      padding: 0;
-      overflow: initial; }
-      .card .card-head::before {
-        content: none; }
-      .card .card-head .card-img {
-        border-radius: 4px 4px 0 0 !important; }
-      .card .card-head .card-icon {
-        position: relative !important;
-        margin: -20px auto !important;
-        border-radius: 50%; }
-        .card .card-head .card-icon img {
-          width: 60%;
-          margin-top: .4em; }
-    .card .card-body {
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      padding: 2em 1.2em 0.8em; } }
+      margin-right: 1.69492%; }
+      .cards-container .card:nth-child(3n+0) {
+        margin-right: 0 !important; }
+      .cards-container .card hr {
+        margin: .8em auto;
+        border: 0;
+        border-top: 1px solid #eee;
+        width: 60%; }
+      .cards-container .card .card-head {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+        padding: 0;
+        overflow: initial; }
+        .cards-container .card .card-head::before {
+          content: none; }
+        .cards-container .card .card-head .card-img {
+          border-radius: 4px 4px 0 0 !important; }
+        .cards-container .card .card-head .card-icon {
+          position: relative !important;
+          margin: -20px auto !important;
+          border-radius: 50%; }
+          .cards-container .card .card-head .card-icon img {
+            width: 60%;
+            margin-top: .4em; }
+      .cards-container .card .card-body {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 2em 1.2em 0.8em; } }
+
 .home-cards-container {
   width: 100%;
   float: left;
@@ -996,9 +1001,31 @@ ul.social-list {
   border: 1px solid #363636;
   border-top-width: 5px;
   padding: 1em;
-  text-align: center; }
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  border-bottom-width: 5px; }
   .sidebar-footer img {
     max-width: 30%; }
+
+article {
+  padding: 2em; }
+  article img.article-image {
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75); }
+  article p.article-text {
+    text-align: justify;
+    padding-top: 1em; }
+
+.price-indicator {
+  margin-top: 1.5em;
+  text-align: center;
+  text-transform: uppercase; }
+  .price-indicator .price-text {
+    font-family: geniusthin;
+    font-size: 2em; }
+    .price-indicator .price-text .price-tag {
+      font-size: 1.5em;
+      color: #A29061; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;

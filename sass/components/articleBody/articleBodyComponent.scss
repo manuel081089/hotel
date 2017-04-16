@@ -1,0 +1,5 @@
+@import 'article.scss';
+
+@media screen and (min-width: 56em){
+  @import "article56em.scss";
+}

@@ -1,0 +1,14 @@
+.price-indicator {
+  margin-top: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  .price-text {
+    font-family: geniusthin;
+    font-size: 2em;
+
+    .price-tag {
+      font-size: 1.5em;
+      color: $brand-primary;
+    }
+  }
+}

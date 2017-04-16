@@ -61,22 +61,7 @@
 
       clear: both !important;
       margin-bottom: 2em !important;
-      button.booking {
 
-        border: none;
-        background-color: $brand-secondary;
-        padding: 0.63em;
-        color: white;
-
-        display: inline-block;
-
-        &:hover {
-          color: $brand-primary;
-          background-color: $nav-item-hover;
-          cursor: pointer;
-        }
-
-      }
     }
   }
 }

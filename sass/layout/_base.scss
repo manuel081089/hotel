@@ -2,19 +2,14 @@
 	@include container;
 }
 
-.l-container-full {
-	@include container(12);
+@import "_l-container-full";
 
-	.l-container-full-col {
-		@include span(full);
-		padding: 1em;
-	}
-}
-
-@import "l-container-2col";
+@import "_l-container-2col";
 
 #content-wrapper {
 	margin-top: $nav-height;
 }
+
+
 
 

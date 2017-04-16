@@ -1,0 +1,13 @@
+.cards-container {
+	@include clearfix;
+	padding: .5em;
+	@import "card.scss";
+
+	@media screen and (min-width: 42em) {
+		@import "card42em.scss";
+	}
+
+	@media screen and (min-width: 56em) {
+		@import "card56em.scss";
+	}
+}

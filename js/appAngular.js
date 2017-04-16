@@ -41,6 +41,10 @@
                         url: '/deluxeSuite',
                         templateUrl: '../pages/deluxeSuite.html',
                     })
+                    .state('executiveMenu', {
+                        url: '/executiveMenu',
+                        templateUrl: '../pages/executiveMenu.html',
+                    })
 
                 $urlRouterProvider.otherwise('home');
             }
