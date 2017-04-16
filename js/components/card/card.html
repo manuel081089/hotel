@@ -1,0 +1,14 @@
+<div class="card" ng-class="{'last': card.last}">
+    <div class="card-head">
+        <img class="card-img" ng-src="{{card.image}}" alt="">
+        <div class="card-icon">
+            <i ng-class="card.icon"></i>
+        </div>
+    </div>
+    <div class="card-body">
+        <h2>{{card.title}}</h2>
+        <hr>
+        <p class="card-description">{{card.description}}</p>
+        <a ng-if="card.withButton" class="default-button" ng-href="{{card.buttonUrl}}">{{card.buttonText}}</a>
+    </div>
+</div>

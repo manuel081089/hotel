@@ -914,6 +914,8 @@ ul.social-list {
       margin-right: 1.69492%; }
       .cards-container .card:nth-child(3n+0) {
         margin-right: 0 !important; }
+      .cards-container .card.last {
+        margin-right: 0 !important; }
       .cards-container .card hr {
         margin: .8em auto;
         border: 0;
