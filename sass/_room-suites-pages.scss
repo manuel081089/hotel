@@ -13,29 +13,7 @@
 
   #main-content-aside {
 
-    h1 {
-      text-align: center;
-    }
 
-    @include span(2);
-    h2 {
-      padding: 0 auto;
-    }
-
-
-    ul.list-services {
-      list-style: square inside;
-      margin-top: 2px;
-      li {
-        margin-left: 25%;
-      }
-    }
-
-    .relais {
-      position: relative;
-      bottom: 0px;
-      @include relais-logo-max-width(100% !important);
-    }
   }
 
   #main-content-article {

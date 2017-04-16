@@ -29,6 +29,18 @@
                         url: '/packages',
                         templateUrl: '../pages/packages.html',
                     })
+                    .state('junior', {
+                        url: '/juniorSuite',
+                        templateUrl: '../pages/juniorSuite.html',
+                    })
+                    .state('double', {
+                        url: '/doubleSuite',
+                        templateUrl: '../pages/doubleSuite.html',
+                    })
+                    .state('deluxe', {
+                        url: '/deluxeSuite',
+                        templateUrl: '../pages/deluxeSuite.html',
+                    })
 
                 $urlRouterProvider.otherwise('home');
             }

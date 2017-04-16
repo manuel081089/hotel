@@ -91,7 +91,7 @@ ul {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%; }
-  .l-container-2col .l-container-full-col {
+  .l-container-2col .l-container-second-col {
     width: 74.57627%;
     float: right;
     margin-right: 0; }
@@ -908,6 +908,19 @@ ul.social-list {
   border: 1px solid #ddd;
   margin: 0 auto 2.5em;
   width: 60%; }
+
+.sidebar {
+  color: white;
+  background: #393939;
+  padding: 1em;
+  margin: 1.8em 1em; }
+  .sidebar h1 {
+    text-align: center; }
+  .sidebar ul {
+    margin-top: 2px; }
+  .sidebar .relais {
+    position: relative;
+    bottom: 0px; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;

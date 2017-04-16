@@ -1,0 +1,25 @@
+.sidebar {
+
+  color: white;
+  background: $brand-secondary;
+  padding: 1em;
+  margin: 1.8em 1em;
+
+
+  h1 {
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 2px;
+    li {
+    }
+  }
+
+  .relais {
+    position: relative;
+    bottom: 0px;
+    //@include relais-logo-max-width(100% !important);
+  }
+
+}
