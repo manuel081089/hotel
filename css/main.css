@@ -1033,13 +1033,17 @@ ul.social-list {
     max-width: 30%; }
 
 article {
-  padding: 2em; }
+  padding: 2em;
+  text-align: center; }
   article img.article-image {
     width: 100%;
+    max-width: 850px;
     box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75); }
   article p.article-text {
     text-align: justify;
     padding-top: 1em; }
+    article p.article-text::first-letter {
+      font-size: 2em; }
 
 .price-indicator {
   margin-top: 1.5em;
