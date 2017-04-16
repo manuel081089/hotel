@@ -1,0 +1,25 @@
+<div class="testimonials">
+    <div ng-repeat="item in testimonials.testimonialsList"
+         class="testimonial-page" ng-class="{'testimonial-active' : item.active}">
+        <div class="prev" ng-click="testimonials.prevItem(item)">
+            <div class="prev-btn"></div>
+        </div>
+        <div class="avatar">
+            <img ng-src="{{item.avatarUrl}}" alt=""><br>
+            <span><strong>{{item.name}}</strong></span><br>
+            <span><i>{{item.position}}</i></span>
+        </div>
+        <div class="dialog-box">
+            <img class="quote" src="img/quote-top.png" alt="">
+            <p>{{item.quote}}</p>
+        </div>
+        <div class="next" ng-click="testimonials.nextItem(item)">
+            <div class="next-btn"></div>
+        </div>
+    </div>
+</div>
+
+<!--
+
+ng-hide="testimonials.testimonialsList.indexOf(item) === 0"
+ng-hide="testimonials.testimonialsList.indexOf(item) === testimonials.testimonialsList.length - 1"-->

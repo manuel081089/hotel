@@ -16,14 +16,14 @@
 <body ng-app="hotelApp">
 	<div class="wrap">
 
-		<div ng-include="'pages/partials/header.html'"></div>
+		<app-header logo-url="/img/logo.png"></app-header>
 
 		<div id="content-wrapper">
 			<ui-view></ui-view>
 		</div>
 
-		<div ng-include="'pages/partials/footer.html'"></div>
-		<div ng-include="'pages/partials/legalSection.html'"></div>
+		<app-footer shape-text="WWW.HOTELORFILA.COM"></app-footer>
+		<legal-section copyright="Hotel Orfila &copy; All rights reserved - 2017"></legal-section>
 
 	</div>
 
@@ -34,6 +34,14 @@
 	<script src="vendor/angular/angular.min.js"></script>
 	<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script src="js/appAngular.js"></script>
+
+	<!-- ************* ngComponents ************** -->
+	<script src="js/components/appHeader/appHeader.js"></script>
+	<script src="js/components/appNav/appNav.js"></script>
+	<script src="js/components/appFooter/appFooter.js"></script>
+	<script src="js/components/legalSection/legalSection.js"></script>
+	<script src="js/components/testimonials/testimonials.js"></script>
+	<!-- ************* ngComponents ************** -->
 
 </body>
 </html>

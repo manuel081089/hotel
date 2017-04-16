@@ -2,7 +2,7 @@
     <div class="subscribe-section">
         <div class="shape-container">
             <div class="footer-shape">
-                <strong>WWW.HOTELORFILA.COM</strong>
+                <strong>{{footer.shapeText}}</strong>
             </div>
         </div>
         <div class="subscribe">
@@ -14,17 +14,9 @@
     <div class="footer-col">
         <h1>contact</h1>
         <ul class="contact-list">
-            <li class="contact-item">
-                <span class="contact-title"><strong>phone:</strong></span>
-                <span class="contact-detail">+34 555 5523</span>
-            </li>
-            <li class="contact-item">
-                <span class="contact-title"><strong>fax:</strong></span>
-                <span class="contact-detail">+34 555 5523</span>
-            </li>
-            <li class="contact-item">
-                <span class="contact-title"><strong>email:</strong></span>
-                <span class="contact-detail">inforeservas@hotelorfila.com</span>
+            <li ng-repeat="contact in footer.contactList" class="contact-item">
+                <span class="contact-title"><strong>{{contact.title}}:</strong></span>
+                <span class="contact-detail">{{contact.detail}}</span>
             </li>
         </ul>
         <ul class="social-list">

@@ -1,0 +1,12 @@
+<div class="legal">
+    <div class="site-info">
+        <div class="copyright">{{legalSection.copyright}}</div>
+        <div class="useful-links">
+            <ul>
+                <li ng-repeat="link in legalSection.links">
+                    <a ng-href="{{link.url}}">{{link.text}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

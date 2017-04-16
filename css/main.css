@@ -483,36 +483,57 @@ div.slider .slides {
   margin-right: 0;
   background: #EFF5F7;
   padding: 1em 0;
-  text-align: center; }
+  text-align: center;
+  transition: all linear 0.5s; }
   .testimonials .testimonial-page {
     display: none;
     position: relative; }
-    .testimonials .testimonial-page::before {
-      content: "";
+    .testimonials .testimonial-page .prev {
       position: absolute;
-      left: 1em;
-      top: 3.75em;
-      width: 1em;
-      height: 1em;
-      border-width: 2px 0 0 2px;
-      border-color: #363636;
-      border-style: solid;
-      transform: rotate(-45deg);
+      height: 130px;
+      left: 0;
+      width: 29px;
+      top: 0;
+      display: block;
       cursor: pointer; }
-    .testimonials .testimonial-page::after {
-      content: "";
+      .testimonials .testimonial-page .prev .prev-btn {
+        content: "";
+        position: absolute;
+        left: 1em;
+        top: 3.75em;
+        width: 1em;
+        height: 1em;
+        border-width: 2px 0 0 2px;
+        border-color: #363636;
+        border-style: solid;
+        transform: rotate(-45deg); }
+    .testimonials .testimonial-page .next {
       position: absolute;
-      right: 3.125em;
-      top: 3.75em;
-      width: 1em;
-      height: 1em;
-      border-width: 2px 2px 0 0;
-      border-color: #363636;
-      border-style: solid;
-      transform: rotate(45deg);
+      height: 130px;
+      right: 0;
+      top: 0;
+      width: 29px;
+      display: block;
       cursor: pointer; }
-  .testimonials .testimonial-page.testimonial-active {
-    display: block !important; }
+      .testimonials .testimonial-page .next .next-btn {
+        content: "";
+        position: absolute;
+        right: 1em;
+        top: 3.75em;
+        width: 1em;
+        height: 1em;
+        border-width: 2px 2px 0 0;
+        border-color: #363636;
+        border-style: solid;
+        transform: rotate(45deg); }
+  .testimonials .testimonial-active {
+    display: block !important;
+    animation: fade .5s ease-in; }
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
   .testimonials .avatar img {
     width: 5em;
     border-radius: 50%;
