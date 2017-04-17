@@ -6,7 +6,7 @@
         controllerAs: 'testimonials'
     });
     
-    function TestimonialsCtrl($timeout) {
+    function TestimonialsCtrl($window) {
         var vm = this;
 
         vm.testimonialsList = [
@@ -65,11 +65,13 @@
             }
         };
 
-        /*window.setInterval(ToggleNextTestimonial(), 1000);
+        this.$onChanges = function () {
+            window.setInterval(ToggleNextTestimonial(), 50);
+        }
 
         function ToggleNextTestimonial() {
             console.log('aki');
-            var currentItem = vm.testimonialsList.find(function (item) {
+            /*var currentItem = vm.testimonialsList.find(function (item) {
                 return item.active;
             });
 
@@ -78,7 +80,7 @@
             if (!vm.testimonialsList[vm.testimonialsList.indexOf(currentItem) + 1])
                 vm.testimonialsList[0].active = true;
             else
-                vm.testimonialsList[vm.testimonialsList.indexOf(currentItem)].active = true;
-        }*/
+                vm.testimonialsList[vm.testimonialsList.indexOf(currentItem)].active = true;*/
+        }
     }
 })();
