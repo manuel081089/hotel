@@ -330,7 +330,7 @@ $.widget( "ui.dialog", {
 			var activeElement = $.ui.safeActiveElement( this.document[ 0 ] ),
 				isActive = this.uiDialog[ 0 ] === activeElement ||
 					$.contains( this.uiDialog[ 0 ], activeElement );
-			if ( !isActive ) {
+			if ( !isDropdownActive ) {
 				this._focusTabbable();
 			}
 		}

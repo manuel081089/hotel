@@ -9,7 +9,12 @@
         controllerAs: 'header',
     });
 
-    function AppHeaderCtrl() {
-
+    function AppHeaderCtrl() {        
+        var vm = this;
+        vm.showOnMobile = false;
+        
+        vm.showNav = function () {
+            vm.showOnMobile = !vm.showOnMobile;
+        }
     }
 })();

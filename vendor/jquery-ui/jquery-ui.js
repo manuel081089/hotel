@@ -12248,7 +12248,7 @@ $.widget( "ui.dialog", {
 			var activeElement = $.ui.safeActiveElement( this.document[ 0 ] ),
 				isActive = this.uiDialog[ 0 ] === activeElement ||
 					$.contains( this.uiDialog[ 0 ], activeElement );
-			if ( !isActive ) {
+			if ( !isDropdownActive ) {
 				this._focusTabbable();
 			}
 		}
@@ -16887,7 +16887,7 @@ $.widget( "ui.spinner", {
 				this.previous : this.element.val();
 			function checkFocus() {
 				var isActive = this.element[ 0 ] === $.ui.safeActiveElement( this.document[ 0 ] );
-				if ( !isActive ) {
+				if ( !isDropdownActive ) {
 					this.element.trigger( "focus" );
 					this.previous = previous;
 

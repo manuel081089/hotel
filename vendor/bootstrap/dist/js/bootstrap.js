@@ -815,7 +815,7 @@ if (typeof jQuery === 'undefined') {
 
     clearMenus()
 
-    if (!isActive) {
+    if (!isDropdownActive) {
       if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
         // if mobile we use a backdrop because click events don't delegate
         $(document.createElement('div'))
@@ -854,7 +854,7 @@ if (typeof jQuery === 'undefined') {
     var $parent  = getParent($this)
     var isActive = $parent.hasClass('open')
 
-    if (!isActive && e.which != 27 || isActive && e.which == 27) {
+    if (!isDropdownActive && e.which != 27 || isDropdownActive && e.which == 27) {
       if (e.which == 27) $parent.find(toggle).trigger('focus')
       return $this.trigger('click')
     }

@@ -6,7 +6,7 @@
             </div>
         </div>
     </a>
-    <div class="nav-toggle">
+    <div class="nav-toggle" ng-click="header.showNav()">
         <button>
             <i class="fa fa-navicon fa-fw"></i>
         </button>
@@ -20,5 +20,5 @@
         </select>
     </div>
     <!--<div ng-include="'pages/partials/nav.html'"></div>-->
-    <app-nav></app-nav>
+    <app-nav show-on-mobile="header.showOnMobile"></app-nav>
 </header> <!-- top header -->

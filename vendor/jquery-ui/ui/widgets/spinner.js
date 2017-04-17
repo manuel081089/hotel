@@ -168,7 +168,7 @@ $.widget( "ui.spinner", {
 				this.previous : this.element.val();
 			function checkFocus() {
 				var isActive = this.element[ 0 ] === $.ui.safeActiveElement( this.document[ 0 ] );
-				if ( !isActive ) {
+				if ( !isDropdownActive ) {
 					this.element.trigger( "focus" );
 					this.previous = previous;
 

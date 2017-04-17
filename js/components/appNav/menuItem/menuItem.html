@@ -1,0 +1,15 @@
+<li class="menu-item" ng-class="{'dropdown': menuItem.isDropdown}">
+    <a ng-href="{{menuItem.url}}"
+       ng-class="{'dropdown-toggle': menuItem.isDropdown, 'active-link': menuItem.isTopLinkActive, 'active': menuItem.isDropdownActive}"
+       ng-click="menuItem.itemClick()">
+        {{menuItem.text}}
+        <span class="caret" ng-if="menuItem.isDropdown">
+            <i class="moon-arrow-right17"></i>
+        </span>
+    </a>
+    <ul class="dropdown-menu" ng-if="menuItem.isDropdown" ng-class="{'show-menu': menuItem.showMenu, 'active': menuItem.isDropdownActive}">
+        <li class="menu-item" ng-repeat="item in menuItem.dropdownMenu">
+            <a ng-href="{{item.url}}" ng-click="menuItem.subItemClick()">{{item.text}}</a>
+        </li>
+    </ul>
+</li>

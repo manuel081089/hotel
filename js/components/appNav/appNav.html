@@ -1,3 +1,4 @@
+<!--
 <nav>
     <div class="nav-content">
         <span class="close-nav">&times;</span>
@@ -32,4 +33,26 @@
             <li class="menu-item"><a href="#">Agenda de Madrid</a></li>
         </ul>
     </div>
-</nav> <!-- nav -->
+</nav>-->
+
+<nav ng-class="{'navbar-open': navbar.showOnMobile}">
+    <div class="nav-content">
+        <span class="close-nav" ng-click="navbar.hideNav()">&times;</span>
+        <h1>MENU</h1>
+        <ul class="main-menu menu">
+            <menu-item ng-repeat="item in navbar.mainNavLinks"
+                       url="{{item.url}}" text="{{item.text}}"
+                       is-dropdown="item.isDropdown" dropdown-menu="item.dropdownMenu"
+
+            ></menu-item>
+        </ul>
+        <ul class="sub-menu menu">
+            <li class="menu-item"><a href="#">Hotel Orfila</a></li>
+            <li class="menu-item"><a href="#">Orfila Madrid</a></li>
+            <li class="menu-item"><a href="#">Gallery</a></li>
+            <li class="menu-item"><a href="#">CSR</a></li>
+            <li class="menu-item"><a href="#">Press Room</a></li>
+            <li class="menu-item"><a href="#">Agenda de Madrid</a></li>
+        </ul>
+    </div>
+</nav>
