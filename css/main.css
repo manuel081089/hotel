@@ -1,6 +1,6 @@
 @import url(/vendor/normalize-css/normalize.css);
-/* Font-Awesome could be removed later and linked from the CDN in the index.html */
 @import url(/vendor/font-awesome/css/font-awesome.min.css);
+/* Font-Awesome could be removed later and linked from the CDN in the index.html */
 @font-face {
   font-family: 'fengardo_neueregular';
   src: url("/fonts/fengardoneue_regular-webfont.woff2") format("woff2"), url("/fonts/fengardoneue_regular-webfont.woff") format("woff");
@@ -913,12 +913,12 @@ ul.social-list {
         display: inline;
         padding: 2em 1.2em 0.8em; } }
   @media screen and (min-width: 56em) {
+    .cards-container card:nth-child(3n+0) .card {
+      margin-right: 0 !important; }
     .cards-container .card {
       width: 32.20339%;
       float: left;
       margin-right: 1.69492%; }
-      .cards-container .card:nth-child(3n+0) {
-        margin-right: 0 !important; }
       .cards-container .card.last {
         margin-right: 0 !important; }
       .cards-container .card hr {

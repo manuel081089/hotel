@@ -41,45 +41,26 @@
             },
         ];
 
-        vm.prevItem = function (currentItem) {
-            var currentIndex = vm.testimonialsList.indexOf(currentItem);
-            if (currentIndex !== 0) {
-                currentItem.active = false;
-                vm.testimonialsList[currentIndex - 1].active = true;
-            }
-            else {
-                vm.testimonialsList[0].active = false;
-                vm.testimonialsList[vm.testimonialsList.length - 1].active = true;
-            }
+        vm.prevItem = function (currentIndex) {
+            moveCursor(-1, currentIndex);
         }
 
-        vm.nextItem = function (currentItem) {
-            var currentIndex = vm.testimonialsList.indexOf(currentItem);
-            if (currentIndex !== vm.testimonialsList.length - 1) {
-                currentItem.active = false;
-                vm.testimonialsList[currentIndex + 1].active = true;
-            }
-            else {
-                vm.testimonialsList[0].active = true;
-                vm.testimonialsList[vm.testimonialsList.length - 1].active = false;
-            }
+        vm.nextItem = function (currentIndex) {
+            moveCursor(1, currentIndex);
         };
+
+        var moveCursor = function (direction, currentIndex) {
+            var length = vm.testimonialsList.length;
+            vm.testimonialsList[currentIndex].active = false;
+            vm.testimonialsList[(currentIndex + direction + length) % length].active = true;
+        }
 
         this.$onChanges = function () {
             window.setInterval(ToggleNextTestimonial(), 50);
         }
 
         function ToggleNextTestimonial() {
-            /*var currentItem = vm.testimonialsList.find(function (item) {
-                return item.active;
-            });
 
-            currentItem.active = false;
-
-            if (!vm.testimonialsList[vm.testimonialsList.indexOf(currentItem) + 1])
-                vm.testimonialsList[0].active = true;
-            else
-                vm.testimonialsList[vm.testimonialsList.indexOf(currentItem)].active = true;*/
         }
     }
 })();
