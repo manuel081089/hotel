@@ -1,5 +1,5 @@
-@import url(/vendor/normalize-css/normalize.css);
-@import url(/vendor/font-awesome/css/font-awesome.min.css);
+@import url(../vendor/normalize-css/normalize.css);
+@import url(../vendor/font-awesome/css/font-awesome.min.css);
 /* Font-Awesome could be removed later and linked from the CDN in the index.html */
 @font-face {
   font-family: 'fengardo_neueregular';
@@ -957,7 +957,7 @@ ul.social-list {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  background: url("/img/parallax1.jpg");
+  background: url("../img/parallax1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
