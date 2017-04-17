@@ -70,7 +70,6 @@
         }
 
         function ToggleNextTestimonial() {
-            console.log('aki');
             /*var currentItem = vm.testimonialsList.find(function (item) {
                 return item.active;
             });
