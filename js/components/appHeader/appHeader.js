@@ -4,7 +4,7 @@
         bindings: {
             logoUrl: '@'
         },
-        templateUrl: '/js/components/appHeader/appHeader.html',
+        templateUrl: 'js/components/appHeader/appHeader.html',
         controller: AppHeaderCtrl,
         controllerAs: 'header',
     });

@@ -4,7 +4,7 @@
         bindings: {
             shapeText: '@',
         },
-        templateUrl: '/js/components/appFooter/appFooter.html',
+        templateUrl: 'js/components/appFooter/appFooter.html',
         controller: AppFooterCtrl,
         controllerAs: 'footer',
     });

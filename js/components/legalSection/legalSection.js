@@ -4,7 +4,7 @@
         bindings: {
             copyright: '@',
         },
-        templateUrl: '/js/components/legalSection/legalSection.html',
+        templateUrl: 'js/components/legalSection/legalSection.html',
         controller: LegalSectionCtrl,
         controllerAs: 'legalSection'
     });

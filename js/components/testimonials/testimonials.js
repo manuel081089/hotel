@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular.module('hotelApp').component('testimonials', {
-        templateUrl: '/js/components/testimonials/testimonials.html',
+        templateUrl: 'js/components/testimonials/testimonials.html',
         controller: TestimonialsCtrl,
         controllerAs: 'testimonials'
     });

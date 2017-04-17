@@ -10,7 +10,7 @@
             buttonUrl: '@',
             last: '<',
         },
-        templateUrl: '/js/components/card/card.html',
+        templateUrl: 'js/components/card/card.html',
         controller: CardCtrl,
         controllerAs: 'card',
     });

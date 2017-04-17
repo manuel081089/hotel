@@ -4,7 +4,7 @@
         bindings: {
             showOnMobile: '=',
         },
-        templateUrl: '/js/components/appNav/appNav.html',
+        templateUrl: 'js/components/appNav/appNav.html',
         controller: AppNavCtrl,
         controllerAs: 'navbar'
     });

@@ -7,7 +7,7 @@
             isDropdown: '<',
             dropdownMenu: '<'
         },
-        templateUrl: '/js/components/appNav/menuItem/menuItem.html',
+        templateUrl: 'js/components/appNav/menuItem/menuItem.html',
         controller: MenuItemCtrl,
         controllerAs: 'menuItem'
     });
