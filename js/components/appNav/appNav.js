@@ -59,6 +59,33 @@
             },
         ];
 
+        vm.subNavLinks = [
+            {
+                text: 'Hotel Orfila',
+                url: '#',
+            },
+            {
+                text: 'Orfila Madrid',
+                url: '#',
+            },
+            {
+                text: 'Gallery',
+                url: '#',
+            },
+            {
+                text: 'CSR',
+                url: '#',
+            },
+            {
+                text: 'Press Room',
+                url: '#',
+            },
+            {
+                text: 'Agenda de Madrid',
+                url: '#',
+            },
+        ];
+
         vm.hideNav = function () {
             vm.showOnMobile = false;
         }

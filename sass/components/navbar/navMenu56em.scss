@@ -6,12 +6,13 @@
 	a {
 		color: $brand-primary;
 		padding: 1em 0 !important;
+		border: none !important;
 		&:hover {
 			color: white !important;
 		}
 	}
 
-	li {
+	menu-item {
 		&::after {
 			content: " | ";
 			color: $brand-primary;

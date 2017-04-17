@@ -340,13 +340,14 @@ nav {
         right: 17%; }
         nav .nav-content .sub-menu a {
           color: #A29061;
-          padding: 1em 0 !important; }
+          padding: 1em 0 !important;
+          border: none !important; }
           nav .nav-content .sub-menu a:hover {
             color: white !important; }
-        nav .nav-content .sub-menu li::after {
+        nav .nav-content .sub-menu menu-item::after {
           content: " | ";
           color: #A29061; }
-        nav .nav-content .sub-menu li:last-child::after {
+        nav .nav-content .sub-menu menu-item:last-child::after {
           content: none; }
       nav .nav-content .menu .menu-item {
         display: inline !important;

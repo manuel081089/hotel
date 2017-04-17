@@ -47,12 +47,16 @@
             ></menu-item>
         </ul>
         <ul class="sub-menu menu">
-            <li class="menu-item"><a href="#">Hotel Orfila</a></li>
+            <menu-item ng-repeat="item in navbar.subNavLinks"
+                       url="{{item.url}}" text="{{item.text}}"
+
+            ></menu-item>
+            <!--<li class="menu-item"><a href="#">Hotel Orfila</a></li>
             <li class="menu-item"><a href="#">Orfila Madrid</a></li>
             <li class="menu-item"><a href="#">Gallery</a></li>
             <li class="menu-item"><a href="#">CSR</a></li>
             <li class="menu-item"><a href="#">Press Room</a></li>
-            <li class="menu-item"><a href="#">Agenda de Madrid</a></li>
+            <li class="menu-item"><a href="#">Agenda de Madrid</a></li>-->
         </ul>
     </div>
 </nav>
