@@ -85,6 +85,9 @@ var mainMenu  = function()
               if (!$(this).hasClass('dropdown')) {
                   $('nav').removeClass('navbar-open');
               }
+              if ($(this).parent('.dropdown-menu')) {
+                  $(this).parent('.dropdown-menu').toggleClass('show-menu');
+              }
           });
 
 

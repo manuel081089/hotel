@@ -293,10 +293,11 @@ nav {
         background: #1d1d1d; }
       nav .nav-content .menu .menu-item a {
         cursor: pointer;
-        width: 91.52542%;
+        width: 100%;
         display: inline-block;
         padding: 0.7em 1em; }
       nav .nav-content .menu .menu-item .caret {
+        float: right;
         transition: all 0.2s ease 0s;
         display: inline-block; }
     nav .nav-content .menu .active {
@@ -361,6 +362,7 @@ nav {
           nav .nav-content .menu .menu-item a.active-link {
             border-bottom: 2px solid white; }
         nav .nav-content .menu .menu-item .caret {
+          float: none;
           transform: rotate(90deg); }
       nav .nav-content .menu .dropdown {
         background: none !important;

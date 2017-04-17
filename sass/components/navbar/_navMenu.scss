@@ -21,15 +21,19 @@
 
     a {
       cursor: pointer;
-      width: span(11 of 12);
+      width: 100%;
       display: inline-block;
       padding: 0.7em 1em;
+
     }
 
     .caret {
+      float: right;
       transition: all 0.2s ease 0s;
       display: inline-block;
     }
+
+
   }
 
   .active {

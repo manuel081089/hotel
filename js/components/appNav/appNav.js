@@ -7,6 +7,7 @@
     });
     
     function AppNavCtrl() {
+        var vm= this;
 
     }
 })();
