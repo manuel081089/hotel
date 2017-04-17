@@ -22,11 +22,13 @@
             if (vm.isDropdown) {
                 vm.showMenu = !vm.showMenu;
                 vm.isDropdownActive = !vm.isDropdownActive;
+                /* Close any other open dropdown */
                 $rootScope.$broadcast('closeOtherDropdowns', {
                     item: vm
                 })
             }
             else {
+                /* Mark top link as active and clear any other top active link */
                 vm.isTopLinkActive = true;
                 $rootScope.$broadcast('menuItemClick', {
                     item: vm
@@ -35,6 +37,8 @@
         }
 
         vm.subItemClick = function () {
+            /* Sub menu item was clicked. Set its top link as active link, */
+            /* close the dropdown and clear it from dropdown active class */
             vm.showMenu = false;
             vm.isTopLinkActive = true;
             vm.isDropdownActive = false;
