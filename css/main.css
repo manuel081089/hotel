@@ -3,18 +3,18 @@
 /* Font-Awesome could be removed later and linked from the CDN in the index.html */
 @font-face {
   font-family: 'fengardo_neueregular';
-  src: url("/fonts/fengardoneue_regular-webfont.woff2") format("woff2"), url("/fonts/fengardoneue_regular-webfont.woff") format("woff");
+  src: url("../fonts/fengardoneue_regular-webfont.woff2") format("woff2"), url("../fonts/fengardoneue_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'folks-lightregular';
-  src: url("/fonts/Folks-Light-webfont.eot");
-  src: url("/fonts/Folks-Light-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Folks-Light-webfont.woff") format("woff");
+  src: url("../fonts/Folks-Light-webfont.eot");
+  src: url("../fonts/Folks-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Folks-Light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'geniusthin';
-  src: url("/fonts/Genius-100-Thin-webfont.woff2") format("woff2"), url("/fonts/Genius-100-Thin-webfont.woff") format("woff");
+  src: url("../fonts/Genius-100-Thin-webfont.woff2") format("woff2"), url("../fonts/Genius-100-Thin-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -487,9 +487,10 @@ div.slider .slides {
   margin-left: 0;
   margin-right: 0;
   background: #EFF5F7;
-  padding: 1em 0;
+  padding: 2em 0;
   text-align: center;
-  transition: all linear 0.5s; }
+  transition: all linear 0.5s;
+  position: relative; }
   .testimonials .testimonial-page {
     display: none;
     position: relative; }
@@ -565,6 +566,22 @@ div.slider .slides {
       border-right: 10px solid transparent;
       border-bottom: 10px solid white;
       border-left: 10px solid transparent; }
+  .testimonials .testimonial-indicator-container {
+    position: absolute;
+    top: .3em;
+    width: 100%; }
+    .testimonials .testimonial-indicator-container li.testimonial-indicator {
+      display: inline-block;
+      margin: 0 .3em;
+      width: .5em;
+      height: .5em;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      cursor: pointer; }
+    .testimonials .testimonial-indicator-container li.testimonial-indicator-active {
+      background: #ccc !important;
+      border: 2px solid white !important; }
 
 @media screen and (min-width: 42em) {
   .testimonials {
@@ -803,9 +820,9 @@ ul.social-list {
         color: white;
         font-size: .8em; }
       .site-info .useful-links ul li::after {
-        content: " |"; }
+        content: " | "; }
       .site-info .useful-links ul li:last-child::after {
-        content: ""; }
+        content: ''; }
 
 @media screen and (min-width: 56em) {
   .site-info {

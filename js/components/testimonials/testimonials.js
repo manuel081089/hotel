@@ -6,7 +6,7 @@
         controllerAs: 'testimonials'
     });
     
-    function TestimonialsCtrl($window) {
+    function TestimonialsCtrl($timeout) {
         var vm = this;
 
         vm.testimonialsList = [
@@ -18,7 +18,6 @@
                         'consectetur adipisicing elit. Sint quos dolorum beatae officiis ' +
                         'ab ipsa aut ipsum iusto, eius neque dolor aliquam. Quisquam explicabo ' +
                         'fugiat voluptatem nostrum, eos, dolorum eius.',
-                active: true
             },
             {
                 avatarUrl: 'img/testimonial-avatar2.png',
@@ -28,7 +27,6 @@
                         'consectetur adipisicing elit. Consectetur consequuntur cumque delectus ' +
                         'dicta dignissimos distinctio eum, exercitationem explicabo facere harum, ' +
                         'incidunt magni maiores natus pariatur praesentium quia quidem sapiente unde.',
-                active: false
             },
             {
                 avatarUrl: 'img/testimonial-avatar3.png',
@@ -37,30 +35,42 @@
                 quote:  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa cum ' +
                         'dolore ea eaque facilis illum, laboriosam nemo porro possimus quam quidem quis repellendus ' +
                         'sapiente similique sint, vero voluptatem voluptatum!',
-                active: false
             },
         ];
 
-        vm.prevItem = function (currentIndex) {
-            moveCursor(-1, currentIndex);
+        vm.testimonialsList[0].active = true;
+        vm.currentPosition = 0;
+
+        vm.prevItem = function () {
+            moveCursor(-1);
         }
 
-        vm.nextItem = function (currentIndex) {
-            moveCursor(1, currentIndex);
+        vm.nextItem = function () {
+            moveCursor(1);
         };
 
-        var moveCursor = function (direction, currentIndex) {
+        vm.selectSlide = function (index) {
+            vm.testimonialsList[vm.currentPosition].active = false;
+            vm.testimonialsList[index].active = true;
+            vm.currentPosition = index;
+        }
+
+        var moveCursor = function (direction) {
             var length = vm.testimonialsList.length;
-            vm.testimonialsList[currentIndex].active = false;
-            vm.testimonialsList[(currentIndex + direction + length) % length].active = true;
+            vm.testimonialsList[vm.currentPosition].active = false;
+            vm.testimonialsList[(vm.currentPosition + direction + length) % length].active = true;
+            vm.currentPosition = (vm.currentPosition + direction + length) % length;
         }
 
-        this.$onChanges = function () {
-            window.setInterval(ToggleNextTestimonial(), 50);
-        }
+        var timer;
+        var autoSlide = function() {
+            timer = $timeout(function() {
+                vm.nextItem(vm.currentPosition);
+                autoSlide();
+            }, 8000);
+        };
 
-        function ToggleNextTestimonial() {
+        //autoSlide();
 
-        }
     }
 })();

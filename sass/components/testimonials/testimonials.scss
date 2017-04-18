@@ -2,11 +2,12 @@
 	@include span(full);
 
 	background: #EFF5F7;		
-	padding: 1em 0;
+	padding: 2em 0;
 
 	text-align: center;
 
 	transition: all linear 0.5s;
+	position: relative;
 
 	.testimonial-page {
 		display: none;
@@ -36,7 +37,6 @@
 			}
 
 		}
-
 
 		.next {
 			position: absolute;
@@ -105,6 +105,27 @@
 			border-right: 10px solid transparent;
 			border-bottom: 10px solid white;
 			border-left: 10px solid transparent;
+		}
+	}
+
+	.testimonial-indicator-container {
+		position: absolute;
+		top: .3em;
+		width: 100%;
+		li.testimonial-indicator {
+			display: inline-block;
+			margin: 0 .3em;
+			width: .5em;
+			height: .5em;
+			background: white;
+			border: 1px solid #ddd;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+
+		li.testimonial-indicator-active {
+			background: #ccc !important;
+			border: 2px solid white !important;
 		}
 	}
 }

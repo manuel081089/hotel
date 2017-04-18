@@ -1,7 +1,7 @@
 <div class="testimonials">
     <div ng-repeat="item in testimonials.testimonialsList"
          class="testimonial-page" ng-class="{'testimonial-active' : item.active}">
-        <div class="prev" ng-click="testimonials.prevItem($index)">
+        <div class="prev" ng-click="testimonials.prevItem()">
             <div class="prev-btn"></div>
         </div>
         <div class="avatar">
@@ -13,8 +13,15 @@
             <img class="quote" src="img/quote-top.png" alt="">
             <p>{{item.quote}}</p>
         </div>
-        <div class="next" ng-click="testimonials.nextItem($index)">
+        <div class="next" ng-click="testimonials.nextItem()">
             <div class="next-btn"></div>
         </div>
+    </div>
+    <div class="testimonial-indicator-container">
+        <ul>
+            <li ng-repeat="item in testimonials.testimonialsList" class="testimonial-indicator"
+                ng-class="{'testimonial-indicator-active': $index===testimonials.currentPosition}"
+                ng-click="testimonials.selectSlide($index)"></li>
+        </ul>
     </div>
 </div>
