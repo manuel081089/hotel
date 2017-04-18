@@ -37,11 +37,8 @@
         }
 
         vm.subItemClick = function () {
-            /* Sub menu item was clicked. Set its top link as active link, */
-            /* close the dropdown and clear it from dropdown active class */
-            vm.showMenu = false;
+            /* Sub menu item was clicked. Set its top link as active link */
             vm.isTopLinkActive = true;
-            vm.isDropdownActive = false;
             $rootScope.$broadcast('menuItemClick', {
                 item: vm
             });
@@ -59,6 +56,9 @@
         $scope.$on('menuItemClick', function (event, args) {
             if (args.item !== vm)
                 vm.isTopLinkActive = false;
+            $rootScope.$broadcast('closeOtherDropdowns', {
+                item: undefined
+            });
         });
     }
 })();

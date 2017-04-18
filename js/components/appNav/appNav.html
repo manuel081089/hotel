@@ -1,40 +1,3 @@
-<!--
-<nav>
-    <div class="nav-content">
-        <span class="close-nav">&times;</span>
-        <h1>MENU</h1>
-        <ul class="main-menu menu">
-            <li class="menu-item"><a href="index.html">Home</a></li>
-            <li class="menu-item"><a href="#!/packages">Orfila-Packages</a></li>
-            <li class="menu-item dropdown">
-                <a class="dropdown-toggle">Room Suites
-                    <span class="caret">
-                        <i class="moon-arrow-right17"></i>
-                    </span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="menu-item"><a href="#!/juniorSuite">Junior Suite</a></li>
-                    <li class="menu-item"><a href="#!/doubleSuite">Double Suite</a></li>
-                    <li class="menu-item"><a href="#!/deluxeSuite">Deluxe Suite</a></li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="#!/executiveMenu">Executive Menu</a>
-            </li>
-            <li class="menu-item"><a href="#">Lounges/Events</a></li>
-            <li class="menu-item"><a href="#">Contact</a></li>
-        </ul>
-        <ul class="sub-menu menu">
-            <li class="menu-item"><a href="#">Hotel Orfila</a></li>
-            <li class="menu-item"><a href="#">Orfila Madrid</a></li>
-            <li class="menu-item"><a href="#">Gallery</a></li>
-            <li class="menu-item"><a href="#">CSR</a></li>
-            <li class="menu-item"><a href="#">Press Room</a></li>
-            <li class="menu-item"><a href="#">Agenda de Madrid</a></li>
-        </ul>
-    </div>
-</nav>-->
-
 <nav ng-class="{'navbar-open': navbar.showOnMobile}">
     <div class="nav-content">
         <span class="close-nav" ng-click="navbar.hideNav()">&times;</span>
@@ -51,12 +14,6 @@
                        url="{{item.url}}" text="{{item.text}}"
 
             ></menu-item>
-            <!--<li class="menu-item"><a href="#">Hotel Orfila</a></li>
-            <li class="menu-item"><a href="#">Orfila Madrid</a></li>
-            <li class="menu-item"><a href="#">Gallery</a></li>
-            <li class="menu-item"><a href="#">CSR</a></li>
-            <li class="menu-item"><a href="#">Press Room</a></li>
-            <li class="menu-item"><a href="#">Agenda de Madrid</a></li>-->
         </ul>
     </div>
 </nav>

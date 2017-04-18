@@ -4,10 +4,13 @@
         'ui.router'
     ])
 
-        .config(['$urlRouterProvider', '$stateProvider', '$locationProvider',
+        .config([
+            '$urlRouterProvider',
+            '$stateProvider',
+            '$locationProvider',
             function ($urlRouterProvider, $stateProvider, $locationProvider) {
 
-                //$locationProvider.html5Mode(true).hashPrefix('!');
+                //$locationProvider.html5Mode(true);
 
                 $stateProvider
                     .state('home', {
@@ -50,7 +53,6 @@
                 $urlRouterProvider.otherwise('home');
             }
         ])
-
 
 
 })();
