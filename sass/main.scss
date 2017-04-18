@@ -10,6 +10,7 @@ $susy: (
 @import "lib/lib";
 
 @import "base/_reset";
+@import "utilities/utilityClasses";
 @import "base/_objects";
 
 @import "layout/_base";
@@ -18,7 +19,7 @@ $susy: (
 @import "components/header/headerComponent";
 @import "components/navbar/navbarComponent";
 @import "components/bookingHandle/bookingHandleComponent";
-@import "components/cssSlider/_css_slider";
+@import "components/slider/slider";
 @import "components/testimonials/testimonialsComponent";
 @import "components/relaisSection/relaisSectionComponent";
 @import "components/footer/footerComponent";
@@ -32,26 +33,4 @@ $susy: (
 @import "components/priceIndicator/priceIndicatorComponent";
 
 
-
 @include border-box-sizing;
-
-/*
-
-
-@import "base/_base";   
-
-@import "room-suites-pages";
-
-
-@media screen and (min-width: 42em) {
-    @import "min-width42em/_min-width-42em";
-}
-
-@media screen and (min-width: 56em) {
-    @import "min-width56em/_min-width-56em";
-}
-
-@media screen and (min-width: 100em) {
-    @import "min-width100em/_min-width-100em";
-}*/
-

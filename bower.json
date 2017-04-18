@@ -21,6 +21,14 @@
     "jssor-slider": "^23.1.0",
     "angular": "angularjs#^1.6.4",
     "angular-ui-router": "ui-router#^0.4.2",
-    "angular-animate": "^1.6.4"
+    "angular-animate": "^1.6.4",
+    "slick-carousel": "^1.6.0",
+    "angular-slick-carousel": "^3.1.7",
+    "angular-dynamic-locale": "^0.1.32",
+    "angular-i18n": "^1.6.4",
+    "angular-translate": "^2.15.1",
+    "angular-translate-handler-log": "^2.15.1",
+    "angular-translate-loader-static-files": "^2.15.1",
+    "angular-translate-storage-local": "^2.15.1"
   }
 }

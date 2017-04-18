@@ -1,9 +1,9 @@
 (function () {
     'use strict';
     angular.module('hotelApp', [
-        'ui.router'
+        'ui.router',
+        'slickCarousel',
     ])
-
         .config([
             '$urlRouterProvider',
             '$stateProvider',
@@ -53,6 +53,12 @@
                 $urlRouterProvider.otherwise('home');
             }
         ])
+        .run(['$rootScope', function ($rootScope) {
 
+            $rootScope.$on('$stateChangeSuccess', function() {
+                document.body.scrollTop = document.documentElement.scrollTop = 0;
+            });
+
+        }])
 
 })();

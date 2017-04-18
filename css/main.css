@@ -54,6 +54,20 @@ ul {
 ::-webkit-scrollbar-thumb:active {
   background: #333;
 } */
+.no-select {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */ }
+
 .default-button {
   display: block;
   margin: 1.5em auto;
@@ -443,43 +457,42 @@ nav {
   .booking-container .booking {
     position: absolute !important;
     top: -38em !important; } }
-@keyframes slidy {
-  0% {
-    left: 0%; }
-  20% {
-    left: 0%; }
-  25% {
-    left: -100%; }
-  45% {
-    left: -100%; }
-  50% {
-    left: -200%; }
-  70% {
-    left: -200%; }
-  75% {
-    left: -300%; }
-  95% {
-    left: -300%; }
-  100% {
-    left: -400%; } }
-body {
-  margin: 0; }
-
-div.slider {
-  overflow: hidden; }
-
-div.slider .slides img {
-  width: 20%;
-  float: left; }
-
-div.slider .slides {
+.slider {
+  overflow: hidden;
   position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 20s slidy infinite; }
+  margin-bottom: 0 !important; }
+  .slider .slick-next {
+    top: 45% !important;
+    right: 40px !important; }
+    .slider .slick-next::before {
+      content: '';
+      display: block;
+      width: 2em;
+      height: 2em;
+      border-width: 2px 2px 0 0;
+      border-color: white;
+      border-style: solid;
+      transform: rotate(45deg); }
+  .slider .slick-prev {
+    left: 20px !important;
+    top: 45% !important;
+    z-index: 99; }
+    .slider .slick-prev::before {
+      content: '';
+      display: block;
+      width: 2em;
+      height: 2em;
+      border-width: 2px 0 0 2px;
+      border-color: white;
+      border-style: solid;
+      transform: rotate(-45deg); }
+  .slider .slick-dots {
+    bottom: 1.2em !important; }
+    .slider .slick-dots li button::before {
+      font-size: 9px !important; }
+  .slider .slide img {
+    width: 100%;
+    max-width: 1600px; }
 
 .testimonials {
   width: 100%;
@@ -1091,25 +1104,5 @@ article {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-/*
-
-
-@import "base/_base";   
-
-@import "room-suites-pages";
-
-
-@media screen and (min-width: 42em) {
-    @import "min-width42em/_min-width-42em";
-}
-
-@media screen and (min-width: 56em) {
-    @import "min-width56em/_min-width-56em";
-}
-
-@media screen and (min-width: 100em) {
-    @import "min-width100em/_min-width-100em";
-}*/
 
 /*# sourceMappingURL=main.css.map */
