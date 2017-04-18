@@ -53,6 +53,7 @@
                 $urlRouterProvider.otherwise('home');
             }
         ])
+
         .run(['$rootScope', function ($rootScope) {
 
             $rootScope.$on('$stateChangeSuccess', function() {
