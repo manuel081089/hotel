@@ -1,9 +1,41 @@
 (function () {
     'use strict';
     angular.module('hotelApp', [
-        'ui.router',
-        'slickCarousel',
+        'ui.router',                            // angular-ui-router        | app wide routing
+        'slickCarousel',                        // angular-slick-slider     | image slider on home
+        'ngCookies',                            // angular-cookies          | required by angular-translate
+        'ngSanitize',                           // angular-sanitize         | sanitize translations
+        'pascalprecht.translate',               // angular-translate
+        'tmh.dynamicLocale',                    // angular-dynamic-locale
+
     ])
+        .config(function ($translateProvider, tmhDynamicLocaleProvider, LOCALES) {
+            $translateProvider.useMissingTranslationHandlerLog();
+            $translateProvider.useStaticFilesLoader({
+                prefix: 'locales/locale-',      // path to translations files
+                suffix: '.json'                 // suffix to the translations files
+            });
+            var localesObj = LOCALES.locales;
+
+            // locales and locales display names
+            var _LOCALES = Object.keys(localesObj);
+
+            $translateProvider
+                .uniformLanguageTag('default')
+                .registerAvailableLanguageKeys(_LOCALES)
+                .determinePreferredLanguage();
+            var defaultLocaleSet = $translateProvider.resolveClientLocale(); // try to determine browser's locale and use it
+
+            // If browser locale couldn't be resolved fallback to english as a default
+            if (!defaultLocaleSet) {
+                $translateProvider.preferredLanguage('en_US');
+            }
+
+            $translateProvider.useLocalStorage(); // saves selected language to localStorage
+            $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
+            tmhDynamicLocaleProvider.localeLocationPattern('vendor/angular-i18n/angular-locale_{{locale}}.js');
+
+        })
         .config([
             '$urlRouterProvider',
             '$stateProvider',
@@ -54,8 +86,9 @@
             }
         ])
 
-        .run(['$rootScope', function ($rootScope) {
+        .run(['$rootScope', '$translate', function ($rootScope, $translate) {
 
+            // scrolling page to top on state changing
             $rootScope.$on('$stateChangeSuccess', function() {
                 document.body.scrollTop = document.documentElement.scrollTop = 0;
             });
