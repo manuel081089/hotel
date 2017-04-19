@@ -43,11 +43,18 @@
 
         vm.prevItem = function () {
             moveCursor(-1);
+            restartTimer();
         }
 
         vm.nextItem = function () {
             moveCursor(1);
+            restartTimer();
         };
+
+        var restartTimer = function () {
+            $timeout.cancel(timer);
+            autoSlide();
+        }
 
         vm.selectSlide = function (index) {
             vm.testimonialsList[vm.currentPosition].active = false;
@@ -65,12 +72,12 @@
         var timer;
         var autoSlide = function() {
             timer = $timeout(function() {
-                vm.nextItem(vm.currentPosition);
+                vm.nextItem();
                 autoSlide();
             }, 8000);
         };
 
-        //autoSlide();
+        autoSlide();
 
     }
 })();
