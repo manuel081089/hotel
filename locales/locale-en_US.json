@@ -6,5 +6,27 @@
   "menu.main.roomSuites.double": "Double Suite",
   "menu.main.roomSuites.deluxe": "Deluxe Suite",
   "menu.main.executiveMenu": "Executive Menu",
-  "menu.main.contact": "Contact"
+  "menu.main.contact": "Contact",
+
+  "menu.sub.hotel": "Orfila Hotel",
+  "menu.sub.orfila": "Orfila Madrid",
+  "menu.sub.gallery": "Gallery",
+  "menu.sub.csr": "CSR",
+  "menu.sub.pressRoom": "Press Room",
+  "menu.sub.agenda": "Madrid's Agenda",
+
+  "footer.contact.title": "contact us",
+  "footer.contact.phone": "phone",
+  "footer.contact.fax": "fax",
+  "footer.contact.email": "email",
+
+  "footer.location.title": "location",
+
+  "footer.subscribe.signUpLabel": "Sign up for our newsletter",
+  "footer.subscribe.emailInputPlaceholder": "Please enter your email",
+  "footer.subscribe.signUpButton": "Subscribe",
+
+  "legal.links.legalNotice": "Legal Notice",
+  "legal.links.siteMap": "Site Map"
+
 }

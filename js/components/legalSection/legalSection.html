@@ -4,7 +4,7 @@
         <div class="useful-links">
             <ul>
                 <li ng-repeat="link in legalSection.links">
-                    <a ng-href="{{link.url}}">{{link.text}}</a>
+                    <a ng-href="{{link.url}}">{{link.text | translate}}</a>
                 </li>
             </ul>
         </div>

@@ -14,11 +14,11 @@
         vm.links = [
             {
                 url: '#',
-                text: 'Legal Notice'
+                text: 'legal.links.legalNotice'
             },
             {
                 url: '#',
-                text: 'Site Map'
+                text: 'legal.links.siteMap'
             },
         ];
     }

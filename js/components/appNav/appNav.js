@@ -14,46 +14,41 @@
 
         vm.mainNavLinks = [
             {
-                text: 'Home',
+                text: 'menu.main.home',
                 url: '#!/home',
                 isDropdown: false,
             },
             {
-                text: 'Orfila Packages',
+                text: 'menu.main.packages',
                 url: '#!/packages',
                 isDropdown: false,
             },
             {
-                text: 'Room Suites',
+                text: 'menu.main.roomSuites',
                 url: '',
                 isDropdown: true,
                 dropdownMenu: [
                     {
-                        text: 'Junior Suite',
+                        text: 'menu.main.roomSuites.junior',
                         url: '#!/juniorSuite'
                     },
                     {
-                        text: 'Double Suite',
+                        text: 'menu.main.roomSuites.double',
                         url: '#!/doubleSuite'
                     },
                     {
-                        text: 'Deluxe Suite',
+                        text: 'menu.main.roomSuites.deluxe',
                         url: '#!/deluxeSuite'
                     },
                 ]
             },
             {
-                text: 'Executive Menu',
+                text: 'menu.main.executiveMenu',
                 url: '#!/executiveMenu',
                 isDropdown: false,
             },
             {
-                text: 'Lounges/Events',
-                url: '#',
-                isDropdown: false,
-            },
-            {
-                text: 'Contact',
+                text: 'menu.main.contact',
                 url: '#',
                 isDropdown: false,
             },
@@ -61,27 +56,27 @@
 
         vm.subNavLinks = [
             {
-                text: 'Hotel Orfila',
+                text: 'menu.sub.hotel',
                 url: '#',
             },
             {
-                text: 'Orfila Madrid',
+                text: 'menu.sub.orfila',
                 url: '#',
             },
             {
-                text: 'Gallery',
+                text: 'menu.sub.gallery',
                 url: '#',
             },
             {
-                text: 'CSR',
+                text: 'menu.sub.csr',
                 url: '#',
             },
             {
-                text: 'Press Room',
+                text: 'menu.sub.pressRoom',
                 url: '#',
             },
             {
-                text: 'Agenda de Madrid',
+                text: 'menu.sub.agenda',
                 url: '#',
             },
         ];

@@ -688,7 +688,7 @@ footer {
     footer .subscribe label {
       display: block; }
     footer .subscribe input[type=text].subscribe-email {
-      width: 68%;
+      width: 65%;
       max-width: 68%;
       height: 2.5em;
       border-radius: 4px;
@@ -836,7 +836,7 @@ ul.social-list {
     margin-left: 0;
     margin-right: 0; }
     .site-info .useful-links ul li {
-      display: inline-block; }
+      display: inline; }
       .site-info .useful-links ul li a {
         font-family: Arial, Helvetica, sans-serif !important;
         color: white;

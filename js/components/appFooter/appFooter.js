@@ -14,15 +14,15 @@
 
         vm.contactList = [
             {
-                title: 'phone',
+                title: 'footer.contact.phone',
                 detail: '+34 555 5253',
             },
             {
-                title: 'fax',
+                title: 'footer.contact.fax',
                 detail: '+34 555 5253',
             },
             {
-                title: 'email',
+                title: 'footer.contact.email',
                 detail: 'inforeservas@hotelorfila.com',
             },
         ]
