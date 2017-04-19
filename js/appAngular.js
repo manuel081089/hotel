@@ -9,33 +9,38 @@
         'tmh.dynamicLocale',                    // angular-dynamic-locale
 
     ])
-        .config(function ($translateProvider, tmhDynamicLocaleProvider, LOCALES) {
-            $translateProvider.useMissingTranslationHandlerLog();
-            $translateProvider.useStaticFilesLoader({
-                prefix: 'locales/locale-',      // path to translations files
-                suffix: '.json'                 // suffix to the translations files
-            });
-            var localesObj = LOCALES.locales;
+        .config([
+            '$translateProvider',
+            'tmhDynamicLocaleProvider',
+            'LOCALES',
+            function ($translateProvider, tmhDynamicLocaleProvider, LOCALES) {
+                $translateProvider.useMissingTranslationHandlerLog();
+                $translateProvider.useStaticFilesLoader({
+                    prefix: 'locales/locale-',      // path to translations files
+                    suffix: '.json'                 // suffix to the translations files
+                });
+                var localesObj = LOCALES.locales;
 
-            // locales and locales display names
-            var _LOCALES = Object.keys(localesObj);
+                // locales and locales display names
+                var _LOCALES = Object.keys(localesObj);
 
-            $translateProvider
-                .uniformLanguageTag('default')
-                .registerAvailableLanguageKeys(_LOCALES)
-                .determinePreferredLanguage();
-            var defaultLocaleSet = $translateProvider.resolveClientLocale(); // try to determine browser's locale and use it
+                $translateProvider
+                    .uniformLanguageTag('default')
+                    .registerAvailableLanguageKeys(_LOCALES)
+                    .determinePreferredLanguage();
+                var defaultLocaleSet = $translateProvider.resolveClientLocale(); // try to determine browser's locale and use it
 
-            // If browser locale couldn't be resolved fallback to english as a default
-            if (!defaultLocaleSet) {
-                $translateProvider.preferredLanguage('en_US');
+                // If browser locale couldn't be resolved fallback to english as a default
+                if (!defaultLocaleSet || $.inArray(defaultLocaleSet, _LOCALES)===-1) {
+                    $translateProvider.preferredLanguage('en_US');
+                }
+
+                $translateProvider.useLocalStorage(); // saves selected language to localStorage
+                $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
+                tmhDynamicLocaleProvider.localeLocationPattern('vendor/angular-i18n/angular-locale_{{locale}}.js');
+
             }
-
-            $translateProvider.useLocalStorage(); // saves selected language to localStorage
-            $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
-            tmhDynamicLocaleProvider.localeLocationPattern('vendor/angular-i18n/angular-locale_{{locale}}.js');
-
-        })
+        ])
         .config([
             '$urlRouterProvider',
             '$stateProvider',
