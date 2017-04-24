@@ -1,20 +1,20 @@
 .dropdown {
   width: 100%;
   z-index: 999;
-  background: $nav-item-bg;
+  background: $nav-bg;
 
   transition: all 0.3s ease 0s;
 
   .dropdown-menu {
     li {
-      border-bottom: 1px solid $brand-secondary;
-
-      &:last-child {
-        border-bottom: none;
-      }
+      border-bottom: 1px solid $brand-secondary !important;
 
       &:hover {
         background: #f8f8f8 !important;
+      }
+
+      &:last-child {
+        border: none !important;
       }
     }
 
@@ -22,4 +22,17 @@
     margin-left: .8em;
     transition: all 0.3s ease 0s;
   }
+}
+
+.active {
+  background: $nav-dropdown-active !important;
+
+  .caret {
+    transform: rotate(90deg);
+  }
+
+}
+
+.show-menu {
+  display: block !important;
 }

@@ -1,6 +1,3 @@
-.main-menu {
-  text-transform: uppercase;
-}
 
 .menu {
   .menu-item {
@@ -25,7 +22,6 @@
       display: inline-block;
       padding: 0.7em 1em;
       color: black;
-
     }
 
     .caret {
@@ -33,24 +29,6 @@
       transition: all 0.2s ease 0s;
       display: inline-block;
     }
-
-
-  }
-
-  .active {
-    background: $nav-dropdown-active !important;
-
-    .caret {
-      transform: rotate(90deg);
-    }
-
-    &:hover {
-      background: $nav-dropdown-active !important;
-    }
-  }
-
-  .show-menu {
-    display: block !important;
   }
 
 }

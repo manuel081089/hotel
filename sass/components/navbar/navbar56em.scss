@@ -1,5 +1,8 @@
 nav {
-	position: static !important;
+	position: absolute !important;
+	left: 0;
+	right: 0;
+
 	z-index: 0;
 	@include span(full);
 
@@ -9,9 +12,9 @@ nav {
 
 	.nav-content {
 		color: $brand-primary;
-		padding: 1.8em 2em 0 0;
-		//text-align: right !important;
-		position: static !important;
+		padding: 1.8em 0;
+
+		//position: static !important;
 
 		h1 {
 			display: none !important;

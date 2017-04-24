@@ -24,7 +24,7 @@ nav {
 	}
 
 	.nav-content {
-		background: $nav-item-bg;
+		background: $nav-bg;
 		text-align: left;
 		position: absolute;			
 		width: 100%;
@@ -35,10 +35,6 @@ nav {
 		h1 {
 			padding-left: 1em;
 		}	
-
-		&, a {
-			color: black;
-		}
 
 		@import "navMenu";
 

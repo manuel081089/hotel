@@ -4,27 +4,36 @@
 
   .dropdown-menu {
     position: absolute;
-    top: 1em;
+    top: 2em;
     right: 0;
     padding: 0.8em;
     display: none;
     margin-top: .8em;
     width: 12.5em;
-    background: $brand-secondary + 30;
-    border: 1px solid #363636;
+    border: 1px solid $brand-secondary;
 
     li {
       display: block !important;
-      border-bottom: 1px solid #242424 !important;
       padding: .4em 0;
       text-align: center;
+      a {
+        padding: .7em .6em !important;
+        display: block !important;
+        border-bottom: 1px solid $brand-secondary !important;
+      }
       &:hover {
         background: $nav-dropdown-active !important;
       }
 
-      &:last-child {
+      &:last-child a {
         border: none !important;
       }
     }
+
   }
+}
+
+
+.active {
+  background: white !important;
 }
