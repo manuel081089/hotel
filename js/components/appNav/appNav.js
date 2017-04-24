@@ -42,41 +42,19 @@
                     },
                 ]
             },
-            {
-                text: 'menu.main.executiveMenu',
-                url: '#!/executiveMenu',
-                isDropdown: false,
-            },
-            {
-                text: 'menu.main.contact',
-                url: '#',
-                isDropdown: false,
-            },
         ];
 
         vm.subNavLinks = [
             {
-                text: 'menu.sub.hotel',
+                text: 'menu.main.loungesEvents',
                 url: '#',
             },
             {
-                text: 'menu.sub.orfila',
+                text: 'menu.main.executiveMenu',
                 url: '#',
             },
             {
-                text: 'menu.sub.gallery',
-                url: '#',
-            },
-            {
-                text: 'menu.sub.csr',
-                url: '#',
-            },
-            {
-                text: 'menu.sub.pressRoom',
-                url: '#',
-            },
-            {
-                text: 'menu.sub.agenda',
+                text: 'menu.main.contact',
                 url: '#',
             },
         ];

@@ -1,16 +1,16 @@
 nav {
 	position: static !important;
 	z-index: 0;
-	@include span(10 of 12 last);
+	@include span(full);
 
 	.close-nav {
 		display: none;
 	}
 
 	.nav-content {
-		background: $brand-secondary;
-		padding: 2.8em 2em 0 0;
-		text-align: right !important;
+		color: $brand-primary;
+		padding: 1.8em 2em 0 0;
+		//text-align: right !important;
 		position: static !important;
 
 		h1 {

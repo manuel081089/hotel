@@ -2,14 +2,14 @@
     <div class="nav-content">
         <span class="close-nav" ng-click="navbar.hideNav()">&times;</span>
         <h1>MENU</h1>
-        <ul class="main-menu menu">
+        <ul class="menu menu-first">
             <menu-item ng-repeat="item in navbar.mainNavLinks"
                        url="{{item.url}}" text="{{item.text}}"
                        is-dropdown="item.isDropdown" dropdown-menu="item.dropdownMenu"
 
             ></menu-item>
         </ul>
-        <ul class="sub-menu menu">
+        <ul class="menu menu-second">
             <menu-item ng-repeat="item in navbar.subNavLinks"
                        url="{{item.url}}" text="{{item.text}}"
 

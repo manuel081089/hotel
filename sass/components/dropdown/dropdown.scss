@@ -1,0 +1,25 @@
+.dropdown {
+  width: 100%;
+  z-index: 999;
+  background: $nav-item-bg;
+
+  transition: all 0.3s ease 0s;
+
+  .dropdown-menu {
+    li {
+      border-bottom: 1px solid $brand-secondary;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background: #f8f8f8 !important;
+      }
+    }
+
+    display: none;
+    margin-left: .8em;
+    transition: all 0.3s ease 0s;
+  }
+}

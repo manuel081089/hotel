@@ -5,28 +5,17 @@ header {
 		display: none !important;
 	}
 	
-	.logo-container	{			
-		
+	.logo-container	{
 		.logo {
-			width: $logo-width + 3em;		
-			height: 4.375em !important;
-			left: 1.5em;
-
-			&::before {
-				border-right: ($logo-triangles-brd-width + 1.5em) solid transparent;
-				border-left: ($logo-triangles-brd-width + 1.5em) solid transparent;
-			}
-
-			&::after {
-				top: 4.4em !important;
-				border-right: ($logo-triangles-brd-width + 1.5em) solid transparent;
-				border-left: ($logo-triangles-brd-width + 1.5em) solid transparent;
-			}
-
 			img {
-				max-width: 9em;					
+				padding-top: 30px;
+				width: 160px;
+			}
+			&::after {
+				border-width: 90px 100px 0 100px;
 			}
 		}
+
 	}
 
 	.language-selector {			

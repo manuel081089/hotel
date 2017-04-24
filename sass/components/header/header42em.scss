@@ -2,24 +2,12 @@ header {
 	@include span(full);
 	
 	.logo-container	{			
-
 		.logo {
-			width: $logo-width + 1em;		
-			height: 4.375em !important;
-
-			&::before {
-				border-right: ($logo-triangles-brd-width + 0.5em) solid transparent;
-				border-left: ($logo-triangles-brd-width + 0.5em) solid transparent;
-			}
-
-			&::after {
-				top: 4.4em !important;
-				border-right: ($logo-triangles-brd-width + 0.5em) solid transparent;
-				border-left: ($logo-triangles-brd-width + 0.5em) solid transparent;
-			}
-
 			img {
-				max-width: 7em;					
+				padding-top: 38px;
+			}
+			&::after {
+				border-width: 60px 70px 0 70px;
 			}
 		}
 	}
