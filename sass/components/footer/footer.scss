@@ -4,10 +4,28 @@ footer {
 	color: white;
 	text-align: center;
 
-	@import "subscribeSection.scss";
+	//@import "subscribeSection.scss";
 
-	@import "footerCol.scss";
+	//@import "footerCol.scss";
 
-	@import "footerShape";
+	//@import "footerShape";
+
+	.footer-col {
+		padding: 3em 1.5em;
+
+		.footer-logo {
+			width: 9em;
+		}
+
+
+		/*ul.contact-list {
+			li.contact-item {
+				border-bottom: 1px solid #4c4c4c;
+				padding-bottom: .562em;
+				margin-bottom: .562em;
+			}
+		}*/
+
+	}
 
 }

@@ -1,24 +1,16 @@
 <footer>
-    <div class="subscribe-section">
-        <div class="shape-container">
-            <div class="footer-shape">
-                <strong>{{footer.shapeText}}</strong>
-            </div>
-        </div>
-        <div class="subscribe">
-            <label><strong>{{ "footer.subscribe.signUpLabel" | translate }}</strong></label>
-            <input type="text" class="subscribe-email" placeholder="{{ 'footer.subscribe.emailInputPlaceholder' | translate }}">
-            <button class="subscribe-button">{{ "footer.subscribe.signUpButton" | translate }}</button>
-        </div>
-    </div>
     <div class="footer-col">
-        <h1>{{ "footer.contact.title" | translate }}</h1>
-        <ul class="contact-list">
+        <!--<h1>{{ "footer.contact.title" | translate }}</h1>-->
+        <!--<ul class="contact-list">
             <li ng-repeat="contact in footer.contactList" class="contact-item">
                 <span class="contact-title"><strong>{{contact.title | translate}}:</strong></span>
                 <span class="contact-detail">{{contact.detail}}</span>
             </li>
-        </ul>
+        </ul>-->
+        <img class="footer-logo" src="img/logo-diegodeleon-blanco.png" alt="">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aut, cupiditate dolor itaque qui quia reprehenderit? Amet delectus facilis iure laborum porro quas quos, recusandae repellat suscipit voluptas? Et, laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut, consequatur cumque distinctio dolorem eius esse harum impedit ipsa maiores necessitatibus optio rem saepe tenetur voluptate! Autem consequuntur et tenetur.
+        </p>
         <ul class="social-list">
             <li class="social-item facebook">
                 <a target="_blank" href="https://www.facebook.com/HotelOrfila">
@@ -51,12 +43,5 @@
                 </a>
             </li>
         </ul>
-    </div>
-    <div class="footer-col">
-        <h1>{{ "footer.location.title" | translate }}</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem voluptatibus tenetur quos eius quisquam officiis!</p>
-        <div class="map">
-            <img src="img/gmap.png" alt="">
-        </div>
     </div>
 </footer>
