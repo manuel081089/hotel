@@ -12,29 +12,28 @@
 		@include span(6 of 12);
 		overflow: hidden;
 		text-align: center;
-		height: 15em;	
-		padding: 1em;					
+		height: 100%;
 
-		&::before {
+
+		/*&::before {
 			content: ' ';
 		    display: inline-block;
-		    vertical-align: middle;  /* vertical alignment of the inline element */
+		    vertical-align: middle;  !* vertical alignment of the inline element *!
 		    height: 100%;
-		}
+		}*/
 		
 		.card-img {
 			position: relative; 
 			left: 100%; 
-			margin-left: -200%; 
+			margin-left: -202%;
 			display: inline;
 			vertical-align: middle;
-			border-radius: 4px !important;
+
 		}
 
 		.card-icon {							
 			position: relative;
-			top: -10%;					
-			
+			top: -10%;
 			width: 2.5em;
 			height: 2.5em;
 
@@ -49,6 +48,7 @@
 		@include span(6 of 12 last);
 		display: inline;
 		padding: 2em 1.2em 0.8em;
+
 	}
 
 }

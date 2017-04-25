@@ -1,5 +1,4 @@
 .home-cards-container {
   @include span(full);
-  @include parallax('../img/parallax1.jpg');
   padding: 5em 1.5em;
 }
