@@ -1,0 +1,9 @@
+@import "languageSelector";
+
+@media screen and (min-width: 56em) {
+  @import "languageSelector56em";
+}
+
+@media screen and (min-width: 100em){
+  @import "languageSelector100em";
+}

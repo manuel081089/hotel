@@ -18,6 +18,8 @@
 
             // GETTING CURRENT LOCALE FROM STORAGE
             var currentLocale = $translate.storage().get('NG_TRANSLATE_LANG_KEY');
+            if (currentLocale === null)
+                currentLocale = LOCALES.preferredLocale;
 
             // METHODS
             var checkLocaleIsValid = function (locale) {
@@ -50,6 +52,9 @@
                 },
                 getLocaleDisplayName: function () {
                     return localesObj[currentLocale];
+                },
+                getLocaleKeys: function () {
+                    return Object.keys(LOCALES.locales);
                 },
                 setLocaleByDisplayName: function (localeDisplayName) {
                     setLocale(

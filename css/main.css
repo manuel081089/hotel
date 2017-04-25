@@ -140,7 +140,7 @@ ul {
       float: right;
       margin-right: 0; } }
 #content-wrapper {
-  margin-top: 5em; }
+  margin-top: 6em; }
 
 header {
   width: 100%;
@@ -148,7 +148,7 @@ header {
   margin-left: 0;
   margin-right: 0;
   background: #fff;
-  height: 5em;
+  height: 6em;
   position: fixed;
   top: 0;
   width: 100%;
@@ -192,19 +192,13 @@ header {
         position: absolute;
         width: 0;
         height: 0;
-        top: 5em;
+        top: 6em;
         left: 0;
         right: 0;
         margin: auto;
         border-style: solid;
         border-width: 50px 60px 0 60px;
         border-color: white transparent transparent transparent; }
-  header .language-selector {
-    position: fixed;
-    left: 42%;
-    text-align: center;
-    padding-top: 1.6em;
-    color: white; }
 
 @media screen and (min-width: 42em) {
   header {
@@ -228,16 +222,41 @@ header {
       padding-top: 30px;
       width: 160px; }
     header .logo-container .logo::after {
-      border-width: 90px 100px 0 100px; }
-    header .language-selector {
-      right: 0;
-      text-align: right;
-      padding: 0.3em 2.8em; } }
+      border-width: 90px 100px 0 100px; } }
 @media screen and (min-width: 100em) {
   header {
-    max-width: 1600px; }
-    header .language-selector {
-      position: absolute !important; } }
+    max-width: 1600px; } }
+.language-selector {
+  position: fixed;
+  left: .3125em;
+  text-align: center;
+  padding-top: 1.8em; }
+  .language-selector .language {
+    background: url("../img/flags.png") no-repeat;
+    background-size: cover;
+    width: 27px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer; }
+  .language-selector .es_ES {
+    background-position-x: -3px; }
+  .language-selector .en_US {
+    background-position-x: -28px; }
+  .language-selector .fr_FR {
+    background-position-x: -52px; }
+  .language-selector .it_IT {
+    background-position-x: -77px; }
+
+@media screen and (min-width: 56em) {
+  .language-selector {
+    right: 0;
+    text-align: right;
+    top: 0;
+    padding: 0 4em;
+    z-index: 99; } }
+@media screen and (min-width: 100em) {
+  .language-selector {
+    position: absolute !important; } }
 .navbar-open {
   right: 0 !important; }
 
@@ -299,7 +318,7 @@ nav {
       display: none; }
     nav .nav-content {
       color: #A38E7B;
-      padding: 1.8em 0; }
+      padding: 2.5em 0; }
       nav .nav-content h1 {
         display: none !important; }
       nav .nav-content .menu-first {

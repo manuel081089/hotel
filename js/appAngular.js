@@ -32,7 +32,7 @@
 
                 // If browser locale couldn't be resolved fallback to english as a default
                 if (!defaultLocaleSet || $.inArray(defaultLocaleSet, _LOCALES)===-1) {
-                    $translateProvider.preferredLanguage('en_US');
+                    $translateProvider.preferredLanguage(LOCALES.preferredLocale);
                 }
 
                 $translateProvider.useLocalStorage(); // saves selected language to localStorage

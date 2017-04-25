@@ -1,0 +1,33 @@
+.language-selector {
+  position: fixed;
+  left: .3125em;
+  text-align: center;
+  padding-top: 1.8em;
+
+
+  .language {
+    background: url('../img/flags.png') no-repeat;
+    background-size:cover;
+    width: 27px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .es_ES {
+    background-position-x: -3px;
+  }
+
+  .en_US {
+    background-position-x: -28px;
+  }
+
+  .fr_FR {
+    background-position-x: -52px;
+  }
+
+  .it_IT {
+    background-position-x: -77px;
+  }
+
+}

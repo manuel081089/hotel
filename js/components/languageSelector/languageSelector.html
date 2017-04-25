@@ -1,8 +1,13 @@
 <div class="language-selector" ng-if="lang.visible">
-    <i class="fa fa-language"></i>
+    <ul>
+        <li class="language" ng-repeat="item in lang.langKeys"
+                             ng-class="item"
+                             ng-click="lang.changeLanguage(item)"></li>
+    </ul>
+    <!--<i class="fa fa-language"></i>
     <select class="language-select" ng-model="lang.currentLocaleDisplayName"
             ng-options="item for item in lang.localesDisplayNames"
             ng-change="lang.changeLanguage()">
-    </select>
+    </select>-->
 </div>
 
