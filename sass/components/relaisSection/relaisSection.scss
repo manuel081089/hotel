@@ -2,11 +2,14 @@
 	@include span(full);
 	text-align: center;
 	padding: 2em 0;
+	color: white;
+	background: $brand-primary;
+
 	img.relais-logo {
-		width: 100%;
-		max-width: 35%;
+		width: 160px;
 	}
-	img.relais-divider {
-		width: 60%;
+
+	p {
+		padding: 1em;
 	}
 }
