@@ -1,6 +1,52 @@
+.testimonial-container {
+	@include clearfix;
+	width: 88%;
+	margin: 0 auto;
+	border: 2px solid $brand-primary;
+}
+
+.avatar-container {
+	width: span(2 of 12) !important;
+	//position: relative;
+	//height: 0;
+	//padding-bottom: 30%;
+
+	.avatar {
+		//position: absolute;
+		//top: 0;
+		//left: 0;
+		height: 98%;
+		text-align: left;
+		margin-right: 0 !important;
+		img {
+			left: 0;
+			width: auto !important;
+			max-height: 106px;
+		}
+
+	}
+}
+
+.dialog-box {
+	width: span(9 of 12) !important;
+	float: right !important;
+
+	p {
+		padding-left: 2em !important;
+	}
+}
+
+.next {
+
+	.next-btn {
+		right: 0 !important;
+	}
+}
+
+/*
 .testimonials {
-	@include container;		
-			
+	@include container;
+
 	.avatar {
 		@include span(3 of 12);
 		padding-top: .8em;
@@ -35,7 +81,7 @@
 			margin-top: -20px;
 			left: -19px;
 			top: 50%;
-			
+
 		}
 	}
-}
+}*/

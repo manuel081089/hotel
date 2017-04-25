@@ -52,8 +52,8 @@
         };
 
         var restartTimer = function () {
-            $timeout.cancel(timer);
-            autoSlide();
+            //$timeout.cancel(timer);
+            //autoSlide();
         }
 
         vm.selectSlide = function (index) {
@@ -77,7 +77,7 @@
             }, 8000);
         };
 
-        autoSlide();
+        //autoSlide();
 
     }
 })();
