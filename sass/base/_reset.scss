@@ -1,16 +1,7 @@
 @font-face {
-	font-family: 'fengardo_neueregular';
-	src: url('../fonts/fengardoneue_regular-webfont.woff2') format('woff2'),
-	url('../fonts/fengardoneue_regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'folks-lightregular';
-	src: url('../fonts/Folks-Light-webfont.eot');
-	src: url('../fonts/Folks-Light-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/Folks-Light-webfont.woff') format('woff');
+	font-family: 'ralewayregular';
+	src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+	url('../fonts/raleway-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -28,7 +19,7 @@
 	margin: 0;
 	padding: 0;
 	font-size: 16px;	
-	font-family: fengardo_neueregular, Helvetica, sans-serif;	
+	font-family: ralewayregular, Helvetica, sans-serif;
 }
 
 body {
