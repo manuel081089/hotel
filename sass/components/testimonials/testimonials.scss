@@ -8,6 +8,12 @@
 
 	transition: all linear 0.5s;
 
+	h1 {
+		text-align: center;
+		text-transform: uppercase;
+		color: $brand-primary;
+	}
+
 	.testimonial-container {
 		@include clearfix;
 		width: 88%;

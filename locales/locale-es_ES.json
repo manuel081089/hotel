@@ -9,19 +9,14 @@
   "menu.main.loungesEvents": "Salones/Eventos",
   "menu.main.contact": "Contacto",
 
-  "menu.sub.hotel": "Hotel Orfila",
-  "menu.sub.orfila": "Orfila Madrid",
-  "menu.sub.gallery": "Galería",
-  "menu.sub.csr": "CSR",
-  "menu.sub.pressRoom": "Sala de Conferencias",
-  "menu.sub.agenda": "Agenda de Madrid",
+  "component.location.title": "ubicación",
+
+  "component.testimonials.title": "opiniones",
 
   "footer.contact.title": "contáctenos",
   "footer.contact.phone": "teléfono",
   "footer.contact.fax": "fáx",
   "footer.contact.email": "email",
-
-  "footer.location.title": "ubicación",
 
   "footer.subscribe.signUpLabel": "Súbscribete a nuestros boletines",
   "footer.subscribe.emailInputPlaceholder": "Por favor introduzca su email",

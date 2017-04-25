@@ -480,6 +480,10 @@ nav {
   padding: 2em 0;
   text-align: center;
   transition: all linear 0.5s; }
+  .testimonials h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #A38E7B; }
   .testimonials .testimonial-container {
     overflow: hidden;
     *zoom: 1;
@@ -1142,6 +1146,20 @@ article {
 
   .active {
     background: white !important; } }
+.location {
+  padding: 2em 0;
+  text-align: center; }
+  .location h1 {
+    text-align: center;
+    color: #A38E7B;
+    text-transform: uppercase; }
+  .location p {
+    color: #A38E7B;
+    padding: .8em; }
+  .location .map img {
+    width: 95%;
+    max-width: 600px; }
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

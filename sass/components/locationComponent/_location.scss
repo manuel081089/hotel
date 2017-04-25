@@ -1,0 +1,21 @@
+.location {
+  padding: 2em 0;
+  text-align: center;
+  h1 {
+    text-align: center;
+    color: $brand-primary;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $brand-primary;
+    padding: .8em;
+  }
+
+  .map {
+    img {
+      width: 95%;
+      max-width: 600px;
+    }
+  }
+}
