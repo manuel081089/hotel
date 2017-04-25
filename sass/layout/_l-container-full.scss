@@ -1,8 +1,8 @@
 .l-container-full {
   @include container(12);
+}
 
-  .l-container-full-col {
-    @include span(full);
-    padding: 1em;
-  }
+.l-container-full-col {
+  @include span(full);
+  padding: 1em;
 }

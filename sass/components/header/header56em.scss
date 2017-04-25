@@ -11,8 +11,11 @@ header {
 				padding-top: 30px;
 				width: 160px;
 			}
-			&::after {
+			&::before {
 				border-width: 90px 100px 0 100px;
+			}
+			&::after {
+				border-width: 97px 104px 0 104px;
 			}
 		}
 

@@ -6,8 +6,11 @@ header {
 			img {
 				padding-top: 38px;
 			}
-			&::after {
+			&::before {
 				border-width: 60px 70px 0 70px;
+			}
+			&::after {
+				border-width: 67px 74px 0 74px;
 			}
 		}
 	}

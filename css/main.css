@@ -98,12 +98,13 @@ ul {
     content: " ";
     display: block;
     clear: both; }
-  .l-container-full .l-container-full-col {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1em; }
+
+.l-container-full-col {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1em; }
 
 .l-container-2col {
   max-width: 1600px;
@@ -139,6 +140,20 @@ ul {
       width: 74.57627%;
       float: right;
       margin-right: 0; } }
+.l-container-half-col {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+
+@media screen and (min-width: 42em) {
+  .l-container-half-col {
+    width: 49.15254%;
+    float: left;
+    margin-right: 1.69492%; }
+    .l-container-half-col:last-child {
+      float: right;
+      margin-right: 0; } }
 #content-wrapper {
   margin-top: 6em; }
 
@@ -153,8 +168,8 @@ header {
   top: 0;
   width: 100%;
   z-index: 99;
-  /*border-bottom: 1px solid $brand-primary;
-  box-shadow: 0 6px 4px -4px rgba(0,0,0,0.19);*/ }
+  /*border-bottom: 1px solid $brand-primary; */
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.19); }
   header .nav-toggle {
     position: absolute;
     top: 0;
@@ -187,7 +202,7 @@ header {
         right: 0;
         margin: auto;
         z-index: 99; }
-      header .logo-container .logo::after {
+      header .logo-container .logo::before {
         content: '';
         position: absolute;
         width: 0;
@@ -199,6 +214,19 @@ header {
         border-style: solid;
         border-width: 50px 60px 0 60px;
         border-color: white transparent transparent transparent; }
+      header .logo-container .logo::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 6em;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: -1;
+        border-style: solid;
+        border-width: 57px 64px 0 64px;
+        border-color: rgba(0, 0, 0, 0.1) transparent transparent transparent; }
 
 @media screen and (min-width: 42em) {
   header {
@@ -208,8 +236,10 @@ header {
     margin-right: 0; }
     header .logo-container .logo img {
       padding-top: 38px; }
+    header .logo-container .logo::before {
+      border-width: 60px 70px 0 70px; }
     header .logo-container .logo::after {
-      border-width: 60px 70px 0 70px; } }
+      border-width: 67px 74px 0 74px; } }
 @media screen and (min-width: 56em) {
   header {
     width: 100%;
@@ -221,8 +251,10 @@ header {
     header .logo-container .logo img {
       padding-top: 30px;
       width: 160px; }
+    header .logo-container .logo::before {
+      border-width: 90px 100px 0 100px; }
     header .logo-container .logo::after {
-      border-width: 90px 100px 0 100px; } }
+      border-width: 97px 104px 0 104px; } }
 @media screen and (min-width: 100em) {
   header {
     max-width: 1600px; } }
