@@ -383,6 +383,11 @@ nav {
   margin-left: 0;
   margin-right: 0; }
   .booking-container .booking {
+    -moz-transition: all .3s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: all .3s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: all .3s ease-in-out, left 1.5s ease-in-out;
+    transition: all .3s ease-in-out, left 1.5s ease-in-out;
     background: #A38E7B;
     color: white;
     padding: 1em 0;
@@ -391,43 +396,33 @@ nav {
     cursor: pointer; }
 
 @media screen and (min-width: 42em) {
-  .booking-container {
-    position: relative; }
-    .booking-container .booking {
-      position: fixed;
-      background: #373026;
-      padding: 1em 4em;
-      border-width: .5em 0 .5em .5em;
-      border-color: #A38E7B;
-      border-style: solid;
-      top: 7em;
-      right: 0;
-      z-index: 2; }
-      .booking-container .booking::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -1.85em;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 25px 30px 25px 0;
-        border-color: transparent #373026 transparent transparent; }
-      .booking-container .booking::after {
-        content: '';
-        position: absolute;
-        top: -0.5em;
-        left: -3em;
-        width: 0;
-        height: 0;
-        z-index: -1;
-        border-style: solid;
-        border-width: 33px 40px 33px 0;
-        border-color: transparent #A38E7B transparent transparent; } }
-@media screen and (min-width: 100em) {
   .booking-container .booking {
-    position: absolute !important;
-    top: -38em !important; } }
+    position: absolute;
+    background: white;
+    color: #A38E7B;
+    border: none !important;
+    bottom: 18em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 11em;
+    z-index: 2;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    .booking-container .booking:hover {
+      width: 11.5em;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+      bottom: 17.5em;
+      color: #373026; } }
+@media screen and (min-width: 56em) {
+  .booking {
+    bottom: 13.5em !important; } }
+@media screen and (min-width: 100em) {
+  .booking-container {
+    /*.booking {
+      position: absolute !important;
+      top: -38em !important;
+    }*/ } }
 .slider {
   overflow: hidden;
   position: relative;

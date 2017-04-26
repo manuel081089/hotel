@@ -4,6 +4,10 @@
   @import "booking42em";
 }
 
+@media screen and (min-width: 56em) {
+  @import "booking56em";
+}
+
 @media screen and (min-width: 100em){
   @import "booking100em";
 }

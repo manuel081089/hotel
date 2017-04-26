@@ -1,39 +1,24 @@
 .booking-container {
-	position: relative;
+
 	.booking {
-		position: fixed;
-		background: $brand-secondary;
-		padding: 1em 4em;
-		border-width: .5em 0 .5em .5em;
-		border-color: $brand-primary;
-		border-style: solid;
-		top: 7em;
+		position: absolute;
+		background: white;
+		color: $brand-primary;
+		border: none !important;
+		bottom: 18em;
+		left: 0;
 		right: 0;
+		margin: auto;
+		width: 11em;
 		z-index: 2;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
-		&::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: -1.85em;
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 25px 30px 25px 0;
-			border-color: transparent $brand-secondary transparent transparent;
-		}
-
-		&::after {
-			content: '';
-			position: absolute;
-			top: -0.5em;
-			left: -3em;
-			width: 0;
-			height: 0;
-			z-index: -1;
-			border-style: solid;
-			border-width: 33px 40px 33px 0;
-			border-color: transparent $brand-primary transparent transparent;
+		&:hover {
+			width: 11.5em;
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			bottom: 17.5em;
+			color: $brand-secondary;
 		}
 	}
 }
