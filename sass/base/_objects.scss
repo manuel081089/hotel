@@ -1,15 +1,18 @@
 .default-button {
+
+  @include transition(all, .3s, ease-in-out);
+
   display: block;
   margin: 1.5em auto;
   padding: 0.4em;
-  border-radius: 3px;
   width: 7em;
-  color: white;
-  border: 1px solid $brand-secondary;
-  background: $brand-secondary;
+  color: $brand-secondary;
+  border: 2px solid $brand-secondary;
+  background: white;
   cursor: pointer;
 
   &:hover {
-    color: $brand-primary;
+    color: white;
+    background: $brand-secondary;
   }
 }

@@ -1,5 +1,6 @@
 @import "variables/_variables";
 @import "utilities/parallaxMixin";
+@import "utilities/transitionMixin";
 
 $susy: (
 	global-box-sizing: border-box,

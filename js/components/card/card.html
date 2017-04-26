@@ -6,5 +6,6 @@
         <h2>{{card.title}}</h2>
         <hr>
         <p class="card-description">{{card.description}}</p>
+        <a ng-if="card.withButton" class="default-button" ng-href="{{card.buttonUrl}}">{{card.buttonText}}</a>
     </div>
 </div>
