@@ -43,17 +43,17 @@
 
         vm.prevItem = function () {
             moveCursor(-1);
-            restartTimer();
+            //restartTimer();
         }
 
         vm.nextItem = function () {
             moveCursor(1);
-            restartTimer();
+            //restartTimer();
         };
 
         var restartTimer = function () {
-            //$timeout.cancel(timer);
-            //autoSlide();
+            timeout.cancel(timer);
+            autoSlide();
         }
 
         vm.selectSlide = function (index) {
@@ -77,7 +77,7 @@
             }, 8000);
         };
 
-        //autoSlide();
+        autoSlide();
 
     }
 })();

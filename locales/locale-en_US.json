@@ -10,19 +10,22 @@
   "room.type.double": "Double Suite",
   "room.type.deluxe": "Deluxe Suite",
 
+  "booking.text": "Book now",
+
+  "home.card.culturalMadrid": "Cultural Madrid",
+  "home.card.calmComfort": "Calm & Comfort",
+  "home.card.taste": "Taste",
+
   "component.location.title": "location",
 
   "component.testimonials.title": "opinions",
+
+  "globals.readMoreBtn.text": "Read more",
 
   "footer.contact.title": "contact us",
   "footer.contact.phone": "phone",
   "footer.contact.fax": "fax",
   "footer.contact.email": "email",
-
-
-  "footer.subscribe.signUpLabel": "Sign up for our newsletter",
-  "footer.subscribe.emailInputPlaceholder": "Please enter your email",
-  "footer.subscribe.signUpButton": "Subscribe",
 
   "legal.links.legalNotice": "Legal Notice",
   "legal.links.siteMap": "Site Map"

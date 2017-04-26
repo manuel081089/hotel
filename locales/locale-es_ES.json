@@ -10,18 +10,23 @@
   "room.type.double": "Suite Doble",
   "room.type.deluxe": "Suite Deluxe",
 
+  "booking.text": "Reservar ahora",
+
+  "home.card.culturalMadrid": "Madrid Cultural",
+  "home.card.calmComfort": "Tranquilidad y Confort",
+  "home.card.taste": "Sabor",
+
   "component.location.title": "ubicación",
 
   "component.testimonials.title": "opiniones",
+
+
+  "globals.readMoreBtn.text": "Leer más",
 
   "footer.contact.title": "contáctenos",
   "footer.contact.phone": "teléfono",
   "footer.contact.fax": "fáx",
   "footer.contact.email": "email",
-
-  "footer.subscribe.signUpLabel": "Súbscribete a nuestros boletines",
-  "footer.subscribe.emailInputPlaceholder": "Por favor introduzca su email",
-  "footer.subscribe.signUpButton": "Subscribirme",
 
   "legal.links.legalNotice": "Aviso Legal",
   "legal.links.siteMap": "Mapa del Sitio"
