@@ -910,7 +910,8 @@ ul.social-list {
     .sidebar .sidebar-head .sidebar-logo {
       font-size: 7em;
       text-shadow: -2px -2px rgba(0, 0, 0, 0.1);
-      font-family: geniusthin; }
+      font-family: geniusthin;
+      text-transform: uppercase; }
     .sidebar .sidebar-head .sidebar-title {
       font-size: 1.5em; }
     .sidebar .sidebar-head .sidebar-separator {

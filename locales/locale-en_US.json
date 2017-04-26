@@ -2,12 +2,13 @@
   "menu.main.home": "Home",
   "menu.main.packages": "Orfila Packages",
   "menu.main.roomSuites": "Room Suites",
-  "menu.main.roomSuites.junior": "Junior Suite",
-  "menu.main.roomSuites.double": "Double Suite",
-  "menu.main.roomSuites.deluxe": "Deluxe Suite",
   "menu.main.executiveMenu": "Executive Menu",
   "menu.main.loungesEvents": "Lounges/Events",
   "menu.main.contact": "Contact",
+
+  "room.type.junior": "Junior Suite",
+  "room.type.double": "Double Suite",
+  "room.type.deluxe": "Deluxe Suite",
 
   "component.location.title": "location",
 

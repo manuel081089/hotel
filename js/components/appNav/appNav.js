@@ -29,15 +29,15 @@
                 isDropdown: true,
                 dropdownMenu: [
                     {
-                        text: 'menu.main.roomSuites.junior',
+                        text: 'room.type.junior',
                         url: '#!/juniorSuite'
                     },
                     {
-                        text: 'menu.main.roomSuites.double',
+                        text: 'room.type.double',
                         url: '#!/doubleSuite'
                     },
                     {
-                        text: 'menu.main.roomSuites.deluxe',
+                        text: 'room.type.deluxe',
                         url: '#!/deluxeSuite'
                     },
                 ]
@@ -51,7 +51,7 @@
             },
             {
                 text: 'menu.main.executiveMenu',
-                url: '#',
+                url: '#!/executiveMenu',
             },
             {
                 text: 'menu.main.contact',
