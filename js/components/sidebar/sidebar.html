@@ -1,0 +1,26 @@
+<div class="sidebar">
+    <div class="sidebar-head">
+        <span class="sidebar-logo">{{sidebar.bigLetter}}</span>
+        <h3 class="sidebar-title">{{sidebar.title}}</h3>
+        <div class="sidebar-separator"></div>
+    </div>
+    <div class="sidebar-body" ng-if="sidebar.withBody">
+        <div class="sidebar-body-title">
+            <h4>Services available in the room</h4>
+        </div>
+        <ul class="sidebar-list">
+            <li>Servicio 1 with a really really long long long name</li>
+            <li>Servicio 2 with a normal name</li>
+            <li>Servicio 3 with a longer than normal name</li>
+            <li>Servicio 4</li>
+            <li>Servicio 5</li>
+        </ul>
+    </div>
+</div>
+<div class="sidebar-footer" ng-if="sidebar.withFooter">
+    <img class="relais-logo" src="img/relais_and_chateaux transp.png" alt=""><br>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis fuga maiores numquam pariatur.
+        A at consequatur iusto, laboriosam molestiae recusandae. Atque blanditiis est et, eveniet exercitationem id illum
+        ut voluptatem.</p>
+</div>

@@ -1,13 +1,19 @@
 .sidebar-footer {
-  margin: -2.1em 1em 1em;
-  border: 1px solid #363636;
-  border-top-width: 5px;
+  margin: 0 1em 1em;
+  border: 1px solid $brand-primary;
+  background: $brand-primary;
+  //border-top-width: 5px;
   padding: 1em;
   text-align: center;
-  border-radius: 0 0 5px 5px; // ask opinion on this bottom border
-  border-bottom-width: 5px;
+  color: white;
+  //border-radius: 0 0 5px 5px; // ask opinion on this bottom border
+  //border-bottom-width: 5px;
 
   img {
     max-width: 30%;
+  }
+
+  p {
+    padding-top: 1em;
   }
 }

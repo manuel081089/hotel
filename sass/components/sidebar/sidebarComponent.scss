@@ -1,9 +1,11 @@
 .sidebar {
-  color: white;
-  background: $brand-secondary;
+  color: $brand-primary;
+  //background: $brand-secondary;
+  background: white;
   padding: 1em;
   margin: 1.8em 1em;
-  border-radius: 5px;
+  //border-radius: 5px;
+  border: 2px solid $brand-secondary;
 
   .sidebar-head {
     text-align: center;
@@ -11,7 +13,7 @@
 
     .sidebar-logo {
       font-size: 7em;
-      text-shadow: -2px -2px rgba(0,0,0,0.5);
+      text-shadow: -2px -2px rgba(0,0,0,0.1);
       font-family: geniusthin;
     }
     .sidebar-title {
@@ -21,7 +23,7 @@
     .sidebar-separator {
       width: 60%;
       height: 1px;
-      background: white;
+      background: $brand-primary;
       margin: .8em auto;
       opacity: 0.4;
       position: relative;
@@ -30,7 +32,7 @@
         content: '';
         width: 18%;
         height: 1px;
-        background: white;
+        background: $brand-primary;
         position: absolute;
         top: 4px;
         margin: 0 auto;
@@ -40,6 +42,7 @@
   }
 
   .sidebar-body {
+    color: $brand-secondary;
     .sidebar-body-title {
       text-align: center !important;
     }
@@ -57,7 +60,7 @@
           left: -10%;
           border-width: 0 0 1px 1px;
           border-style: solid;
-          border-color: white;
+          border-color: $brand-secondary;
           -webkit-transform: rotate(-45deg);
           -moz-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
