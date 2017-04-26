@@ -4,6 +4,7 @@
   margin-bottom: 0 !important;
   .slick-next
   {
+    display: none !important;   //hide next button as requested but keep implementation
     top: 45% !important;
     right: 40px !important;
     &::before {
@@ -19,6 +20,7 @@
   }
   .slick-prev
   {
+    display: none !important;  //hide prev button as requested but keep implementation
     left: 20px !important;
     top: 45% !important;
     z-index: 1;

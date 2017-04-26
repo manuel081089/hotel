@@ -428,6 +428,7 @@ nav {
   position: relative;
   margin-bottom: 0 !important; }
   .slider .slick-next {
+    display: none !important;
     top: 45% !important;
     right: 40px !important; }
     .slider .slick-next::before {
@@ -440,6 +441,7 @@ nav {
       border-style: solid;
       transform: rotate(45deg); }
   .slider .slick-prev {
+    display: none !important;
     left: 20px !important;
     top: 45% !important;
     z-index: 1; }
