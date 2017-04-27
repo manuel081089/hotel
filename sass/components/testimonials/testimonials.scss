@@ -24,17 +24,15 @@
 		width: 85%;
 		margin: 0 auto;
 		border: 1px solid $brand-primary;
+		display: flex;
 	}
 
 	.avatar-container {
-		@include span(full);
-
 		.avatar {
 			text-align: center;
 			img {
 				display: inline;
 				vertical-align: middle;
-				height: 100%;
 				width: 7em;
 			}
 
@@ -42,7 +40,6 @@
 	}
 
 	.dialog-box {
-		@include span(full);
 		p {
 			padding: .5em;
 			text-align: justify !important;
