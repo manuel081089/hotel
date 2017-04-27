@@ -476,6 +476,9 @@ nav {
     text-align: center;
     text-transform: uppercase;
     color: #A38E7B; }
+  .testimonials p {
+    padding: .8em;
+    color: #A38E7B; }
   .testimonials .testimonial-container {
     overflow: hidden;
     *zoom: 1;
@@ -500,7 +503,8 @@ nav {
     margin-left: 0;
     margin-right: 0; }
     .testimonials .dialog-box p {
-      padding: .5em; }
+      padding: .5em;
+      text-align: justify !important; }
   .testimonials .testimonial-page {
     display: none;
     position: relative; }
