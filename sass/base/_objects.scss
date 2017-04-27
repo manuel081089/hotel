@@ -6,13 +6,13 @@
   margin: 1.5em auto;
   padding: 0.4em;
   width: 7em;
-  color: $brand-secondary;
-  border: 2px solid $brand-secondary;
+  color: $brand-primary;
+  border: 1px solid $brand-primary;
   background: white;
   cursor: pointer;
 
   &:hover {
-    color: white;
-    background: $brand-secondary;
+    color: $brand-secondary;
+    //background: $brand-secondary;
   }
 }

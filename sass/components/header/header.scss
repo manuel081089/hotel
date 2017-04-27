@@ -8,7 +8,7 @@ header {
 	width: 100%;
 	z-index: 99;
 	/*border-bottom: 1px solid $brand-primary; */
-	box-shadow: 0 6px 4px -4px rgba(0,0,0,0.19);
+	box-shadow: 0 6px 0px -4px rgba(0,0,0,0.09);
 
 	.nav-toggle {
 		position: absolute;
@@ -76,7 +76,7 @@ header {
 				margin: auto;
 				z-index: -1;
 				border-style: solid;
-				border-width: 57px 64px 0 64px;
+				border-width: 54px 64px 0 64px;
 				border-color: rgba(0,0,0,0.1) transparent transparent transparent;
 			}
 		}

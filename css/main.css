@@ -71,13 +71,12 @@ ul {
   margin: 1.5em auto;
   padding: 0.4em;
   width: 7em;
-  color: #373026;
-  border: 2px solid #373026;
+  color: #A38E7B;
+  border: 1px solid #A38E7B;
   background: white;
   cursor: pointer; }
   .default-button:hover {
-    color: white;
-    background: #373026; }
+    color: #373026; }
 
 .wrap {
   max-width: 1600px;
@@ -167,7 +166,7 @@ header {
   width: 100%;
   z-index: 99;
   /*border-bottom: 1px solid $brand-primary; */
-  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.19); }
+  box-shadow: 0 6px 0px -4px rgba(0, 0, 0, 0.09); }
   header .nav-toggle {
     position: absolute;
     top: 0;
@@ -223,7 +222,7 @@ header {
         margin: auto;
         z-index: -1;
         border-style: solid;
-        border-width: 57px 64px 0 64px;
+        border-width: 54px 64px 0 64px;
         border-color: rgba(0, 0, 0, 0.1) transparent transparent transparent; }
 
 @media screen and (min-width: 42em) {
@@ -237,7 +236,7 @@ header {
     header .logo-container .logo::before {
       border-width: 60px 70px 0 70px; }
     header .logo-container .logo::after {
-      border-width: 67px 74px 0 74px; } }
+      border-width: 64px 74px 0 74px; } }
 @media screen and (min-width: 56em) {
   header {
     width: 100%;
@@ -252,7 +251,7 @@ header {
     header .logo-container .logo::before {
       border-width: 90px 100px 0 100px; }
     header .logo-container .logo::after {
-      border-width: 97px 104px 0 104px; } }
+      border-width: 94px 104px 0 104px; } }
 @media screen and (min-width: 100em) {
   header {
     max-width: 1600px; } }
@@ -411,13 +410,11 @@ nav {
     margin: auto;
     width: 11em;
     z-index: 2;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important; }
     .booking-container .booking:hover {
-      width: 11.5em;
-      padding-top: 1.5em;
-      padding-bottom: 1.5em;
-      bottom: 17.5em;
-      color: #373026; } }
+      color: #373026;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25), 0 4px 5px rgba(0, 0, 0, 0.24); } }
 @media screen and (min-width: 56em) {
   .booking {
     bottom: 13.5em !important; } }
@@ -482,9 +479,9 @@ nav {
   .testimonials .testimonial-container {
     overflow: hidden;
     *zoom: 1;
-    width: 88%;
+    width: 85%;
     margin: 0 auto;
-    border: 2px solid #A38E7B; }
+    border: 1px solid #A38E7B; }
   .testimonials .avatar-container {
     width: 100%;
     float: left;
@@ -781,7 +778,7 @@ ul.social-list {
     margin-right: 0;
     text-align: center;
     background: white;
-    border: 2px solid #A38E7B;
+    border: 1px solid #A38E7B;
     margin-bottom: 5.26316%; }
     .cards-container .card hr {
       margin: .8em auto !important;

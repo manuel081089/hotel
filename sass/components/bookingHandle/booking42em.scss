@@ -12,13 +12,11 @@
 		width: 11em;
 		z-index: 2;
 		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		transition: all 0.3s cubic-bezier(.25,.8,.25,1) !important;
 
 		&:hover {
-			width: 11.5em;
-			padding-top: 1.5em;
-			padding-bottom: 1.5em;
-			bottom: 17.5em;
 			color: $brand-secondary;
+			box-shadow: 0 4px 6px rgba(0,0,0,0.25), 0 4px 5px rgba(0,0,0,0.24);
 		}
 	}
 }

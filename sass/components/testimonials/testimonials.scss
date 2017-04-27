@@ -16,9 +16,9 @@
 
 	.testimonial-container {
 		@include clearfix;
-		width: 88%;
+		width: 85%;
 		margin: 0 auto;
-		border: 2px solid $brand-primary;
+		border: 1px solid $brand-primary;
 	}
 
 	.avatar-container {

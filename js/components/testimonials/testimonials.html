@@ -1,31 +1,33 @@
 <div class="testimonials no-select">
     <h1>{{"component.testimonials.title" | translate}}</h1>
-    <div ng-repeat="item in testimonials.testimonialsList"
-         class="testimonial-page" ng-class="{'testimonial-active' : item.active}">
-        <div class="prev" ng-click="testimonials.prevItem()">
-            <div class="prev-btn"></div>
-        </div>
-        <div class="testimonial-container">
-            <div class="avatar-container">
-                <div class="avatar">
-                    <img ng-src="{{item.avatarUrl}}" alt="">
+    <div class="testimonial-content">
+        <div ng-repeat="item in testimonials.testimonialsList"
+             class="testimonial-page" ng-class="{'testimonial-active' : item.active}">
+            <div class="prev" ng-click="testimonials.prevItem()">
+                <div class="prev-btn"></div>
+            </div>
+            <div class="testimonial-container">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img ng-src="{{item.avatarUrl}}" alt="">
+                    </div>
+                </div>
+                <div class="dialog-box">
+                    <div>
+                        <p>{{item.quote}}</p>
+                    </div>
                 </div>
             </div>
-            <div class="dialog-box">
-                <div>
-                    <p>{{item.quote}}</p>
-                </div>
+            <div class="next" ng-click="testimonials.nextItem()">
+                <div class="next-btn"></div>
             </div>
         </div>
-        <div class="next" ng-click="testimonials.nextItem()">
-            <div class="next-btn"></div>
+        <div class="testimonial-indicator-container">
+            <ul>
+                <li ng-repeat="item in testimonials.testimonialsList" class="testimonial-indicator"
+                    ng-class="{'testimonial-indicator-active': $index===testimonials.currentPosition}"
+                    ng-click="testimonials.selectSlide($index)"></li>
+            </ul>
         </div>
-    </div>
-    <div class="testimonial-indicator-container">
-        <ul>
-            <li ng-repeat="item in testimonials.testimonialsList" class="testimonial-indicator"
-                ng-class="{'testimonial-indicator-active': $index===testimonials.currentPosition}"
-                ng-click="testimonials.selectSlide($index)"></li>
-        </ul>
     </div>
 </div>
