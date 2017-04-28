@@ -306,6 +306,21 @@ header {
     background-position-x: -52px; }
   .language-selector .it_IT {
     background-position-x: -77px; }
+  .language-selector .current-lang {
+    position: relative; }
+    .language-selector .current-lang::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 5px;
+      height: 5px;
+      border-width: 0 2px 2px 0;
+      border-color: #ccc;
+      border-style: solid;
+      transform: rotate(45deg);
+      margin: auto; }
 
 @media screen and (min-width: 56em) {
   .language-selector {

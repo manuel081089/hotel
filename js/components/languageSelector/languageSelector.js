@@ -12,13 +12,16 @@
 
         vm.langKeys = localeService.getLocaleKeys();
 
-        vm.currentLocaleDisplayName = localeService.getLocaleDisplayName();
+        vm.currentLocale = localeService.getCurrentLocale();
+
+        vm.currentIndex = vm.langKeys.indexOf(vm.currentLocale);
 
         vm.visible = vm.localesDisplayNames &&
             vm.localesDisplayNames.length > 1;
 
         vm.changeLanguage = function (item) {
             localeService.setLocaleByDisplayName(LOCALES.locales[item]);
+            vm.currentIndex = vm.langKeys.indexOf(item);
         };
     }
 })();
