@@ -86,6 +86,10 @@
                         url: '/executiveMenu',
                         templateUrl: 'pages/executiveMenu.html',
                     })
+                    .state('contact', {
+                        url: '/contact',
+                        templateUrl: 'pages/contact.html',
+                    })
 
                 $urlRouterProvider.otherwise('home');
             }

@@ -16,6 +16,12 @@
   "home.card.calmComfort": "Tranquilidad y Confort",
   "home.card.taste": "Sabor",
 
+  "component.contactForm.namePlaceholder": "Escriba su nombre",
+  "component.contactForm.emailPlaceholder": "Escriba su email",
+  "component.contactForm.messagePlaceholder": "Escriba su mensaje",
+  "component.contactForm.sendButtonLabel": "Enviar",
+
+
   "component.location.title": "ubicación",
 
   "component.testimonials.title": "opiniones",

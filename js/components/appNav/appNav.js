@@ -55,7 +55,7 @@
             },
             {
                 text: 'menu.main.contact',
-                url: '#',
+                url: '#!/contact',
             },
         ];
 

@@ -62,7 +62,7 @@ ul {
   user-select: none;
   /* Non-prefixed version, currently supported by Chrome and Opera */ }
 
-.default-button {
+.btn-default {
   -webkit-transition: all false false, 0.3s false false, ease-in-out false false;
   -moz-transition: all false false false, 0.3s false false false, ease-in-out false false false;
   -o-transition: all false false false, 0.3s false false false, ease-in-out false false false;
@@ -75,9 +75,27 @@ ul {
   border: 1px solid #A38E7B;
   background: white;
   cursor: pointer; }
-  .default-button:hover {
+  .btn-default:hover {
     color: #373026; }
 
+.input {
+  padding: 1.3em 1em;
+  width: 100%;
+  border: 1px solid #A38E7B;
+  margin-bottom: 1em;
+  outline: none !important; }
+  .input:focus {
+    border-color: #373026; }
+
+.headline {
+  text-align: center;
+  color: #A38E7B;
+  text-transform: uppercase; }
+
+textarea {
+  resize: none; }
+
+/* Custom chevrons on navbar dropdowns */
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?75nrot");
@@ -1024,16 +1042,15 @@ article {
 .location {
   padding: 2em 0;
   text-align: center; }
-  .location h1 {
-    text-align: center;
-    color: #A38E7B;
-    text-transform: uppercase; }
   .location p {
     color: #A38E7B;
     padding: .8em; }
   .location .map img {
     width: 95%;
     max-width: 600px; }
+
+.contact-form {
+  padding: 2em 1em; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;

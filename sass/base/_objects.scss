@@ -1,7 +1,5 @@
-.default-button {
-
+.btn-default {
   @include transition(all, .3s, ease-in-out);
-
   display: block;
   margin: 1.5em auto;
   padding: 0.4em;
@@ -17,11 +15,36 @@
   }
 }
 
+.input {
+  padding: 1.3em 1em;
+  width: 100%;
+  border: 1px solid $brand-primary;
+  margin-bottom: 1em;
+  outline: none !important;
+
+  &:focus {
+    border-color: $brand-secondary;
+  }
+}
+
+.headline {
+  text-align: center;
+  color: $brand-primary;
+  text-transform: uppercase;
+}
+
+
+textarea {
+  resize: none;
+}
 
 
 
 
 
+
+
+/* Custom chevrons on navbar dropdowns */
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?75nrot');
