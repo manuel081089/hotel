@@ -659,6 +659,7 @@ footer {
   float: left;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 5em;
   background: #373026;
   color: white;
   text-align: center; }
