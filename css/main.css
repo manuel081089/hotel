@@ -469,6 +469,8 @@ nav {
     text-align: center;
     margin-top: -.187em;
     cursor: pointer; }
+    .booking-container .booking:hover {
+      background: #998471; }
 
 @media screen and (min-width: 42em) {
   .booking-container .booking {
@@ -476,7 +478,7 @@ nav {
     background: white;
     color: #A38E7B;
     border: none !important;
-    bottom: 18em;
+    top: 19em;
     left: 0;
     right: 0;
     margin: auto;
@@ -486,10 +488,13 @@ nav {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important; }
     .booking-container .booking:hover {
       color: #373026;
+      background: white;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25), 0 4px 5px rgba(0, 0, 0, 0.24); } }
 @media screen and (min-width: 56em) {
+  /*
   .booking {
-    bottom: 13.5em !important; } }
+    bottom: 13.5em !important;
+  }*/ }
 @media screen and (min-width: 100em) {
   .booking-container {
     /*.booking {
@@ -586,7 +591,7 @@ nav {
       width: 2em;
       height: 2em;
       top: calc(50% - 1em);
-      border-color: #363636;
+      border-color: #373026;
       border-style: solid; }
     .testimonials .testimonial-page .prev-btn {
       left: .5em;
@@ -982,6 +987,7 @@ article {
   .dropdown .caret i {
     font-size: .7em; }
   .dropdown .dropdown-menu {
+    margin-top: -1px;
     display: none;
     margin-left: .8em;
     transition: all 0.3s ease 0s; }

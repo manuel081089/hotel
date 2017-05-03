@@ -10,6 +10,10 @@
   }
 
   .dropdown-menu {
+    margin-top: -1px;
+    display: none;
+    margin-left: .8em;
+    transition: all 0.3s ease 0s;
     li {
       border-bottom: 1px solid $brand-secondary !important;
 
@@ -22,9 +26,6 @@
       }
     }
 
-    display: none;
-    margin-left: .8em;
-    transition: all 0.3s ease 0s;
   }
 }
 

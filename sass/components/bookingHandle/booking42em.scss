@@ -5,7 +5,7 @@
 		background: white;
 		color: $brand-primary;
 		border: none !important;
-		bottom: 18em;
+		top: 19em;
 		left: 0;
 		right: 0;
 		margin: auto;
@@ -16,6 +16,7 @@
 
 		&:hover {
 			color: $brand-secondary;
+			background: white;
 			box-shadow: 0 4px 6px rgba(0,0,0,0.25), 0 4px 5px rgba(0,0,0,0.24);
 		}
 	}

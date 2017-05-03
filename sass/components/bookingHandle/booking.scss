@@ -14,5 +14,9 @@
 		text-align: center;
 		margin-top: -.187em;
 		cursor: pointer;
+
+		&:hover {
+			background: $brand-primary - 10;
+		}
 	}
 }
