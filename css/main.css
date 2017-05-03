@@ -570,44 +570,33 @@ nav {
   .testimonials .testimonial-page {
     display: none;
     position: relative; }
-    .testimonials .testimonial-page .prev {
+    .testimonials .testimonial-page .prev,
+    .testimonials .testimonial-page .next {
       position: absolute;
-      height: 130px;
-      left: 0;
-      width: 29px;
+      height: 100%;
+      width: 7.5%;
       top: 0;
       display: block;
       cursor: pointer;
       z-index: 1; }
-      .testimonials .testimonial-page .prev .prev-btn {
-        content: "";
-        position: absolute;
-        left: .5em;
-        top: 2em;
-        width: 2em;
-        height: 2em;
-        border-width: 1px 0 0 1px;
-        border-color: #363636;
-        border-style: solid;
-        transform: rotate(-45deg); }
-    .testimonials .testimonial-page .next {
+    .testimonials .testimonial-page .prev-btn,
+    .testimonials .testimonial-page .next-btn {
+      content: "";
       position: absolute;
-      height: 130px;
-      right: 0;
-      top: 0;
-      width: 29px;
-      display: block;
-      cursor: pointer; }
+      width: 2em;
+      height: 2em;
+      top: calc(50% - 1em);
+      border-color: #363636;
+      border-style: solid; }
+    .testimonials .testimonial-page .prev-btn {
+      left: .5em;
+      border-width: 1px 0 0 1px;
+      transform: rotate(-45deg); }
+    .testimonials .testimonial-page .next {
+      right: 0; }
       .testimonials .testimonial-page .next .next-btn {
-        content: "";
-        position: absolute;
         right: .5em;
-        top: 2em;
-        width: 2em;
-        height: 2em;
         border-width: 1px 1px 0 0;
-        border-color: #363636;
-        border-style: solid;
         transform: rotate(45deg); }
   .testimonials .testimonial-active {
     display: block !important;
@@ -636,10 +625,7 @@ nav {
 
 @media screen and (min-width: 42em) {
   .dialog-box p {
-    padding-left: 1em !important; }
-
-  .next .next-btn {
-    right: 0 !important; } }
+    padding-left: 1em !important; } }
 .relais {
   width: 100%;
   float: left;

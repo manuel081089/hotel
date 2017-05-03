@@ -51,53 +51,41 @@
 		display: none;
 		position: relative;
 
-		.prev {
+		.prev,
+		.next {
 			position: absolute;
-			height: 130px;
-			left: 0;
-			width: 29px;
+			height: 100%;
+			width: 7.5%;
 			top: 0;
 			display: block;
 			cursor: pointer;
 			z-index: 1;
+		}
 
-			.prev-btn {
-				content: "";
-				position: absolute;
-				left: .5em;
-				top: 2em;
-				width: 2em;
-				height: 2em;
-				border-width: 1px 0 0 1px;
-				border-color: #363636;
-				border-style: solid;
-				transform: rotate(-45deg);
+		.prev-btn,
+		.next-btn {
+			content: "";
+			position: absolute;
+			width: 2em;
+			height: 2em;
+			top: calc(50% - 1em);
+			border-color: #363636;
+			border-style: solid;
+		}
 
-			}
 
+		.prev-btn {
+			left: .5em;
+			border-width: 1px 0 0 1px;
+			transform: rotate(-45deg);
 		}
 
 		.next {
-			position: absolute;
-			height: 130px;
 			right: 0;
-			top: 0;
-			width: 29px;
-			display: block;
-			cursor: pointer;
-
 			.next-btn {
-				content: "";
-				position: absolute;
 				right: .5em;
-				top: 2em;
-				width: 2em;
-				height: 2em;
 				border-width: 1px 1px 0 0;
-				border-color: #363636;
-				border-style: solid;
 				transform: rotate(45deg);
-
 			}
 		}
 	}
