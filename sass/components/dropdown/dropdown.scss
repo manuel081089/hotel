@@ -5,6 +5,10 @@
 
   transition: all 0.3s ease 0s;
 
+  .caret i {
+    font-size: .7em;
+  }
+
   .dropdown-menu {
     li {
       border-bottom: 1px solid $brand-secondary !important;

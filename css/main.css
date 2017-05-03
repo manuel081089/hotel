@@ -993,6 +993,8 @@ article {
   z-index: 999;
   background: white;
   transition: all 0.3s ease 0s; }
+  .dropdown .caret i {
+    font-size: .7em; }
   .dropdown .dropdown-menu {
     display: none;
     margin-left: .8em;
