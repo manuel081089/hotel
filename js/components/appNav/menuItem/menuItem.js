@@ -12,7 +12,7 @@
         controllerAs: 'menuItem'
     });
 
-    function MenuItemCtrl($rootScope, $scope) {
+    function MenuItemCtrl($rootScope, $scope, $element, $document) {
         var vm = this;
         vm.showMenu = false;
         vm.isTopLinkActive = false;
@@ -21,11 +21,12 @@
         vm.itemClick = function () {
             if (vm.isDropdown) {
                 vm.showMenu = !vm.showMenu;
-                vm.isDropdownActive = !vm.isDropdownActive;
-                /* Close any other open dropdown */
+                vm.isDropdownActive = !vm.isDropdownActive; // required for styling on mobile view
+                /* Broadcast to close any other open dropdown */
                 $rootScope.$broadcast('closeOtherDropdowns', {
                     item: vm
-                })
+                });
+                outsideClickBinder();
             }
             else {
                 /* Mark top link as active and clear any other top active link */
@@ -34,6 +35,8 @@
                     item: vm
                 });
             }
+
+
         }
 
         vm.subItemClick = function () {
@@ -42,7 +45,53 @@
             $rootScope.$broadcast('menuItemClick', {
                 item: vm
             });
+            outsideClickUnbinder();
         }
+
+
+        var outsideClickBinder = function () {
+            /* pure angularjs alternative */
+            /*$document.on('click', function (event) {
+                if ($element !== event.target && !$element[0].contains(event.target)) {
+                    $scope.$apply(function () {
+                        console.log('here');
+                        $rootScope.$broadcast('closeOtherDropdowns', {
+                            item: undefined
+                        });
+                        outsideClickUnbinder();
+                    });
+                }
+            });*/
+
+            /* with jquery alternative - test which is better later*/
+            $(document).bind('click', function(event){
+                var isClickedElementChildOfDropdown = $element
+                        .find(event.target)
+                        .length > 0;
+
+                if (isClickedElementChildOfDropdown)
+                    return;
+
+                $scope.$apply(function(){
+                    console.log('here');
+                    $rootScope.$broadcast('closeOtherDropdowns', {
+                        item: undefined
+                    });
+                });
+            });
+        }
+
+        var outsideClickUnbinder = function () {
+            $document.on('click', null);
+            /*$(document).unbind('click', function (event) {
+                console.log('now');
+            });*/
+        }
+
+
+
+
+        /* Broadcast listeners */
 
         $scope.$on('closeOtherDropdowns', function (event, args) {
             if (args.item !== vm) {

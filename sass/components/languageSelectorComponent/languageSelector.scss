@@ -1,8 +1,13 @@
 .language-selector {
-  position: fixed;
-  left: .3125em;
+  position: absolute;
+  //left: .3125em;
   text-align: center;
   padding-top: 1.8em;
+  padding-left: 1em;
+
+  ul {
+    height: 2em;
+  }
 
 
   .language {
