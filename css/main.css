@@ -1012,6 +1012,11 @@ article {
   .dropdown {
     background: none !important;
     position: relative; }
+    .dropdown .caret {
+      width: 16px;
+      padding-left: 1px; }
+      .dropdown .caret i {
+        font-size: .6em; }
     .dropdown .dropdown-menu {
       position: absolute;
       top: 2em;

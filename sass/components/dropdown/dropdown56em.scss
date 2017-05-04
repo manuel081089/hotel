@@ -2,6 +2,14 @@
   background: none !important;
   position: relative;
 
+  .caret {
+    width: 16px;
+    padding-left: 1px;
+    i {
+      font-size: .6em;
+    }
+  }
+
   .dropdown-menu {
     position: absolute;
     top: 2em;

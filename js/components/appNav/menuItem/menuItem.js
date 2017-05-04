@@ -76,7 +76,6 @@
                 return;
 
             $scope.$apply(function(){
-                console.log('here');
                 $rootScope.$broadcast('closeOtherDropdowns', {
                     item: undefined
                 });
