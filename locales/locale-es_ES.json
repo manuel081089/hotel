@@ -18,7 +18,7 @@
 
   "component.contactForm.namePlaceholder": "Escriba su nombre",
   "component.contactForm.emailPlaceholder": "Escriba su email",
-  "component.contactForm.messagePlaceholder": "Escriba su mensaje",
+  "component.contactForm.messagePlaceholder": "Escriba su mensaje...",
   "component.contactForm.sendButtonLabel": "Enviar",
 
 

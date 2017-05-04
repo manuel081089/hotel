@@ -1,3 +1,16 @@
 .contact-form {
   padding: 2em 1em;
+
+  .contact-intro {
+    height: 8em;
+    p {
+      color: $brand-primary;
+    }
+  }
+
+  button {
+    background: $brand-primary !important;
+    width: 50%;
+    color: white !important;
+  }
 }

@@ -45,7 +45,6 @@
             $rootScope.$broadcast('menuItemClick', {
                 item: vm
             });
-            outsideClickUnbinder();
         }
 
 
@@ -82,10 +81,9 @@
         }
 
         var outsideClickUnbinder = function () {
-            $document.on('click', null);
-            /*$(document).unbind('click', function (event) {
+            $(document).unbind('click', function (event) {
                 console.log('now');
-            });*/
+            });
         }
 
 

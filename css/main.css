@@ -76,7 +76,7 @@ ul {
   background: white;
   cursor: pointer; }
   .btn-default:hover {
-    color: #373026; }
+    color: #373026 !important; }
 
 .input {
   padding: 1.3em 1em;
@@ -1038,15 +1038,25 @@ article {
 .location {
   padding: 2em 0;
   text-align: center; }
-  .location p {
-    color: #A38E7B;
-    padding: .8em; }
+  .location .location-intro {
+    height: 8em; }
+    .location .location-intro p {
+      color: #A38E7B;
+      padding: .8em; }
   .location .map img {
     width: 95%;
     max-width: 600px; }
 
 .contact-form {
   padding: 2em 1em; }
+  .contact-form .contact-intro {
+    height: 8em; }
+    .contact-form .contact-intro p {
+      color: #A38E7B; }
+  .contact-form button {
+    background: #A38E7B !important;
+    width: 50%;
+    color: white !important; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
