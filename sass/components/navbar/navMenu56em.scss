@@ -29,7 +29,7 @@
 
 		a {
 			font-size: 1.05em;
-			padding: 1em .6em 1.95em;
+			padding: 1em .6em 2.55em;
 			display: inline;
 			color: $brand-primary;
 			&:hover {
@@ -38,7 +38,7 @@
 
 			&.active-link {
 				color: black !important;
-				//border-bottom: 2px solid $brand-secondary;
+				border-bottom: 2px solid rgba(0,0,0,.5);
 			}
 		}
 

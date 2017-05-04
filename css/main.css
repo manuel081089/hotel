@@ -443,13 +443,14 @@ nav {
           background: none !important; }
         nav .nav-content .menu .menu-item a {
           font-size: 1.05em;
-          padding: 1em .6em 1.95em;
+          padding: 1em .6em 2.55em;
           display: inline;
           color: #A38E7B; }
           nav .nav-content .menu .menu-item a:hover {
             color: #373026; }
           nav .nav-content .menu .menu-item a.active-link {
-            color: black !important; }
+            color: black !important;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5); }
         nav .nav-content .menu .menu-item .caret {
           float: none;
           transform: rotate(90deg); } }
