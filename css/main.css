@@ -550,14 +550,17 @@ nav {
   background: white;
   padding: 2em 0;
   text-align: center;
-  transition: all linear 0.5s; }
-  .testimonials h1 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #A38E7B; }
-  .testimonials p {
-    padding: .8em;
-    color: #A38E7B; }
+  transition: all linear 0.5s;
+  /*h1 {
+  	text-align: center;
+  	text-transform: uppercase;
+  	color: $brand-primary;
+  }*/ }
+  .testimonials .testimonials-intro {
+    height: 8em; }
+    .testimonials .testimonials-intro p {
+      padding: .8em;
+      color: #A38E7B; }
   .testimonials .testimonial-container {
     overflow: hidden;
     *zoom: 1;

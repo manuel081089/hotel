@@ -12,11 +12,15 @@
         controllerAs: 'menuItem'
     });
 
-    function MenuItemCtrl($rootScope, $scope, $element, $document) {
+    function MenuItemCtrl($rootScope, $scope, $element, $document, $state) {
         var vm = this;
         vm.showMenu = false;
         vm.isTopLinkActive = false;
         vm.isDropdownActive = false;
+
+        this.$onChanges = function () {
+            vm.url = this.url;
+        }
 
         vm.itemClick = function () {
             if (vm.isDropdown) {
@@ -35,8 +39,6 @@
                     item: vm
                 });
             }
-
-
         }
 
         vm.subItemClick = function () {
@@ -86,6 +88,16 @@
                     vm.showMenu = false;
                     vm.isDropdownActive = false;
                 }
+            }
+        });
+
+        $scope.$on('homeActive', function (event, args) {
+            console.log('aki');
+            if (vm.url === '#!/home') {
+                vm.isTopLinkActive = true;
+            }
+            else {
+                vm.isTopLinkActive = false;
             }
         });
 

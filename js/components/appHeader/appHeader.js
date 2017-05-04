@@ -9,12 +9,16 @@
         controllerAs: 'header',
     });
 
-    function AppHeaderCtrl() {        
+    function AppHeaderCtrl($scope) {
         var vm = this;
         vm.showNavOnMobile = false;
         
         vm.showNav = function () {
             vm.showNavOnMobile = !vm.showNavOnMobile;
+        }
+
+        vm.setHomeAsActive = function () {
+            $scope.$broadcast('homeActive', {});
         }
     }
 })();
