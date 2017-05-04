@@ -26,7 +26,7 @@
                 $rootScope.$broadcast('closeOtherDropdowns', {
                     item: vm
                 });
-                $(document).bind('click', outsideClick);
+                $document.bind('click', outsideClick);
             }
             else {
                 /* Mark top link as active and clear any other top active link */
@@ -47,39 +47,23 @@
             });
         }
 
-
-        var outsideClickBinder = function () {
-            /* pure angularjs alternative */
-            /*$document.on('click', function (event) {
-                if ($element !== event.target && !$element[0].contains(event.target)) {
-                    $scope.$apply(function () {
-                        console.log('here');
-                        $rootScope.$broadcast('closeOtherDropdowns', {
-                            item: undefined
-                        });
-                        outsideClickUnbinder();
-                    });
-                }
-            });*/
-
-            /* with jquery alternative - test which is better later*/
-            $(document).bind('click', outsideClick(event));
-        }
-
-
         var outsideClick = function (event) {
-            var isClickedElementChildOfDropdown = $element
+            /* with jQuery */
+            /*var isClickedElementChildOfDropdown = $element
                     .find(event.target)
                     .length > 0;
 
             if (isClickedElementChildOfDropdown)
+                return;*/
+
+            if ($element === event.target || $element[0].contains(event.target)) // if element or child of element do nothing
                 return;
 
             $scope.$apply(function(){
                 $rootScope.$broadcast('closeOtherDropdowns', {
                     item: undefined
                 });
-                $(document).unbind('click', outsideClick);
+                $document.unbind('click', outsideClick);
             });
         }
 
@@ -87,6 +71,14 @@
 
 
         /* Broadcast listeners */
+
+        $scope.$on('menuItemClick', function (event, args) {
+            if (args.item !== vm)
+                vm.isTopLinkActive = false;
+            $rootScope.$broadcast('closeOtherDropdowns', {
+                item: undefined
+            });
+        });
 
         $scope.$on('closeOtherDropdowns', function (event, args) {
             if (args.item !== vm) {
@@ -97,12 +89,5 @@
             }
         });
 
-        $scope.$on('menuItemClick', function (event, args) {
-            if (args.item !== vm)
-                vm.isTopLinkActive = false;
-            $rootScope.$broadcast('closeOtherDropdowns', {
-                item: undefined
-            });
-        });
     }
 })();
