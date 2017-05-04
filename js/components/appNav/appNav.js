@@ -2,7 +2,7 @@
     'use strict';
     angular.module('hotelApp').component('appNav', {
         bindings: {
-            showOnMobile: '=',
+            showNavOnMobile: '=',
         },
         templateUrl: 'js/components/appNav/appNav.html',
         controller: AppNavCtrl,
@@ -60,7 +60,7 @@
         ];
 
         vm.hideNav = function () {
-            vm.showOnMobile = false;
+            vm.showNavOnMobile = false;
         }
 
         $scope.$on('menuItemClick', function () {

@@ -26,7 +26,7 @@
                 $rootScope.$broadcast('closeOtherDropdowns', {
                     item: vm
                 });
-                outsideClickBinder();
+                $(document).bind('click', outsideClick);
             }
             else {
                 /* Mark top link as active and clear any other top active link */
@@ -63,26 +63,24 @@
             });*/
 
             /* with jquery alternative - test which is better later*/
-            $(document).bind('click', function(event){
-                var isClickedElementChildOfDropdown = $element
-                        .find(event.target)
-                        .length > 0;
-
-                if (isClickedElementChildOfDropdown)
-                    return;
-
-                $scope.$apply(function(){
-                    console.log('here');
-                    $rootScope.$broadcast('closeOtherDropdowns', {
-                        item: undefined
-                    });
-                });
-            });
+            $(document).bind('click', outsideClick(event));
         }
 
-        var outsideClickUnbinder = function () {
-            $(document).unbind('click', function (event) {
-                console.log('now');
+
+        var outsideClick = function (event) {
+            var isClickedElementChildOfDropdown = $element
+                    .find(event.target)
+                    .length > 0;
+
+            if (isClickedElementChildOfDropdown)
+                return;
+
+            $scope.$apply(function(){
+                console.log('here');
+                $rootScope.$broadcast('closeOtherDropdowns', {
+                    item: undefined
+                });
+                $(document).unbind('click', outsideClick);
             });
         }
 

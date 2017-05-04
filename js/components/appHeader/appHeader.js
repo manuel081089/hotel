@@ -11,10 +11,10 @@
 
     function AppHeaderCtrl() {        
         var vm = this;
-        vm.showOnMobile = false;
+        vm.showNavOnMobile = false;
         
         vm.showNav = function () {
-            vm.showOnMobile = !vm.showOnMobile;
+            vm.showNavOnMobile = !vm.showNavOnMobile;
         }
     }
 })();
