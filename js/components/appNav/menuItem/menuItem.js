@@ -92,7 +92,6 @@
         });
 
         $scope.$on('homeActive', function (event, args) {
-            console.log('aki');
             if (vm.url === '#!/home') {
                 vm.isTopLinkActive = true;
             }

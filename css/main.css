@@ -1052,9 +1052,9 @@ article {
     .location .location-intro p {
       color: #A38E7B;
       padding: .8em; }
-  .location .map img {
-    width: 95%;
-    max-width: 600px; }
+  .location .map {
+    width: 97% !important;
+    margin: auto; }
 
 .contact-form {
   padding: 2em 1em; }

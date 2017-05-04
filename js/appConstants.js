@@ -10,5 +10,6 @@
             },
             'preferredLocale': 'en_US'
         })
+        .constant('MAP_API_KEY', 'AIzaSyCWstqjnwZtAMf7mDByrfx9VoDId7Yk5VE')
 
 })();
