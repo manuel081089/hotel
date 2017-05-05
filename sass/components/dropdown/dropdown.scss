@@ -33,7 +33,7 @@
   background: $nav-dropdown-active !important;
 
   .caret {
-    transform: rotate(90deg);
+    @include rotate(90deg);
   }
 
 }

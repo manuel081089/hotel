@@ -80,7 +80,7 @@
 		.prev-btn {
 			left: .5em;
 			border-width: 1px 0 0 1px;
-			transform: rotate(-45deg);
+			@include rotate(-45deg);
 		}
 
 		.next {
@@ -88,7 +88,7 @@
 			.next-btn {
 				right: .5em;
 				border-width: 1px 1px 0 0;
-				transform: rotate(45deg);
+				@include rotate(45deg);
 			}
 		}
 	}
