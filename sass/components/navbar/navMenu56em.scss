@@ -44,7 +44,7 @@
 
 		.caret {
 			float: none;
-			transform: rotate(90deg);
+			@include rotate(90deg);
 		}
 	}
 

@@ -339,6 +339,10 @@ header {
       border-width: 0 2px 2px 0;
       border-color: #ccc;
       border-style: solid;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
       transform: rotate(45deg);
       margin: auto; }
 
@@ -453,6 +457,10 @@ nav {
             border-bottom: 2px solid rgba(0, 0, 0, 0.5); }
         nav .nav-content .menu .menu-item .caret {
           float: none;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
           transform: rotate(90deg); } }
 .booking-container {
   width: 100%;
@@ -601,12 +609,20 @@ nav {
     .testimonials .testimonial-page .prev-btn {
       left: .5em;
       border-width: 1px 0 0 1px;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
       transform: rotate(-45deg); }
     .testimonials .testimonial-page .next {
       right: 0; }
       .testimonials .testimonial-page .next .next-btn {
         right: .5em;
         border-width: 1px 1px 0 0;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
         transform: rotate(45deg); }
   .testimonials .testimonial-active {
     display: block !important;
@@ -850,8 +866,6 @@ ul.social-list {
         border: 0;
         border-top: 1px solid #eee;
         width: 90%; }
-      .cards-container .card h2 {
-        margin-bottom: -10px !important; }
       .cards-container .card .card-img {
         margin-left: -200% !important; }
       .cards-container .card .card-head {
@@ -1006,6 +1020,10 @@ article {
 .active {
   background: #A38E7B !important; }
   .active .caret {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
     transform: rotate(90deg); }
 
 .show-menu {
