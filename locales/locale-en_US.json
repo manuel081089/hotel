@@ -41,6 +41,18 @@
   "legal.links.siteMap": "Site Map",
 
   "rooms.nightText" : "Night",
+
+  "rooms.services.tv" : "49\" LCD TV",
+  "rooms.services.tvx2" : "49\" LCD TV (2)",
+  "rooms.services.ihome" : "IHome",
+  "rooms.services.internet" : "High speed wireless internet",
+  "rooms.services.minibar" : "Minibar",
+  "rooms.services.coffee" : "Nespresso coffee machine",
+  "rooms.services.hydro" : "Hydromassage",
+  "rooms.services.size.small" : "15~20 m²",
+  "rooms.services.size.medium" : "20~25 m²",
+  "rooms.services.size.large" : "30 m²",
+
   "rooms.junior.introText" : "The ample and luxururious Junior Suite offers the posibility of choosing between a King Size bed or two individual european beds. These rooms provide plenty of space and comfort in a classical and distinguished ambiance. Equipped with the latest technologies, a 49 inch LCD TV, Ihome, high speed wireless internet connectivity, full minibar and a Nespresso coffeee machine. The Junior Suite offers its guests a space of tranquility, being this mode the perfect choice for the longest stays since every room comes with a comfortable sofa, work space and a balcony with a view to the Principe de Vergara street.",
   "rooms.doubleStandard.introText" : "Cozy and comfortable room that comes with a King Size bed or two individual european beds. The rooms are designed to invite you to rest, and are equipped with a desk, a 40 inch LCD TV, IHome, high speed wireless internet connectivity and minibar. All of it neatly distributed in a space of 15 to 20 squared meters.",
   "rooms.doubleSuperior.introText" : "Elegant and functional room where you will be able to choose between a King Size bed or two individual european beds. All superior rooms are exterior and some come with a balcony. They provide with a comfortable space to work, a 49 inch LCD TV, Ihome, free highspeed wireless internet connectivity and a minibar. The bathrooms are designed with independent bathtub and shower. The total room space is between 20 to 25 squared meters.",

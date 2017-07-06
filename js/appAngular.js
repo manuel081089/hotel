@@ -72,23 +72,28 @@
                     })
                     .state('suite', {
                         url: '/suite',
-                        templateUrl: 'pages/suite.html',
+                        //templateUrl: 'pages/suite.html',
+                        template: '<suite></suite>'
                     })
                     .state('junior', {
                         url: '/juniorSuite',
-                        templateUrl: 'pages/juniorSuite.html',
+                        //templateUrl: 'pages/juniorSuite.html',
+                        template: '<junior></junior>',
                     })
                     .state('doubleStandard', {
                         url: '/doubleStandard',
-                        templateUrl: 'pages/doubleStandard.html',
+                        //templateUrl: 'pages/doubleStandard.html',
+                        template: '<standard></standard>'
                     })
                     .state('doubleSuperior', {
                         url: '/doubleSuperior',
-                        templateUrl: 'pages/doubleSuperior.html',
+                        //templateUrl: 'pages/doubleSuperior.html',
+                        template: '<superior></superior>'
                     })
                     .state('family', {
                         url: '/familyRoom',
-                        templateUrl: 'pages/familyRoom.html',
+                        //templateUrl: 'pages/familyRoom.html',
+                        template: '<family></family>'
                     })
                     .state('executiveMenu', {
                         url: '/executiveMenu',

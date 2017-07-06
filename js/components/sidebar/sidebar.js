@@ -5,6 +5,7 @@
             title: '@',
             withBody: '<',
             withFooter: '<',
+            services: '<'
         },
         templateUrl: 'js/components/sidebar/sidebar.html',
         controller: SidebarCtrl,

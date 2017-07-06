@@ -41,6 +41,18 @@
   "legal.links.siteMap": "Mapa del Sitio",
 
   "rooms.nightText" : "Noche",
+
+  "rooms.services.tv" : "Televisión LCD de 49 pulgadas",
+  "rooms.services.tvx2" : "Televisión LCD de 49 pulgadas (2)",
+  "rooms.services.ihome" : "IHome",
+  "rooms.services.internet" : "Internet inalámbrico de alta velocidad",
+  "rooms.services.minibar" : "Minibar",
+  "rooms.services.coffee" : "Máquina de café Nespresso",
+  "rooms.services.hydro" : "Hidromasaje",
+  "rooms.services.size.small" : "15~20 m²",
+  "rooms.services.size.medium" : "20~25 m²",
+  "rooms.services.size.large" : "30 m²",
+
   "rooms.junior.introText" : "La lujosa y amplia Junior Suite ofrece la posibilidad de elegir entre cama King Size o dos camas individuales europeas. Estas habitaciones proporcionan amplitud  y comodidad en un ambiente clásico y distinguido. Equipado con la última tecnología, televisión LCD  de 49 pulgadas, IHome, internet inalámbrico de alta de velocidad, minibar completamente equipado y maquina de café Nespresso. La Junior Suite ofrece a sus huéspedes un remanso de tranquilidad, siendo de este modo la elección perfecta para estancias más largas ya que todas las habitaciones cuentan con un cómodo sofá, espacio de trabajo y disponen de balcón con vistas a la calle Principe de Vergara.",
   "rooms.doubleStandard.introText" : "Acogedora y confortable habitación que cuenta con una cama King Size o dos camas individuales europeas. Las habitaciones están diseñadas para invitarle al descanso y  están equipadas con escritorio, televisión LCD de 40 pulgadas, IHome,  internet inalámbrico de alta velocidad y minibar. Todo ello distribuido en un espacio de 15 a 20 metros cuadrados.",
   "rooms.doubleSuperior.introText" : "Elegante y funcional habitación donde podrá elegir entre una cama King Size o dos camas individuales europeas. Todas las habitaciones superiores son exteriores y algunas disponen de balcón. Cuentan con un cómodo espacio de trabajo, televisión LCD de 49 pulgadas, Ihome, internet inalámbrico de alta velocidad gratuito y minibar. Los baños están diseñados con bañera y ducha independientes. Se distribuye en un espacio de 20 a 25 metros cuadrados.",

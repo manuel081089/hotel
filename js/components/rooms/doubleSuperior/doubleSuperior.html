@@ -1,22 +1,24 @@
 <slider></slider>
 <div class="l-container-2col">
     <aside class="l-container-first-col">
-        <sidebar title="{{'room.type.junior' | translate}}" with-body="true" with-footer="true"></sidebar>
+        <sidebar title="{{'room.type.doubleSuperior' | translate}}"
+                 services="superior.services"
+                 with-body="true" with-footer="true"></sidebar>
     </aside>
     <div class="l-container-second-col">
         <article>
             <div class="article-title">
                 <h1>
-                    {{ "room.type.junior" | translate }}
+                    {{ "room.type.doubleSuperior" | translate }}
                 </h1>
             </div>
             <div class="article-body">
                 <img class="article-image" src="img/paq1.jpg" alt="">
                 <p class="article-text" >
-                    {{ "rooms.junior.introText" | translate }}
+                    {{ "rooms.doubleSuperior.introText" | translate }}
                 </p>
             </div>
-            <room-price room-type-key="room.type.junior" price="455"></room-price>
+            <room-price room-type-key="room.type.doubleSuperior" price="455"></room-price>
             <button class="btn-default">Booking</button>
         </article>
     </div>
