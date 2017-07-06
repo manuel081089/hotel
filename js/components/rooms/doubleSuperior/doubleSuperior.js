@@ -18,7 +18,16 @@
                 {key: "minibar"},
                 {key: "coffee"},
                 {key: "size.medium"}
-            ]
+            ];
+
+            vm.roomSlides = [
+                {
+                    src: 'img/superior1.jpg'
+                },
+                {
+                    src: 'img/superior2.jpg'
+                },
+            ];
         };
     }
 })();

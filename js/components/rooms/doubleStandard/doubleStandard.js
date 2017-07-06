@@ -17,7 +17,22 @@
                 {key: "internet"},
                 {key: "minibar"},
                 {key: "size.small"}
-            ]
+            ];
+
+            vm.roomSlides = [
+                {
+                    src: 'img/DC1.jpg'
+                },
+                {
+                    src: 'img/DC2.jpg'
+                },
+                {
+                    src: 'img/DC3.jpg'
+                },
+                {
+                    src: 'img/DC4.jpg'
+                },
+            ];
         };
     }
 })();

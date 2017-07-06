@@ -77,7 +77,7 @@
             }, 8000);
         };
 
-        //autoSlide();
+        autoSlide();
 
     }
 })();
