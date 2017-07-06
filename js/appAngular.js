@@ -70,17 +70,25 @@
                         url: '/packages',
                         templateUrl: 'pages/packages.html',
                     })
+                    .state('suite', {
+                        url: '/suite',
+                        templateUrl: 'pages/suite.html',
+                    })
                     .state('junior', {
                         url: '/juniorSuite',
                         templateUrl: 'pages/juniorSuite.html',
                     })
-                    .state('double', {
-                        url: '/doubleSuite',
-                        templateUrl: 'pages/doubleSuite.html',
+                    .state('doubleStandard', {
+                        url: '/doubleStandard',
+                        templateUrl: 'pages/doubleStandard.html',
                     })
-                    .state('deluxe', {
-                        url: '/deluxeSuite',
-                        templateUrl: 'pages/deluxeSuite.html',
+                    .state('doubleSuperior', {
+                        url: '/doubleSuperior',
+                        templateUrl: 'pages/doubleSuperior.html',
+                    })
+                    .state('family', {
+                        url: '/familyRoom',
+                        templateUrl: 'pages/familyRoom.html',
                     })
                     .state('executiveMenu', {
                         url: '/executiveMenu',

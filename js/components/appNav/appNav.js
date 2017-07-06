@@ -29,16 +29,24 @@
                 isDropdown: true,
                 dropdownMenu: [
                     {
+                        text: 'room.type.doubleStandard',
+                        url: '#!/doubleStandard'
+                    },
+                    {
+                        text: 'room.type.doubleSuperior',
+                        url: '#!/doubleSuperior'
+                    },
+                    {
                         text: 'room.type.junior',
                         url: '#!/juniorSuite'
                     },
                     {
-                        text: 'room.type.double',
-                        url: '#!/doubleSuite'
+                        text: 'room.type.family',
+                        url: '#!/familyRoom'
                     },
                     {
-                        text: 'room.type.deluxe',
-                        url: '#!/deluxeSuite'
+                        text: 'room.type.suite',
+                        url: '#!/suite'
                     },
                 ]
             },
