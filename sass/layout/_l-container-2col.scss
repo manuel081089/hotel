@@ -12,7 +12,6 @@
 
 @media screen and (min-width: 56em){
   .l-container-2col {
-    @include container(12);
 
     .l-container-first-col {
       display: block;
