@@ -169,23 +169,15 @@ textarea {
     margin-right: 0; }
 
 @media screen and (min-width: 56em) {
-  .l-container-2col {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto; }
-    .l-container-2col:after {
-      content: " ";
-      display: block;
-      clear: both; }
-    .l-container-2col .l-container-first-col {
-      display: block;
-      width: 23.72881%;
-      float: left;
-      margin-right: 1.69492%; }
-    .l-container-2col .l-container-second-col {
-      width: 74.57627%;
-      float: right;
-      margin-right: 0; } }
+  .l-container-2col .l-container-first-col {
+    display: block;
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%; }
+  .l-container-2col .l-container-second-col {
+    width: 74.57627%;
+    float: right;
+    margin-right: 0; } }
 .l-container-half-col {
   width: 100%;
   float: left;
@@ -241,7 +233,7 @@ header {
     header .logo-container .logo {
       position: relative; }
       header .logo-container .logo img {
-        width: 120px;
+        width: 135px;
         padding-top: 30px;
         position: absolute;
         left: 0;
@@ -296,7 +288,7 @@ header {
       display: none !important; }
     header .logo-container .logo img {
       padding-top: 30px;
-      width: 160px; }
+      width: 170px; }
     header .logo-container .logo::before {
       border-width: 90px 100px 0 100px; }
     header .logo-container .logo::after {
