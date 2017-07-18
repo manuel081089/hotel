@@ -694,7 +694,8 @@ ul.social-list {
     padding: .3em 0;
     background: transparent;
     border: 2px solid white;
-    transition: all 0.3s ease 0s; }
+    transition: all 0.3s ease 0s;
+    margin: 0 2px; }
     ul.social-list li.social-item a {
       cursor: pointer;
       color: white; }
