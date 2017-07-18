@@ -18,7 +18,16 @@
                 {key: "coffee"},
                 {key: "hydro"},
                 {key: "size.large"}
-            ]
+            ];
+
+            vm.roomSlides = [
+                {
+                    src: 'img/suite1.jpg'
+                },
+                {
+                    src: 'img/suite2.jpg'
+                },
+            ];
         };
     }
 })();
