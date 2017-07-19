@@ -1,8 +1,11 @@
 .contact-form {
-  padding: 2em 1em;
+  width: 100%;
+  margin: auto;
+  padding: 5em 2em;
 
   .contact-intro {
-    height: 8em;
+    //height: 8em;
+    padding-bottom: .5em;
     p {
       color: $brand-primary;
     }
@@ -12,5 +15,12 @@
     background: $brand-primary !important;
     width: 50%;
     color: white !important;
+  }
+}
+
+@media screen and (min-width: 42em) {
+  .contact-form {
+    max-width: 60%;
+
   }
 }

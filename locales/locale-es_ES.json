@@ -32,6 +32,8 @@
 
   "sidebar.services.title" : "Servicios disponibles en la habitación",
 
+  "packages.pageTitle" : "Paquetes",
+
   "footer.contact.title": "contáctenos",
   "footer.contact.phone": "teléfono",
   "footer.contact.fax": "fáx",

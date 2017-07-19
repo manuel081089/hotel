@@ -32,6 +32,8 @@
 
   "sidebar.services.title" : "Services available in the room",
 
+  "packages.pageTitle" : "Packages",
+
   "footer.contact.title": "contact us",
   "footer.contact.phone": "phone",
   "footer.contact.fax": "fax",
